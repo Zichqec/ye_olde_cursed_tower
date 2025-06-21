@@ -1,0 +1,5 @@
+charset,UTF-8
+type,ghost
+
+name,Ye Olde Cursed Tower
+directory,ye_olde_cursed_tower_gpz

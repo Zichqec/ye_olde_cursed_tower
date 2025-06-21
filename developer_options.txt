@@ -1,0 +1,2 @@
+.gitignore,nonar,noupdate
+.gitattributes,nonar,noupdate

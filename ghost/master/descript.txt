@@ -1,0 +1,12 @@
+charset,UTF-8
+type,ghost
+
+name,Ye Olde Cursed Tower
+craftman,Galla & Pommy & Zichqec
+craftmanw,Galla & Pommy & Zichqec
+craftmanurl,https://github.com/Zichqec/ye_olde_cursed_tower
+
+sakura.name,Noneyet
+kero.name,TobeDecided
+
+shiori,aosora.dll
