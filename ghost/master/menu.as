@@ -31,12 +31,12 @@ function OnSakuraMenu
 function TalkRates
 {
 	return [
-	{time: 0, label: "Off"},
-	{time: 60, label: "1m"},
-	{time: 180, label: "3m"},
-	{time: 300, label: "5m"},
-	{time: 600, label: "10m"},
-	{time: 900, label: "15m"},
+		{time: 0, label: "Off"},
+		{time: 60, label: "1m"},
+		{time: 180, label: "3m"},
+		{time: 300, label: "5m"},
+		{time: 600, label: "10m"},
+		{time: 900, label: "15m"},
 	];
 }
 
