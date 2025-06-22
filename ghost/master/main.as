@@ -41,14 +41,8 @@ function OnPromptTalk
 
 function OnAITalk
 {
-	if (FarApart())
-	{
-		LastTalk = Reflection.Get("ApartTalk")();
-	}
-	else
-	{
-		LastTalk = Reflection.Get("RandomTalk")();
-	}
+	if (FarApart()) LastTalk = Reflection.Get("ApartTalk")();
+	else LastTalk = Reflection.Get("RandomTalk")();
 	return LastTalk;
 }
 
@@ -61,24 +55,21 @@ function OnStroked
 {
 	if (Shiori.Reference[3] == 1)
 	{
-		return KeroStroked;
+		if (FarApart()) return KeroApartStroked;
+		else return KeroStroked;
 	}
 	else
 	{
+		if (FarApart()) return SakuraApartStroked;
+		else return SakuraStroked;
 		return SakuraStroked;
 	}
 }
 
 function OnMouseDoubleClick
 {
-	if (Shiori.Reference[3] == 1)
-	{
-		return OnKeroMenu;
-	}
-	else
-	{
-		return OnSakuraMenu;
-	}
+	if (Shiori.Reference[3] == 1) return OnKeroMenu;
+	else return OnSakuraMenu;
 }
 
 function OnKeyPress

@@ -1,9 +1,19 @@
+talk SakuraStroked
+{
+	0:Don't I'm ticklish :(
+}
+
+talk SakuraApartStroked
+{
+	0:I miss my friend :(
+}
+
 talk KeroStroked
 {
 	1:Wheeee!
 }
 
-talk SakuraStroked
+talk KeroApartStroked
 {
-	0:Don't I'm ticklish :(
+	1:This isn't fun when I'm lonely :(
 }
