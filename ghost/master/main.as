@@ -42,8 +42,10 @@ function OnPromptTalk
 
 function OnAITalk
 {
-	if (FarApart()) LastTalk = Reflection.Get("ApartTalk")();
-	else LastTalk = Reflection.Get("RandomTalk")();
+	//Surface calls go _here_ because if you put them in the talk builder then they bend to the whims of the talk builder
+	LastTalk = "\0\s[0]\1\s[10]";
+	if (FarApart()) LastTalk += Reflection.Get("ApartTalk")();
+	else LastTalk += Reflection.Get("RandomTalk")();
 	return LastTalk;
 }
 
