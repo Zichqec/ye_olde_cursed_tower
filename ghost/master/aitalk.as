@@ -16,7 +16,7 @@ talk RandomTalk
 	1:\b[2]Have you ever fought a dragon?
 	0:\b[4]Why would I have?
 	1:Oh, uhm... I... don't know? That's just a thing that knights do, isn't it?
-	0:I think you my have some misunderstanding of what it means to combat a dragon.
+	0:I think you may have some misunderstanding of what it means to combat a dragon.
 	1:... Okaaay...
 	0:Most dragons do not possess the intelligence to be more of a threat to man than any large predator.
 	1:Wait, then the old 'knight slays a dragon' cliché is made up!?
