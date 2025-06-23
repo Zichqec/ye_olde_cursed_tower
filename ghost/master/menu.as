@@ -19,12 +19,20 @@ function OnSakuraMenu
 	}
 	
 	local talkrates = TalkRates();
-	output += "Talk rate:\n";
-	for (local i = 0; i < talkrates.length; i++)
+	if (Save.Data.BalloonName == "Ye Olde Soul Spell") output += "Talk rate:      ";
+	else output += "Talk rate:  ";
+	
+	if (Save.Data.TalkInterval == 0) output += "\f[underline,true]\_a[OnChangeTalkInterval,0]Silence!\_a\f[underline,default]";
+	else output += "\__q[OnChangeTalkInterval,0]Silence!\__q";
+	
+	output += "\n";
+	for (local i = 1; i < talkrates.length; i++)
 	{
 		if (talkrates[i].time == Save.Data.TalkInterval) output += "\f[underline,true]\_a[OnChangeTalkInterval,{talkrates[i].time}]{talkrates[i].label}\_a\f[underline,default]";
 		else output += "\__q[OnChangeTalkInterval,{talkrates[i].time}]{talkrates[i].label}\__q";
-		output += "  ";
+		
+		if (Save.Data.BalloonName == "Ye Olde Soul Spell") output += " ";
+		else output += "  ";
 	}
 	
 	output += "\n\n";
@@ -111,7 +119,7 @@ function OnBalloonColorChange
 function TalkRates
 {
 	return [
-		{time: 0, label: "Off"},
+		{time: 0, label: "Silence!"},
 		{time: 60, label: "1m"},
 		{time: 180, label: "3m"},
 		{time: 300, label: "5m"},
