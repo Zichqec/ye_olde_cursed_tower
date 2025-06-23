@@ -6,7 +6,9 @@ craftman,Galla & Pommy & Zichqec
 craftmanw,Galla & Pommy & Zichqec
 craftmanurl,https://github.com/Zichqec/ye_olde_cursed_tower
 
-sakura.name,Noneyet
-kero.name,TobeDecided
+sakura.name,The Knight
+kero.name,The Kid
 
 shiori,aosora.dll
+
+balloon,Ye Olde Soul Spell
