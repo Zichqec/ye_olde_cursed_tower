@@ -47,6 +47,29 @@ talk RandomTalk
 	0:There is little more indicative of human nature than coming up with strange explanations for mundane events.
 }
 
+talk RandomTalk
+{
+	1:\b[2]How many sunsets do you think you've watched in your life?
+	0:\b[2]A strange question...
+	1:I'm just curious!
+	0:I suppose it would have been several thousand. I've never thought about it.
+	1:Oh, same! I've seen about 7,318.
+	0:That is... specific.
+	1:Give or take a few dozen.
+	0:You've counted them?
+	1:Of course!
+}
+
+talk RandomTalk
+{
+	1:\b[2]Hehehehe...
+	0:Is something funny?
+	1:I was just thinking that if you were put into a lightbulb, you'd be a nightlight...
+	0:...
+	1:You know... because you're a knight... and you would be a light...?
+	0:Heh. That is funny.
+}
+
 //———————————————————— Apart Talk ————————————————————
 
 talk ApartTalk
