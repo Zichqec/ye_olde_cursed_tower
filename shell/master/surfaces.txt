@@ -8,13 +8,13 @@ surface0
 	//Glowy idle
 	animation0.interval,random,10
 	animation0.pattern0,replace,100,0,0,0
-	animation0.pattern1,replace,101,50,0,0
-	animation0.pattern2,replace,102,50,0,0
-	animation0.pattern3,replace,103,50,0,0
-	animation0.pattern4,replace,104,50,0,0
-	animation0.pattern5,replace,105,50,0,0
-	animation0.pattern6,replace,106,50,0,0
-	animation0.pattern7,replace,-1,50,0,0
+	animation0.pattern1,replace,101,65,0,0
+	animation0.pattern2,replace,102,65,0,0
+	animation0.pattern3,replace,103,65,0,0
+	animation0.pattern4,replace,104,65,0,0
+	animation0.pattern5,replace,105,65,0,0
+	animation0.pattern6,replace,106,65,0,0
+	animation0.pattern7,replace, -1,65,0,0
 	
 	//Talk wiggle
 	animation10.interval,talk,4
@@ -22,27 +22,27 @@ surface0
 	
 	animation11.interval,never
 	animation11.pattern0,replace,200,0,0,0
-	animation11.pattern1,replace,201,45,0,0
-	animation11.pattern2,replace,200,45,0,0
-	animation11.pattern3,replace,202,45,0,0
-	animation11.pattern4,replace,201,45,0,0
-	animation11.pattern5,replace,-1,45,0,0
+	animation11.pattern1,replace,201,65,0,0
+	animation11.pattern2,replace,200,65,0,0
+	animation11.pattern3,replace,202,65,0,0
+	animation11.pattern4,replace,201,65,0,0
+	animation11.pattern5,replace, -1,65,0,0
 	
 	animation12.interval,never
 	animation12.pattern0,replace,200,0,0,0
-	animation12.pattern1,replace,201,45,0,0
-	animation12.pattern2,replace,203,45,0,0
-	animation12.pattern3,replace,201,45,0,0
-	animation12.pattern4,replace,202,45,0,0
-	animation12.pattern5,replace,-1,45,0,0
+	animation12.pattern1,replace,201,65,0,0
+	animation12.pattern2,replace,200,65,0,0
+	animation12.pattern3,replace,201,65,0,0
+	animation12.pattern4,replace,202,65,0,0
+	animation12.pattern5,replace, -1,65,0,0
 	
 	animation13.interval,never
 	animation13.pattern0,replace,201,0,0,0
-	animation13.pattern1,replace,202,45,0,0
-	animation13.pattern2,replace,201,45,0,0
-	animation13.pattern3,replace,200,45,0,0
-	animation13.pattern4,replace,201,45,0,0
-	animation13.pattern5,replace,-1,45,0,0
+	animation13.pattern1,replace,202,65,0,0
+	animation13.pattern2,replace,201,65,0,0
+	animation13.pattern3,replace,200,65,0,0
+	animation13.pattern4,replace,201,65,0,0
+	animation13.pattern5,replace, -1,65,0,0
 }
 
 surface10
