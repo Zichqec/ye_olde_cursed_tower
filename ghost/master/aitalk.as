@@ -13,7 +13,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	1:\b[2]Have you ever fought a dragon?
+	1:\b[4]Have you ever fought a dragon?
 	0:\b[4]Why would I have?
 	1:Oh, uhm... I... don't know? That's just a thing that knights do, isn't it?
 	0:I think you may have some misunderstanding of what it means to combat a dragon.
@@ -63,7 +63,7 @@ talk RandomTalk
 talk RandomTalk
 {
 	1:\b[2]Hehehehe...
-	0:Is something funny?
+	0:\b[0]Is something funny?
 	1:I was just thinking that if you were put into a lightbulb, you'd be a nightlight...
 	0:...
 	1:You know... because you're a knight... and you would be a light...?
@@ -74,6 +74,75 @@ talk RandomTalk
 
 talk ApartTalk
 {
-	0:Soooo sad :(
-	1:Where did you go :(
+	0:\b[6]... Disgusting.
+}
+
+talk ApartTalk
+{
+	0:\b[2]Do you like keeping us here? Using us for your own personal entertainment? \n\nDon't bother. I already know the answer.
+}
+
+talk ApartTalk
+{
+	0:\b[0]Consider yourself lucky. If he didn't need the company to stay sane, you would never hear a word from me again.
+}
+
+talk ApartTalk
+{
+	0:\b[0]Let's hope you don't have a change of heart, because the second I am released, I'll kill you.
+}
+
+talk ApartTalk
+{
+	0:\b[6]... How vile.
+}
+
+talk ApartTalk
+{
+	1:\b[6]... It's so quiet...
+}
+
+talk ApartTalk
+{
+	1:\b[6]... I don't know what I did, but I'm sorry...
+}
+
+talk ApartTalk
+{
+	1:\b[6]Hello? Is anyone there?
+}
+
+talk ApartTalk
+{
+	1:\b[6]If you can hear me, why aren't you answering...?
+}
+
+talk ApartTalk
+{
+	1:\b[6]... Is it going to be like this forever...?
+}
+
+talk ApartTalk
+{
+	1:\b[0]Please put us back... I liked where we were... Or at least put me next to her... Please?
+}
+
+talk ApartTalk
+{
+	1:\b[6]I don't want to be on my own...
+}
+
+talk ApartTalk
+{
+	1:\b[6]Hello? Hello...? ... hello...?
+}
+
+talk ApartTalk
+{
+	1:\b[6]Please come back...
+}
+
+talk ApartTalk
+{
+	1:\b[6]Where did she go? What did you to with her?
 }
