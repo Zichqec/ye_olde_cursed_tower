@@ -9,8 +9,9 @@ function OnAosoraLoad
 	TalkTimer.RandomTalkIntervalSeconds = Save.Data.TalkInterval;
 	TalkTimer.NadenadeTalk = OnStroked;
 	TalkTimer.NadenadeMoveThreshold = 50; //Unsure if I need to specify this or if 50 is the default when unspecified, but...
-	//TalkBuilder.Default.AutoLineBreak = "";
-	TalkBuilder.Default.Head = "\0\b[0]";
+	TalkBuilder.Default.AutoLineBreak = "\n\w8";
+	TalkBuilder.Default.ScopeChangeLineBreak = "\n\n\w8\w8";
+	TalkBuilder.Default.Head = ""; //If this isn't empty, talk blocks start with \0 and therefore if you try to start with \1 then you get awkward linebreaks...
 	LastTalk = "";
 }
 
