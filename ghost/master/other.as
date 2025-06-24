@@ -5,12 +5,15 @@ function OnTranslate
 	//Autopause for all your autopause needs
 	if (!talkstr.Contains("\![no-autopause]"))
 	{
-		//talkstr = talkstr.Replace("......?",".\w4.\w4.\w4.\w4.\w4.\w4?\w8\w8");
-		//talkstr = talkstr.Replace("......!",".\w4.\w4.\w4.\w4.\w4.\w4!\w8\w8");
-		//i THINK just the two below will be ok... because if there is a question mark or exclamation mark on the end, they ONLY need pauses if the scope switches or linebreaks are added. And those are both covered by other things
+		talkstr = talkstr.Replace("......?",".\w4.\w4.\w4.\w4.\w4.\w4?\w8\w8");
+		talkstr = talkstr.Replace("......!",".\w4.\w4.\w4.\w4.\w4.\w4!\w8\w8");
+		//i THINK just the two below will be ok... because if there is a question mark or exclamation mark on the end, they ONLY need pauses if the scope switches or linebreaks are added. And those are both covered by other things -- update they are not lol
 		//These break the autopause rule of requiring a space after... hum.
-		talkstr = talkstr.Replace("......",".\w4.\w4.\w4.\w4.\w4.\w4");
-		talkstr = talkstr.Replace("...",".\w4.\w4.\w4");
+		//TODO do we need interrobang, because this does not account for interrobang + ellipses. need a better solution...
+		talkstr = talkstr.Replace("......",".\w4.\w4.\w4.\w4.\w4.\w8\w8"); //this wont work for space then more text
+		talkstr = talkstr.Replace("...?",".\w4.\w4.\w4?\w8\w8");
+		talkstr = talkstr.Replace("...!",".\w4.\w4.\w4!\w8\w8");
+		talkstr = talkstr.Replace("...",".\w4.\w4.\w8\w8");
 		talkstr = talkstr.Replace(". ",".\w8\w8 ");
 		talkstr = talkstr.Replace(", ",",\w4 ");
 		talkstr = talkstr.Replace("? ","?\w8\w8 ");
