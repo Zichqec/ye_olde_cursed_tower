@@ -115,6 +115,27 @@ talk RandomTalk
 	0:I'm quite flattered that you think I have one at all.
 }
 
+talk RandomTalk
+{
+	1:\b[4]Did you have any pets? As a kid, or before all of this, whatever.
+	0:\b[2]In a way. I had a horse that I raised and trained by hand. He served me well in combat.
+	1:Combat, sure... I had an ant farm, and when I was younger, my family had a dog.
+	0:Ah, my family also had dogs. They kept our home entertaining.
+	1:Yeah, right? I wouldn't mind getting a puppy once we're out of here.
+	0:... I hope you do.
+}
+
+talk RandomTalk
+{
+	1:\b[2]... I was wondering...
+	0:\b[0]Yes?
+	1:Do you know what happens if the wizard... doesn't want us anymore?
+	0:...
+	1:Will we be let out, do you think?
+	0:... No. I don't think we will.
+	1:...... oh......
+}
+
 //———————————————————— Apart Talk ————————————————————
 
 talk ApartTalk
