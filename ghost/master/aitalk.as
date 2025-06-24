@@ -136,6 +136,25 @@ talk RandomTalk
 	1:...... oh......
 }
 
+talk RandomTalk
+{
+	1:\b[2]You had music back in your day, right? I mean, who didn't?
+	0:\b[2]Heh. Yes, we did. There was a ballade I had a particular fondness for, of a seven-headed snake.
+	1:That seems like too many heads, to be honest.
+	0:The heads were not truly heads, as the snake was not truly a snake.
+	1:... Yeah, that's how art is, huh.
+}
+
+talk RandomTalk
+{
+	0:\b[2]I am curious about something, if it isn't too forward of me to ask.
+	1:\b[2]Oh, no, I'm sure it's fine. Shoot!
+	0:Did you have plans for your future?
+	1:Uh... I don't know, the usual things, I think? Finish college, get a nice job, buy a house eventually.
+	0:A comfortable life, then. That's an admirable goal.
+	1:Yeah, uh... Yeah. I guess it is.
+}
+
 //———————————————————— Apart Talk ————————————————————
 
 talk ApartTalk
