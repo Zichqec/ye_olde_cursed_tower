@@ -145,7 +145,9 @@ talk ApartTalk
 
 talk ApartTalk
 {
-	0:\b[2]Do you like keeping us here? Using us for your own personal entertainment? \n\nDon't bother. I already know the answer.
+	0:\b[2]Do you like keeping us here? Using us for your own personal entertainment?
+	
+	Don't bother. I already know the answer.
 }
 
 talk ApartTalk
@@ -200,7 +202,9 @@ talk ApartTalk
 
 talk ApartTalk
 {
-	1:\b[6]Hello? Hello...? \n\n... hello...?
+	1:\b[6]Hello? Hello...?
+	
+	... hello...?
 }
 
 talk ApartTalk
