@@ -70,6 +70,51 @@ talk RandomTalk
 	0:Heh. That is funny.
 }
 
+talk RandomTalk
+{
+	1:\b[4]Sooo... What kind of stuff did you do in your free time?
+	0:\b[4]Ah. I spent a fair amount of time at balls, festivals, and hunts. However, I would not call any of it 'free time', as a strong social standing is required to maintain good will.
+	1:You mean you never picked up any hobbies just for the fun of it?
+	0:Indeed not. And yourself?
+	1:Oh, I like reading and listening to music! And roller skating is fun. And making string art!
+	0:Quite the polymath. I'm impressed.
+	1:Heheh... Thanks!
+}
+
+talk RandomTalk
+{
+	0:\b[2]Do you have any favorite foods?
+	1:\b[4]Like food-foods, or like snack-foods, or like any-foods?
+	0:... For meals.
+	1:Food-foods! Okay. Yeah. I've always liked peach and garlic chicken.
+	0:I see we are both compelled by fowl.
+	1:We are?
+	0:Yes. I'm fond of roast pheasant.
+	1:Wow. We're basically twins!
+}
+
+talk RandomTalk
+{
+	1:\b[4]I don't miss getting hungry, but it's strange still getting cravings...
+	0:\b[2]You have something in mind that you want?
+	1:Something sweet! I was taking a break from sugar when all of... this... happened, but I regret it now! I should have let my teeth rot out!
+	0:I see. I understand what you mean. I would not mind a calisson or two.
+	1:Right!? I really, really, really want a strawberry pretzel tart!
+	0:Alas...
+	1:Alas!
+}
+
+talk RandomTalk
+{
+	0:\b[4]You've mentioned that you have an elder sister?
+	1:\b[4]I do! Are you curious about something?
+	0:Whether or not you had other siblings as well.
+	1:No, it's just the two of us. Though, you remind me of her sometimes!
+	0:Do I?
+	1:Well... Not in tone, or attitude, or interests... but you both have a similar sense of humor!
+	0:I'm quite flattered that you think I have one at all.
+}
+
 //———————————————————— Apart Talk ————————————————————
 
 talk ApartTalk
@@ -134,7 +179,7 @@ talk ApartTalk
 
 talk ApartTalk
 {
-	1:\b[6]Hello? Hello...? ... hello...?
+	1:\b[6]Hello? Hello...? \n\n... hello...?
 }
 
 talk ApartTalk
@@ -144,5 +189,5 @@ talk ApartTalk
 
 talk ApartTalk
 {
-	1:\b[6]Where did she go? What did you to with her?
+	1:\b[6]Where did she go? What did you do with her?
 }
