@@ -41,6 +41,11 @@ function OnTranslate
 		talkstr = talkstr.Replace("\1\b[4]","\1\b[{KeroBalloonColor}4]");
 		talkstr = talkstr.Replace("\1\b[6]","\1\b[{KeroBalloonColor}6]");
 	}
+	else
+	{
+		talkstr = talkstr.Replace("\b[4]","\b[4,--fallback=2]");
+		talkstr = talkstr.Replace("\b[6]","\b[6,--fallback=0]");
+	}
 	
 	return talkstr;
 }
