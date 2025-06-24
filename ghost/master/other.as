@@ -11,6 +11,16 @@ function OnTranslate
 		talkstr = talkstr.Replace("! ","!\w8\w8 ");
 		talkstr = talkstr.Replace(": ",":\w8 ");
 		talkstr = talkstr.Replace("; ",";\w8 ");
+		
+		//First scope change... kind of a bandaid patch, hoping for a better solution later
+		//No mid-dialogue punctuation needed here, only sentence enders
+		talkstr = talkstr.Replace(".\1",".\w8\w8\1");
+		talkstr = talkstr.Replace("?\1","?\w8\w8\1");
+		talkstr = talkstr.Replace("!\1","!\w8\w8\1");
+		
+		talkstr = talkstr.Replace(".\0",".\w8\w8\0");
+		talkstr = talkstr.Replace("?\0","?\w8\w8\0");
+		talkstr = talkstr.Replace("!\0","!\w8\w8\0");
 	}
 	
 	if (Save.Data.BalloonName == "Ye Olde Soul Spell")
