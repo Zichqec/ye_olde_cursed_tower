@@ -10,14 +10,14 @@ function OnAosoraLoad
 	TalkTimer.NadenadeTalk = OnStroked;
 	TalkTimer.NadenadeMoveThreshold = 50; //Unsure if I need to specify this or if 50 is the default when unspecified, but...
 	TalkBuilder.Default.AutoLineBreak = "\n\w8";
-	TalkBuilder.Default.ScopeChangeLineBreak = "\n\n\w8\w8";
+	TalkBuilder.Default.ScopeChangeLineBreak = "\n\n";
 	TalkBuilder.Default.Head = ""; //If this isn't empty, talk blocks start with \0 and therefore if you try to start with \1 then you get awkward linebreaks...
 	LastTalk = "";
 }
 
 function OnBoot
 {
-	local output = "";
+	local output = "\0\s[0]\1\s[10]";
 	output += GetCoords();
 	if (FarApart()) output += BootApartTalk();
 	else output += BootTalk();
@@ -26,7 +26,7 @@ function OnBoot
 
 function OnClose
 {
-	local output = "";
+	local output = "\0\s[0]\1\s[10]";
 	output += GetCoords();
 	if (FarApart()) output += CloseApartTalk();
 	else output += CloseTalk();
@@ -120,4 +120,9 @@ function BalloonIsOpen
 	local status = Shiori.Headers.Status.ToString();
 	if (status.Contains("balloon") || status.Contains("choosing")) return 1;
 	else return 0;
+}
+
+function OnSurfaceRestore
+{
+	return "\0\s[0]\1\s[10]";
 }

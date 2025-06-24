@@ -3,7 +3,7 @@ function OnSakuraMenu
 {
 	local output = "";
 	
-	output += "\0\b[2]\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]\![quicksection,true]\![no-autopause]";
+	output += "\0\b[2]\s[0]\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]\![quicksection,true]\![no-autopause]";
 	
 	output += "\![*]\__q[OnPromptTalk]Speak!\__q  \![*]";
 	
@@ -61,7 +61,7 @@ function OnBalloonColorMenu
 	
 	local output = "";
 	output += "\C\0\![lock,balloonrepaint]\c\1\![lock,balloonrepaint]\c\0";
-	output += "\0\b[4]\![quicksection,true]\![set,autoscroll,disable]\![no-autopause]\f[anchorvisitedfontcolor,default.anchor]";
+	output += "\0\b[4]\s[10]\![quicksection,true]\![set,autoscroll,disable]\![no-autopause]\f[anchorvisitedfontcolor,default.anchor]";
 	output += "\0\f[align,center]{emdash} Spell choice {emdash}\n\f[align,left]";
 	for (local i = 0; i < colors.length; i++)
 	{
