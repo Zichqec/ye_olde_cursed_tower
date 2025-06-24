@@ -3,93 +3,97 @@ descript
 	version,1
 }
 
-surface0
+surface0,10
 {
+	element0,overlay,surface10.png,0,0
+	
+	//——————————————— Gem ———————————————
+	animation100.interval,bind
+	animation100.pattern0,replace,100,0,0,0
+	
 	//Glowy idle
-	animation0.interval,random,10
-	animation0.pattern0,replace,100,0,0,0
-	animation0.pattern1,replace,101,65,0,0
-	animation0.pattern2,replace,102,65,0,0
-	animation0.pattern3,replace,103,65,0,0
-	animation0.pattern4,replace,104,65,0,0
-	animation0.pattern5,replace,105,65,0,0
-	animation0.pattern6,replace,106,65,0,0
-	animation0.pattern7,replace,107,65,0,0
-	animation0.pattern8,replace, -1,65,0,0
+	animation101.interval,bind+random,10
+	animation101.pattern0,replace,100,0,0,0
+	animation101.pattern1,replace,101,65,0,0
+	animation101.pattern2,replace,102,65,0,0
+	animation101.pattern3,replace,103,65,0,0
+	animation101.pattern4,replace,104,65,0,0
+	animation101.pattern5,replace,105,65,0,0
+	animation101.pattern6,replace,106,65,0,0
+	animation101.pattern7,replace,107,65,0,0
+	animation101.pattern8,replace, -1,65,0,0
 	
 	//Talk wiggle
-	animation10.interval,talk,4
-	animation10.pattern0,alternativestart,(11,12,13)
+	animation200.interval,bind+talk,4
+	animation200.pattern0,alternativestart,(201,202,203)
 	
-	animation11.interval,never
-	animation11.pattern0,replace,200,0,0,0
-	animation11.pattern1,replace,201,65,0,0
-	animation11.pattern2,replace,200,65,0,0
-	animation11.pattern3,replace,202,65,0,0
-	animation11.pattern4,replace,201,65,0,0
-	animation11.pattern5,replace, -1,65,0,0
+	animation201.interval,never
+	animation201.pattern0,replace,200,0,0,0
+	animation201.pattern1,replace,201,65,0,0
+	animation201.pattern2,replace,200,65,0,0
+	animation201.pattern3,replace,202,65,0,0
+	animation201.pattern4,replace,201,65,0,0
+	animation201.pattern5,replace, -1,65,0,0
 	
-	animation12.interval,never
-	animation12.pattern0,replace,200,0,0,0
-	animation12.pattern1,replace,201,65,0,0
-	animation12.pattern2,replace,203,65,0,0
-	animation12.pattern3,replace,201,65,0,0
-	animation12.pattern4,replace,202,65,0,0
-	animation12.pattern5,replace, -1,65,0,0
+	animation202.interval,never
+	animation202.pattern0,replace,200,0,0,0
+	animation202.pattern1,replace,201,65,0,0
+	animation202.pattern2,replace,203,65,0,0
+	animation202.pattern3,replace,201,65,0,0
+	animation202.pattern4,replace,202,65,0,0
+	animation202.pattern5,replace, -1,65,0,0
 	
-	animation13.interval,never
-	animation13.pattern0,replace,201,0,0,0
-	animation13.pattern1,replace,202,65,0,0
-	animation13.pattern2,replace,201,65,0,0
-	animation13.pattern3,replace,200,65,0,0
-	animation13.pattern4,replace,201,65,0,0
-	animation13.pattern5,replace, -1,65,0,0
-}
+	animation203.interval,never
+	animation203.pattern0,replace,201,0,0,0
+	animation203.pattern1,replace,202,65,0,0
+	animation203.pattern2,replace,201,65,0,0
+	animation203.pattern3,replace,200,65,0,0
+	animation203.pattern4,replace,201,65,0,0
+	animation203.pattern5,replace, -1,65,0,0
 
-surface1000
-{
+	
+	//——————————————— Pot ———————————————
+	animation1000.interval,bind
+	animation1000.pattern0,replace,1000,0,0,0
+	
 	//Glowy idle
-	animation0.interval,random,10
-	animation0.pattern0,replace,1000,0,0,0
-	animation0.pattern1,replace,1001,65,0,0
-	animation0.pattern2,replace,1002,65,0,0
-	animation0.pattern3,replace,1003,65,0,0
-	animation0.pattern4,replace,1004,65,0,0
-	animation0.pattern5,replace,1005,65,0,0
-	animation0.pattern6,replace,1006,65,0,0
-	animation0.pattern7,replace,1007,65,0,0
-	animation0.pattern8,replace,1008,65,0,0
-	animation0.pattern9,replace, -1,65,0,0
+	animation1001.interval,bind+random,20
+	animation1001.pattern0,replace,1000,0,0,0
+	animation1001.pattern1,replace,1001,65,0,0
+	animation1001.pattern2,replace,1002,65,0,0
+	animation1001.pattern3,replace,1003,65,0,0
+	animation1001.pattern4,replace,1004,65,0,0
+	animation1001.pattern5,replace,1005,65,0,0
+	animation1001.pattern6,replace,1006,65,0,0
+	animation1001.pattern7,replace,1007,65,0,0
+	animation1001.pattern8,replace,1008,65,0,0
+	animation1001.pattern9,replace, -1,65,0,0
 	
 	//Talk wiggle
-	animation10.interval,talk,4
-	animation10.pattern0,alternativestart,(11,12,13)
+	animation2000.interval,bind+talk,4
+	animation2000.pattern0,alternativestart,(2001,2002,2003)
 	
-	animation11.interval,never
-	animation11.pattern0,replace,1100,0,0,0
-	animation11.pattern1,replace,1101,65,0,0
-	animation11.pattern2,replace,1100,65,0,0
-	animation11.pattern3,replace,1102,65,0,0
-	animation11.pattern4,replace,1101,65,0,0
-	animation11.pattern5,replace, -1,65,0,0
+	animation2001.interval,never
+	animation2001.pattern0,replace,1100,0,0,0
+	animation2001.pattern1,replace,1101,65,0,0
+	animation2001.pattern2,replace,1100,65,0,0
+	animation2001.pattern3,replace,1102,65,0,0
+	animation2001.pattern4,replace,1101,65,0,0
+	animation2001.pattern5,replace, -1,65,0,0
 	
-	animation12.interval,never
-	animation12.pattern0,replace,1100,0,0,0
-	animation12.pattern1,replace,1101,65,0,0
-	animation12.pattern2,replace,1103,65,0,0
-	animation12.pattern3,replace,1101,65,0,0
-	animation12.pattern4,replace,1102,65,0,0
-	animation12.pattern5,replace, -1,65,0,0
+	animation2002.interval,never
+	animation2002.pattern0,replace,1100,0,0,0
+	animation2002.pattern1,replace,1101,65,0,0
+	animation2002.pattern2,replace,1103,65,0,0
+	animation2002.pattern3,replace,1101,65,0,0
+	animation2002.pattern4,replace,1102,65,0,0
+	animation2002.pattern5,replace, -1,65,0,0
 	
-	animation13.interval,never
-	animation13.pattern0,replace,1101,0,0,0
-	animation13.pattern1,replace,1102,65,0,0
-	animation13.pattern2,replace,1101,65,0,0
-	animation13.pattern3,replace,1100,65,0,0
-	animation13.pattern4,replace,1101,65,0,0
-	animation13.pattern5,replace, -1,65,0,0
-}
-
-surface10
-{
+	animation2003.interval,never
+	animation2003.pattern0,replace,1101,0,0,0
+	animation2003.pattern1,replace,1102,65,0,0
+	animation2003.pattern2,replace,1101,65,0,0
+	animation2003.pattern3,replace,1100,65,0,0
+	animation2003.pattern4,replace,1101,65,0,0
+	animation2003.pattern5,replace, -1,65,0,0
 }

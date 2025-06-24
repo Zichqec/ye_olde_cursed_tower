@@ -8,3 +8,20 @@ craftmanurl,https://github.com/Zichqec/ye_olde_cursed_tower
 
 seriko.alignmenttodesktop,free
 seriko.use_self_alpha,1
+
+sakura.bindoption100.group,Item,mustselect
+sakura.bindgroup100.default,1
+
+sakura.bindgroup100.name,Item,Gem
+sakura.bindgroup100.addid,101,200
+sakura.bindgroup1000.name,Item,Pot
+sakura.bindgroup1000.addid,1001,2000
+
+
+kero.bindoption100.group,Item,mustselect
+kero.bindgroup100.default,1
+
+kero.bindgroup100.name,Item,Gem
+kero.bindgroup100.addid,101,200
+kero.bindgroup1000.name,Item,Pot
+kero.bindgroup1000.addid,1001,2000

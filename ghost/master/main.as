@@ -17,7 +17,7 @@ function OnAosoraLoad
 
 function OnBoot
 {
-	local output = "";
+	local output = "\0\s[0]\1\s[10]";
 	output += GetCoords();
 	if (FarApart()) output += BootApartTalk();
 	else output += BootTalk();
@@ -26,7 +26,7 @@ function OnBoot
 
 function OnClose
 {
-	local output = "";
+	local output = "\0\s[0]\1\s[10]";
 	output += GetCoords();
 	if (FarApart()) output += CloseApartTalk();
 	else output += CloseTalk();
@@ -120,4 +120,9 @@ function BalloonIsOpen
 	local status = Shiori.Headers.Status.ToString();
 	if (status.Contains("balloon") || status.Contains("choosing")) return 1;
 	else return 0;
+}
+
+function OnSurfaceRestore
+{
+	return "\0\s[0]\1\s[10]";
 }
