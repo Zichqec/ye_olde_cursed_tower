@@ -3,3 +3,5 @@ type,ghost
 
 name,Ye Olde Cursed Tower
 directory,ye_olde_cursed_tower_gpz
+
+balloon.directory,ye_olde_soul_spell_zi

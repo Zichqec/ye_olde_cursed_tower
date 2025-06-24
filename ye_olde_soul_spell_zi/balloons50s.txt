@@ -1,0 +1,12 @@
+anchor.font.color.r,196
+anchor.font.color.g,148
+anchor.font.color.b,004
+
+cursor.font.color.r,196
+cursor.font.color.g,148
+cursor.font.color.b,004
+
+arrow.filename,arrow50_
+sstpmarker.filename,sstp_50
+marker.filename,sstp_50
+onlinemarker.filename,online50_

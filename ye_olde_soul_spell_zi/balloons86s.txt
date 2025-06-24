@@ -1,0 +1,25 @@
+validrect.top,52
+validrect.bottom,-55
+
+onlinemarker.x,12
+onlinemarker.y,12
+
+sstpmarker.x,46
+sstpmessage.x,56
+//This makes the sstp message stop appearing if i uncomment it?
+//sstpmessage.xr,-20
+
+number.xr,-40
+
+anchor.font.color.r,068
+anchor.font.color.g,149
+anchor.font.color.b,194
+
+cursor.font.color.r,068
+cursor.font.color.g,149
+cursor.font.color.b,194
+
+arrow.filename,arrow80_
+sstpmarker.filename,sstp_80
+marker.filename,sstp_80
+onlinemarker.filename,online80_

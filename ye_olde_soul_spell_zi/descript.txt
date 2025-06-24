@@ -1,0 +1,103 @@
+charset,UTF-8
+type,balloon
+use_self_alpha,1
+use_input_alpha,1
+overlay_outside_balloon,1
+
+
+//——— Basic information ———
+name,Ye Olde Soul Spell
+craftman,Zichqec
+craftmanw,Zichqec
+craftmanurl,https://ukagaka.zichqec.com/
+homeurl,https://raw.githubusercontent.com/Zichqec/s-the-skeleton/master/updates/balloons/ye_olde_soul_spell/
+
+
+//——— Display area ———
+origin.x,0
+origin.y,0
+
+validrect.left,65
+validrect.top,65
+validrect.right,-65
+validrect.bottom,-67
+
+wordwrappoint.x,-70
+
+
+//——— Font ———
+font.name,Calibri
+font.height,14
+
+font.color.r,70
+font.color.g,70
+font.color.b,70
+
+font.shadowcolor.r,200
+font.shadowcolor.g,200
+font.shadowcolor.b,200
+
+anchor.font.color.r,022
+anchor.font.color.g,151
+anchor.font.color.b,222
+
+cursor.font.color.r,022
+cursor.font.color.g,151
+cursor.font.color.b,222
+
+cursor.style,underline
+
+disable.font.color.r,150
+disable.font.color.g,150
+disable.font.color.b,150
+
+
+//——— Arrows ———
+arrow0.x,86
+arrow0.y,38
+
+arrow1.x,86
+arrow1.y,-55
+
+
+//——— Online marker ———
+onlinemarker.x,15
+onlinemarker.y,15
+
+onlinemarker.interval,75
+
+
+//——— SSTP ———
+sstpmarker.x,50
+sstpmarker.y,-70
+
+sstpmessage.font.name,Calibri
+sstpmessage.font.height,11
+
+sstpmessage.x,60
+sstpmessage.xr,-50
+sstpmessage.y,-70
+
+sstpmessage.font.color.r,150
+sstpmessage.font.color.g,150
+sstpmessage.font.color.b,150
+
+
+//——— Number ———
+number.font.name,Calibri
+number.font.height,11
+
+number.xr,-57
+number.y,-80
+
+number.font.color.r,150
+number.font.color.g,150
+number.font.color.b,150
+
+
+//——— Input box ———
+communicatebox.x,45
+communicatebox.y,32
+
+communicatebox.width,320
+communicatebox.height,22

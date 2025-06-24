@@ -1,0 +1,4 @@
+charset,UTF-8
+type,balloon
+name,Ye Olde Soul Spell
+directory,ye_olde_soul_spell_zi

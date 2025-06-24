@@ -1,0 +1,15 @@
+validrect.top,70
+validrect.bottom,-77
+
+onlinemarker.x,17
+onlinemarker.y,17
+
+arrow0.y,41
+arrow1.y,-56
+
+sstpmarker.x,60
+sstpmessage.x,70
+//This makes the sstp message stop appearing if i uncomment it?
+//sstpmessage.xr,-20
+
+number.xr,-66
