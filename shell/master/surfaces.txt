@@ -6,94 +6,393 @@ descript
 surface0,10
 {
 	element0,overlay,surface10.png,0,0
+}
+
+
+//——————————————— Gem ———————————————
+surface0,10
+{
+	//——————————————— Main position / main color ———————————————
+	//Base
+	animation1000000.interval,bind
+	animation1000000.pattern0,replace,1000000,0,0,0
 	
-	//——————————————— Gem ———————————————
-	animation100.interval,bind
-	animation100.pattern0,replace,100,0,0,0
+	//Idle
+	animation1000100.interval,bind+random,10
+	animation1000100.pattern0,replace,1000100,0,0,0
+	animation1000100.pattern1,replace,1000101,65,0,0
+	animation1000100.pattern2,replace,1000102,65,0,0
+	animation1000100.pattern3,replace,1000103,65,0,0
+	animation1000100.pattern4,replace,1000104,65,0,0
+	animation1000100.pattern5,replace,1000105,65,0,0
+	animation1000100.pattern6,replace,1000106,65,0,0
+	animation1000100.pattern7,replace, -1,65,0,0
 	
-	//Glowy idle
-	animation101.interval,bind+random,10
-	animation101.pattern0,replace,100,0,0,0
-	animation101.pattern1,replace,101,65,0,0
-	animation101.pattern2,replace,102,65,0,0
-	animation101.pattern3,replace,103,65,0,0
-	animation101.pattern4,replace,104,65,0,0
-	animation101.pattern5,replace,105,65,0,0
-	animation101.pattern6,replace,106,65,0,0
-	animation101.pattern7,replace,107,65,0,0
-	animation101.pattern8,replace, -1,65,0,0
+	//Talk
+	animation1000200.interval,bind+talk,4
+	animation1000200.pattern0,alternativestart,(1000201,1000202,1000203)
 	
-	//Talk wiggle
-	animation200.interval,bind+talk,4
-	animation200.pattern0,alternativestart,(201,202,203)
+	animation1000201.interval,never
+	animation1000201.pattern0,replace,1000200,0,0,0
+	animation1000201.pattern1,replace,1000201,65,0,0
+	animation1000201.pattern2,replace,1000200,65,0,0
+	animation1000201.pattern3,replace,1000202,65,0,0
+	animation1000201.pattern4,replace,1000201,65,0,0
+	animation1000201.pattern5,replace, -1,65,0,0
 	
-	animation201.interval,never
-	animation201.pattern0,replace,200,0,0,0
-	animation201.pattern1,replace,201,65,0,0
-	animation201.pattern2,replace,200,65,0,0
-	animation201.pattern3,replace,202,65,0,0
-	animation201.pattern4,replace,201,65,0,0
-	animation201.pattern5,replace, -1,65,0,0
+	animation1000202.interval,never
+	animation1000202.pattern0,replace,1000200,0,0,0
+	animation1000202.pattern1,replace,1000201,65,0,0
+	animation1000202.pattern2,replace,1000203,65,0,0
+	animation1000202.pattern3,replace,1000201,65,0,0
+	animation1000202.pattern4,replace,1000202,65,0,0
+	animation1000202.pattern5,replace, -1,65,0,0
 	
-	animation202.interval,never
-	animation202.pattern0,replace,200,0,0,0
-	animation202.pattern1,replace,201,65,0,0
-	animation202.pattern2,replace,203,65,0,0
-	animation202.pattern3,replace,201,65,0,0
-	animation202.pattern4,replace,202,65,0,0
-	animation202.pattern5,replace, -1,65,0,0
-	
-	animation203.interval,never
-	animation203.pattern0,replace,201,0,0,0
-	animation203.pattern1,replace,202,65,0,0
-	animation203.pattern2,replace,201,65,0,0
-	animation203.pattern3,replace,200,65,0,0
-	animation203.pattern4,replace,201,65,0,0
-	animation203.pattern5,replace, -1,65,0,0
+	animation1000203.interval,never
+	animation1000203.pattern0,replace,1000201,0,0,0
+	animation1000203.pattern1,replace,1000202,65,0,0
+	animation1000203.pattern2,replace,1000201,65,0,0
+	animation1000203.pattern3,replace,1000200,65,0,0
+	animation1000203.pattern4,replace,1000201,65,0,0
+	animation1000203.pattern5,replace, -1,65,0,0
 
 	
-	//——————————————— Pot ———————————————
-	animation1000.interval,bind
-	animation1000.pattern0,replace,1000,0,0,0
+	//——————————————— Main position / alt color ———————————————
+	//Base
+	animation1001000.interval,bind
+	animation1001000.pattern0,replace,1001000,0,0,0
 	
-	//Glowy idle
-	animation1001.interval,bind+random,20
-	animation1001.pattern0,replace,1000,0,0,0
-	animation1001.pattern1,replace,1001,65,0,0
-	animation1001.pattern2,replace,1002,65,0,0
-	animation1001.pattern3,replace,1003,65,0,0
-	animation1001.pattern4,replace,1004,65,0,0
-	animation1001.pattern5,replace,1005,65,0,0
-	animation1001.pattern6,replace,1006,65,0,0
-	animation1001.pattern7,replace,1007,65,0,0
-	animation1001.pattern8,replace,1008,65,0,0
-	animation1001.pattern9,replace, -1,65,0,0
+	//Idle
+	animation1001100.interval,bind+random,10
+	animation1001100.pattern0,replace,1001100,0,0,0
+	animation1001100.pattern1,replace,1001101,0,0,0
+	animation1001100.pattern2,replace,1001102,65,0,0
+	animation1001100.pattern3,replace,1001103,65,0,0
+	animation1001100.pattern4,replace,1001104,65,0,0
+	animation1001100.pattern5,replace,1001105,65,0,0
+	animation1001100.pattern6,replace,1001106,65,0,0
+	animation1001100.pattern7,replace,1001107,65,0,0
+	animation1001100.pattern8,replace, -1,65,0,0
 	
-	//Talk wiggle
-	animation2000.interval,bind+talk,4
-	animation2000.pattern0,alternativestart,(2001,2002,2003)
+	//Talk
+	animation1001200.interval,bind+talk,4
+	animation1001200.pattern0,alternativestart,(1001201,1001202,1001203)
 	
-	animation2001.interval,never
-	animation2001.pattern0,replace,1100,0,0,0
-	animation2001.pattern1,replace,1101,65,0,0
-	animation2001.pattern2,replace,1100,65,0,0
-	animation2001.pattern3,replace,1102,65,0,0
-	animation2001.pattern4,replace,1101,65,0,0
-	animation2001.pattern5,replace, -1,65,0,0
+	animation1001201.interval,never
+	animation1001201.pattern0,replace,1001200,0,0,0
+	animation1001201.pattern1,replace,1001201,65,0,0
+	animation1001201.pattern2,replace,1001200,65,0,0
+	animation1001201.pattern3,replace,1001202,65,0,0
+	animation1001201.pattern4,replace,1001201,65,0,0
+	animation1001201.pattern5,replace, -1,65,0,0
 	
-	animation2002.interval,never
-	animation2002.pattern0,replace,1100,0,0,0
-	animation2002.pattern1,replace,1101,65,0,0
-	animation2002.pattern2,replace,1103,65,0,0
-	animation2002.pattern3,replace,1101,65,0,0
-	animation2002.pattern4,replace,1102,65,0,0
-	animation2002.pattern5,replace, -1,65,0,0
+	animation1001202.interval,never
+	animation1001202.pattern0,replace,1001200,0,0,0
+	animation1001202.pattern1,replace,1001201,65,0,0
+	animation1001202.pattern2,replace,1001203,65,0,0
+	animation1001202.pattern3,replace,1001201,65,0,0
+	animation1001202.pattern4,replace,1001202,65,0,0
+	animation1001202.pattern5,replace, -1,65,0,0
 	
-	animation2003.interval,never
-	animation2003.pattern0,replace,1101,0,0,0
-	animation2003.pattern1,replace,1102,65,0,0
-	animation2003.pattern2,replace,1101,65,0,0
-	animation2003.pattern3,replace,1100,65,0,0
-	animation2003.pattern4,replace,1101,65,0,0
-	animation2003.pattern5,replace, -1,65,0,0
+	animation1001203.interval,never
+	animation1001203.pattern0,replace,1001201,0,0,0
+	animation1001203.pattern1,replace,1001202,65,0,0
+	animation1001203.pattern2,replace,1001201,65,0,0
+	animation1001203.pattern3,replace,1001200,65,0,0
+	animation1001203.pattern4,replace,1001201,65,0,0
+	animation1001203.pattern5,replace, -1,65,0,0
+	
+	//——————————————— Alt position / main color ———————————————
+	//Base
+	animation1100000.interval,bind
+	animation1100000.pattern0,replace,1100000,0,0,0
+	
+	//Idle
+	animation1100100.interval,bind+random,20
+	animation1100100.pattern0,replace,1100100,0,0,0
+	animation1100100.pattern1,replace,1100101,0,0,0
+	animation1100100.pattern2,replace,1100102,65,0,0
+	animation1100100.pattern3,replace,1100103,65,0,0
+	animation1100100.pattern4,replace,1100104,65,0,0
+	animation1100100.pattern5,replace,1100105,65,0,0
+	animation1100100.pattern6,replace,1100106,65,0,0
+	animation1100100.pattern7,replace,1100107,65,0,0
+	animation1100100.pattern8,replace, -1,65,0,0
+	
+	//Talk
+	animation1100200.interval,bind+talk,4
+	animation1100200.pattern0,alternativestart,(1100201,1100202,1100203)
+	
+	animation1100201.interval,never
+	animation1100201.pattern0,replace,1100200,0,0,0
+	animation1100201.pattern1,replace,1100201,65,0,0
+	animation1100201.pattern2,replace,1100200,65,0,0
+	animation1100201.pattern3,replace,1100202,65,0,0
+	animation1100201.pattern4,replace,1100201,65,0,0
+	animation1100201.pattern5,replace, -1,65,0,0
+	
+	animation1100202.interval,never
+	animation1100202.pattern0,replace,1100200,0,0,0
+	animation1100202.pattern1,replace,1100201,65,0,0
+	animation1100202.pattern2,replace,1100203,65,0,0
+	animation1100202.pattern3,replace,1100201,65,0,0
+	animation1100202.pattern4,replace,1100202,65,0,0
+	animation1100202.pattern5,replace, -1,65,0,0
+	
+	animation1100203.interval,never
+	animation1100203.pattern0,replace,1100201,0,0,0
+	animation1100203.pattern1,replace,1100202,65,0,0
+	animation1100203.pattern2,replace,1100201,65,0,0
+	animation1100203.pattern3,replace,1100200,65,0,0
+	animation1100203.pattern4,replace,1100201,65,0,0
+	animation1100203.pattern5,replace, -1,65,0,0
+	
+	
+	//——————————————— Alt position / alt color ———————————————
+	//Base
+	animation1101000.interval,bind
+	animation1101000.pattern0,replace,1101000,0,0,0
+	
+	//Idle
+	animation1101100.interval,bind+random,20
+	animation1101100.pattern0,replace,1101100,0,0,0
+	animation1101100.pattern1,replace,1101101,0,0,0
+	animation1101100.pattern2,replace,1101102,65,0,0
+	animation1101100.pattern3,replace,1101103,65,0,0
+	animation1101100.pattern4,replace,1101104,65,0,0
+	animation1101100.pattern5,replace,1101105,65,0,0
+	animation1101100.pattern6,replace,1101106,65,0,0
+	animation1101100.pattern7,replace,1101107,65,0,0
+	animation1101100.pattern8,replace, -1,65,0,0
+	
+	//Talk
+	animation1101200.interval,bind+talk,4
+	animation1101200.pattern0,alternativestart,(1101201,1101202,1101203)
+	
+	animation1101201.interval,never
+	animation1101201.pattern0,replace,1101200,0,0,0
+	animation1101201.pattern1,replace,1101201,65,0,0
+	animation1101201.pattern2,replace,1101200,65,0,0
+	animation1101201.pattern3,replace,1101202,65,0,0
+	animation1101201.pattern4,replace,1101201,65,0,0
+	animation1101201.pattern5,replace, -1,65,0,0
+	
+	animation1101202.interval,never
+	animation1101202.pattern0,replace,1101200,0,0,0
+	animation1101202.pattern1,replace,1101201,65,0,0
+	animation1101202.pattern2,replace,1101203,65,0,0
+	animation1101202.pattern3,replace,1101201,65,0,0
+	animation1101202.pattern4,replace,1101202,65,0,0
+	animation1101202.pattern5,replace, -1,65,0,0
+	
+	animation1101203.interval,never
+	animation1101203.pattern0,replace,1101201,0,0,0
+	animation1101203.pattern1,replace,1101202,65,0,0
+	animation1101203.pattern2,replace,1101201,65,0,0
+	animation1101203.pattern3,replace,1101200,65,0,0
+	animation1101203.pattern4,replace,1101201,65,0,0
+	animation1101203.pattern5,replace, -1,65,0,0
+}
+
+//——————————————— Pot ———————————————
+surface0,10
+{
+	//——————————————— Main position / main color ———————————————
+	//Base
+	animation2000000.interval,bind
+	animation2000000.pattern0,replace,2000000,0,0,0
+	
+	//Idle
+	animation2000100.interval,bind+random,10
+	animation2000100.pattern0, replace,2000100,0,0,0
+	animation2000100.pattern1, replace,2000101,65,0,0
+	animation2000100.pattern2, replace,2000102,65,0,0
+	animation2000100.pattern3, replace,2000103,65,0,0
+	animation2000100.pattern4, replace,2000104,65,0,0
+	animation2000100.pattern5, replace,2000105,65,0,0
+	animation2000100.pattern6, replace,2000106,65,0,0
+	animation2000100.pattern7, replace,2000107,65,0,0
+	animation2000100.pattern8, replace,2000108,65,0,0
+	animation2000100.pattern9, replace,2000109,65,0,0
+	animation2000100.pattern10,replace,2000110,65,0,0
+	animation2000100.pattern11,replace,2000111,65,0,0
+	animation2000100.pattern12,replace,2000112,65,0,0
+	animation2000100.pattern13,replace, -1,65,0,0
+	
+	//Talk
+	animation2000200.interval,bind+talk,4
+	animation2000200.pattern0,alternativestart,(2000201,2000202,2000203)
+	
+	animation2000201.interval,never
+	animation2000201.pattern0,replace,2000200,0,0,0
+	animation2000201.pattern1,replace,2000201,65,0,0
+	animation2000201.pattern2,replace,2000200,65,0,0
+	animation2000201.pattern3,replace,2000202,65,0,0
+	animation2000201.pattern4,replace,2000201,65,0,0
+	animation2000201.pattern5,replace, -1,65,0,0
+	
+	animation2000202.interval,never
+	animation2000202.pattern0,replace,2000200,0,0,0
+	animation2000202.pattern1,replace,2000201,65,0,0
+	animation2000202.pattern2,replace,2000203,65,0,0
+	animation2000202.pattern3,replace,2000201,65,0,0
+	animation2000202.pattern4,replace,2000202,65,0,0
+	animation2000202.pattern5,replace, -1,65,0,0
+	
+	animation2000203.interval,never
+	animation2000203.pattern0,replace,2000201,0,0,0
+	animation2000203.pattern1,replace,2000202,65,0,0
+	animation2000203.pattern2,replace,2000201,65,0,0
+	animation2000203.pattern3,replace,2000200,65,0,0
+	animation2000203.pattern4,replace,2000201,65,0,0
+	animation2000203.pattern5,replace, -1,65,0,0
+	
+	
+	//——————————————— Main position / alt color ———————————————
+	//Base
+	animation2001000.interval,bind
+	animation2001000.pattern0,replace,2001000,0,0,0
+	
+	//Idle
+	animation2001100.interval,bind+random,10
+	animation2001100.pattern0, replace,2001100,0,0,0
+	animation2001100.pattern1, replace,2001101,65,0,0
+	animation2001100.pattern2, replace,2001102,65,0,0
+	animation2001100.pattern3, replace,2001103,65,0,0
+	animation2001100.pattern4, replace,2001104,65,0,0
+	animation2001100.pattern5, replace,2001105,65,0,0
+	animation2001100.pattern6, replace,2001106,65,0,0
+	animation2001100.pattern7, replace,2001107,65,0,0
+	animation2001100.pattern8, replace,2001108,65,0,0
+	animation2001100.pattern9, replace,2001109,65,0,0
+	animation2001100.pattern10,replace,2001110,65,0,0
+	animation2001100.pattern11,replace,2001111,65,0,0
+	animation2001100.pattern12,replace,2001112,65,0,0
+	animation2001100.pattern13,replace, -1,65,0,0
+	
+	//Talk
+	animation2001200.interval,bind+talk,4
+	animation2001200.pattern0,alternativestart,(2001201,2001202,2001203)
+	
+	animation2001201.interval,never
+	animation2001201.pattern0,replace,2001200,0,0,0
+	animation2001201.pattern1,replace,2001201,65,0,0
+	animation2001201.pattern2,replace,2001200,65,0,0
+	animation2001201.pattern3,replace,2001202,65,0,0
+	animation2001201.pattern4,replace,2001201,65,0,0
+	animation2001201.pattern5,replace, -1,65,0,0
+	
+	animation2001202.interval,never
+	animation2001202.pattern0,replace,2001200,0,0,0
+	animation2001202.pattern1,replace,2001201,65,0,0
+	animation2001202.pattern2,replace,2001203,65,0,0
+	animation2001202.pattern3,replace,2001201,65,0,0
+	animation2001202.pattern4,replace,2001202,65,0,0
+	animation2001202.pattern5,replace, -1,65,0,0
+	
+	animation2001203.interval,never
+	animation2001203.pattern0,replace,2001201,0,0,0
+	animation2001203.pattern1,replace,2001202,65,0,0
+	animation2001203.pattern2,replace,2001201,65,0,0
+	animation2001203.pattern3,replace,2001200,65,0,0
+	animation2001203.pattern4,replace,2001201,65,0,0
+	animation2001203.pattern5,replace, -1,65,0,0
+	
+	
+	//——————————————— Alt position / main color ———————————————
+	//Base
+	animation2100000.interval,bind
+	animation2100000.pattern0,replace,2100000,0,0,0
+	
+	//Idle
+	animation2100100.interval,bind+random,10
+	animation2100100.pattern0, replace,2100100,0,0,0
+	animation2100100.pattern1, replace,2100101,65,0,0
+	animation2100100.pattern2, replace,2100102,65,0,0
+	animation2100100.pattern3, replace,2100103,65,0,0
+	animation2100100.pattern4, replace,2100104,65,0,0
+	animation2100100.pattern5, replace,2100105,65,0,0
+	animation2100100.pattern6, replace,2100106,65,0,0
+	animation2100100.pattern7, replace,2100107,65,0,0
+	animation2100100.pattern8, replace,2100108,65,0,0
+	animation2100100.pattern9, replace,2100109,65,0,0
+	animation2100100.pattern10,replace,2100110,65,0,0
+	animation2100100.pattern11,replace, -1,65,0,0
+	
+	//Talk
+	animation2100200.interval,bind+talk,4
+	animation2100200.pattern0,alternativestart,(2100201,2100202,2100203)
+	
+	animation2100201.interval,never
+	animation2100201.pattern0,replace,2100200,0,0,0
+	animation2100201.pattern1,replace,2100201,65,0,0
+	animation2100201.pattern2,replace,2100200,65,0,0
+	animation2100201.pattern3,replace,2100202,65,0,0
+	animation2100201.pattern4,replace,2100201,65,0,0
+	animation2100201.pattern5,replace, -1,65,0,0
+	
+	animation2100202.interval,never
+	animation2100202.pattern0,replace,2100200,0,0,0
+	animation2100202.pattern1,replace,2100201,65,0,0
+	animation2100202.pattern2,replace,2100203,65,0,0
+	animation2100202.pattern3,replace,2100201,65,0,0
+	animation2100202.pattern4,replace,2100202,65,0,0
+	animation2100202.pattern5,replace, -1,65,0,0
+	
+	animation2100203.interval,never
+	animation2100203.pattern0,replace,2100201,0,0,0
+	animation2100203.pattern1,replace,2100202,65,0,0
+	animation2100203.pattern2,replace,2100201,65,0,0
+	animation2100203.pattern3,replace,2100200,65,0,0
+	animation2100203.pattern4,replace,2100201,65,0,0
+	animation2100203.pattern5,replace, -1,65,0,0
+	
+	
+	//——————————————— Alt position / alt color ———————————————
+	//Base
+	animation2101000.interval,bind
+	animation2101000.pattern0,replace,2101000,0,0,0
+	
+	//Idle
+	animation2101100.interval,bind+random,10
+	animation2101100.pattern0, replace,2101100,0,0,0
+	animation2101100.pattern1, replace,2101101,65,0,0
+	animation2101100.pattern2, replace,2101102,65,0,0
+	animation2101100.pattern3, replace,2101103,65,0,0
+	animation2101100.pattern4, replace,2101104,65,0,0
+	animation2101100.pattern5, replace,2101105,65,0,0
+	animation2101100.pattern6, replace,2101106,65,0,0
+	animation2101100.pattern7, replace,2101107,65,0,0
+	animation2101100.pattern8, replace,2101108,65,0,0
+	animation2101100.pattern9, replace,2101109,65,0,0
+	animation2101100.pattern10,replace,2101110,65,0,0
+	animation2101100.pattern11,replace, -1,65,0,0
+	
+	//Talk
+	animation2101200.interval,bind+talk,4
+	animation2101200.pattern0,alternativestart,(2101201,2101202,2101203)
+	
+	animation2101201.interval,never
+	animation2101201.pattern0,replace,2101200,0,0,0
+	animation2101201.pattern1,replace,2101201,65,0,0
+	animation2101201.pattern2,replace,2101200,65,0,0
+	animation2101201.pattern3,replace,2101202,65,0,0
+	animation2101201.pattern4,replace,2101201,65,0,0
+	animation2101201.pattern5,replace, -1,65,0,0
+	
+	animation2101202.interval,never
+	animation2101202.pattern0,replace,2101200,0,0,0
+	animation2101202.pattern1,replace,2101201,65,0,0
+	animation2101202.pattern2,replace,2101203,65,0,0
+	animation2101202.pattern3,replace,2101201,65,0,0
+	animation2101202.pattern4,replace,2101202,65,0,0
+	animation2101202.pattern5,replace, -1,65,0,0
+	
+	animation2101203.interval,never
+	animation2101203.pattern0,replace,2101201,0,0,0
+	animation2101203.pattern1,replace,2101202,65,0,0
+	animation2101203.pattern2,replace,2101201,65,0,0
+	animation2101203.pattern3,replace,2101200,65,0,0
+	animation2101203.pattern4,replace,2101201,65,0,0
+	animation2101203.pattern5,replace, -1,65,0,0
 }

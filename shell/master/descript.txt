@@ -9,19 +9,38 @@ craftmanurl,https://github.com/Zichqec/ye_olde_cursed_tower
 seriko.alignmenttodesktop,free
 seriko.use_self_alpha,1
 
-sakura.bindoption100.group,Item,mustselect
-sakura.bindgroup100.default,1
+sakura.bindoption1000000.group,Item,mustselect
+sakura.bindgroup1000000.default,1
 
-sakura.bindgroup100.name,Item,Gem
-sakura.bindgroup100.addid,101,200
-sakura.bindgroup1000.name,Item,Pot
-sakura.bindgroup1000.addid,1001,2000
+//kero.bindoption1000000.group,Item,mustselect
+//kero.bindgroup1000000.default,1
+
+sakura.bindgroup1000000.name,Item,Gem upright red
+sakura.bindgroup1000000.addid,1000100,1000200
+sakura.bindgroup1001000.name,Item,Gem upright purple
+sakura.bindgroup1001000.addid,1001100,1001200
+sakura.bindgroup1100000.name,Item,Gem side red
+sakura.bindgroup1100000.addid,1100100,1100200
+sakura.bindgroup1101000.name,Item,Gem side purple
+sakura.bindgroup1101000.addid,1101100,1101200
+
+sakura.bindgroup2000000.name,Item,Pot upright brown
+sakura.bindgroup2000000.addid,2000100,2000200
+sakura.bindgroup2001000.name,Item,Pot upright gray
+sakura.bindgroup2001000.addid,2001100,2001200
+sakura.bindgroup2100000.name,Item,Pot spilled brown
+sakura.bindgroup2100000.addid,2100100,2100200
+sakura.bindgroup2101000.name,Item,Pot spilled gray
+sakura.bindgroup2101000.addid,2101100,2101200
 
 
-kero.bindoption100.group,Item,mustselect
-kero.bindgroup100.default,1
 
-kero.bindgroup100.name,Item,Gem
-kero.bindgroup100.addid,101,200
-kero.bindgroup1000.name,Item,Pot
-kero.bindgroup1000.addid,1001,2000
+
+
+
+
+
+//kero.bindgroup100.name,Item,Gem
+//kero.bindgroup100.addid,101,200
+//kero.bindgroup1000.name,Item,Pot
+//kero.bindgroup1000.addid,1001,2000
