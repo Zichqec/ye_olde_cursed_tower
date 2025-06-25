@@ -22,6 +22,22 @@ talk BootTalk
 	0:...
 }
 
+talk BootTalk
+{
+	1:\b[0]Is someone there...?
+	0:\b[0]The wizard, it would seem. A pity.
+	1:Hey, maybe it won't be all bad!
+	0:... Perhaps.
+	1:I'd like to hope, anyway...!
+}
+
+talk BootTalk
+{
+	1:\b[0]Ooh, could that be...?
+	0:\b[0]Yes, that is the wizard making an appearance. You're becoming quite good at this.
+	1:Heheh... I have a good teacher!
+}
+
 
 //———————————————————— Boot apart ————————————————————
 talk BootApartTalk
@@ -31,6 +47,13 @@ talk BootApartTalk
 	Oh, thank goodness! I was... It's been so quiet. Please, please put me next to her again. I can't...
 	
 	... I can't handle all this silence...
+}
+
+talk BootApartTalk
+{
+	1:\b[0]... Hello...? Is... is someone there...?
+	
+	... Please... I don't want to be alone anymore... please...
 }
 
 talk BootApartTalk
@@ -55,6 +78,22 @@ talk CloseTalk
 	1:Oh... wish we could go. I bet it's warm outside...
 	0:Be careful what it is you wish for.
 	1:... Right.
+}
+
+talk CloseTalk
+{
+	1:\b[0]Oh... I feel a little less magical than I did a moment ago.
+	0:\b[0]That will be the wizard leaving us for now.
+	1:Ah, of course! I knew that.
+	0:You will get the hang of it with time and practice.
+}
+
+talk CloseTalk
+{
+	0:\b[0]It seems our supervision is leaving shortly.
+	1:\b[0]Oh. Nice!
+	0:Contain your enthusiasm for now.
+	1:Right, right...
 }
 
 //———————————————————— Close apart ————————————————————
