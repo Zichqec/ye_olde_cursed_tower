@@ -12,8 +12,8 @@ seriko.use_self_alpha,1
 sakura.bindoption1000000.group,Item,mustselect
 sakura.bindgroup1000000.default,1
 
-//kero.bindoption1000000.group,Item,mustselect
-//kero.bindgroup1000000.default,1
+kero.bindoption1000000.group,Item,mustselect
+kero.bindgroup1000000.default,1
 
 sakura.bindgroup1000000.name,Item,Gem upright red
 sakura.bindgroup1000000.addid,1000100,1000200
@@ -34,13 +34,20 @@ sakura.bindgroup2101000.name,Item,Pot spilled gray
 sakura.bindgroup2101000.addid,2101100,2101200
 
 
+kero.bindgroup1000000.name,Item,Gem upright red
+kero.bindgroup1000000.addid,1000100,1000200
+kero.bindgroup1001000.name,Item,Gem upright purple
+kero.bindgroup1001000.addid,1001100,1001200
+kero.bindgroup1100000.name,Item,Gem side red
+kero.bindgroup1100000.addid,1100100,1100200
+kero.bindgroup1101000.name,Item,Gem side purple
+kero.bindgroup1101000.addid,1101100,1101200
 
-
-
-
-
-
-//kero.bindgroup100.name,Item,Gem
-//kero.bindgroup100.addid,101,200
-//kero.bindgroup1000.name,Item,Pot
-//kero.bindgroup1000.addid,1001,2000
+kero.bindgroup2000000.name,Item,Pot upright brown
+kero.bindgroup2000000.addid,2000100,2000200
+kero.bindgroup2001000.name,Item,Pot upright gray
+kero.bindgroup2001000.addid,2001100,2001200
+kero.bindgroup2100000.name,Item,Pot spilled brown
+kero.bindgroup2100000.addid,2100100,2100200
+kero.bindgroup2101000.name,Item,Pot spilled gray
+kero.bindgroup2101000.addid,2101100,2101200
