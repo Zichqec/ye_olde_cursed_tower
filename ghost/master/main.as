@@ -18,18 +18,17 @@ function OnAosoraLoad
 
 function OnBoot
 {
-	local output = "\0\s[0]\1\s[10]";
-	output += GetCoords();
+	local output = "{GetCoords}\0\s[0]\1\s[10]";
 	if (FarApart()) output += BootApartTalk();
 	else output += BootTalk();
 	return output;
 }
 
+//Known issue: if you drag them around during a dialogue, they won't have a chance to update their coords, and then the user might close the ghost before it has a chance to update. There's not anything I can do about this without introducing a SAORI, which I do not want to do for various reasons
+//Yes, I tried to do like the other functions and separate this into a function to get the coords and then one to close. Problem with that is it only works in multi-ghost settings... if they're the only ghost you have open, SSP forces them to close when OnClose is done, regardless of other functions you try to raise. Probably the same is true of clicking quit, and maybe various other cases. This is a problem I would have to solve at the source.
 function OnClose
 {
-	local output = "\0\s[0]\1\s[10]";
-	output += GetCoords();
-	
+	local output = "{GetCoords}\0\s[0]\1\s[10]";
 	if (FarApart()  != Save.Data.FarApart) //Mismatch means the state must have changed
 	{
 		if (FarApart()) output += Reflection.Get("ApartTransitionTalk")();
@@ -56,6 +55,11 @@ function OnPromptTalk
 //Only problem is OnBoot, but for that I think we just fall back to the function and assume they had the transition dialogue while you were away
 function OnAITalk
 {
+	return "{GetCoords}\![raise,OnSendTalk]";
+}
+
+function OnSendTalk
+{
 	//Surface calls go *here* because if you put them in the talk builder then they bend to the whims of the talk builder
 	LastTalk = "\0\s[0]\1\s[10]";
 	if (FarApart()  != Save.Data.FarApart) //Mismatch means the state must have changed
@@ -77,6 +81,11 @@ function OnLastTalk
 function OnStroked
 {
 	//TODO the transitions here... they would have to be per-character -- or, or or or, i could have conditionals on the dialogue side?? i could do that...
+	return "{GetCoords}\![raise,OnSendStroked,,,,{Shiori.Reference[3]}]";
+}
+
+function OnSendStroked
+{
 	if (Shiori.Reference[3] == 1)
 	{
 		if (FarApart()) return KeroApartStroked;
@@ -91,6 +100,11 @@ function OnStroked
 }
 
 function OnMouseDoubleClick
+{
+	return "{GetCoords}\![raise,OnSendMouseDoubleClick,,,,{Shiori.Reference[3]}]";
+}
+
+function OnSendMouseDoubleClick
 {
 	if (Shiori.Reference[3] == 1) return OnKeroMenu;
 	else return OnSakuraMenu;
@@ -145,5 +159,5 @@ function BalloonIsOpen
 
 function OnSurfaceRestore
 {
-	return "\0\s[0]\1\s[10]";
+	return "{GetCoords}\0\s[0]\1\s[10]";
 }
