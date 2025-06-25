@@ -1,3 +1,5 @@
+Content warnings: Dehumanization
+
 A Ghost Jam 2025 entry, by:
 
 Galla - https://gallathegalla.github.io/gtg-ghosts/
