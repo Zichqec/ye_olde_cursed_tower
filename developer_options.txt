@@ -1,3 +1,4 @@
 .gitignore,nonar,noupdate
 .gitattributes,nonar,noupdate
 ye_olde_soul_spell_zi/,noupdate
+3D Models/,nonar,noupdate
