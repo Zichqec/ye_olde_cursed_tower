@@ -81,3 +81,18 @@ function KeroBalloonColor
 {
 	return Save.Data.KeroBalloonColor;
 }
+
+function whiteout
+{
+	return "\i[10000000]";
+}
+
+function fadeout
+{
+	local output = "";
+	for (local i = 100; i >= 0; i--)
+	{
+		output += "\0\![set,alpha,{i}]\1\![set,alpha,{i}]\_w[10]";
+	}
+	return output;
+}
