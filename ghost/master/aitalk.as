@@ -155,6 +155,16 @@ talk RandomTalk
 	1:Yeah, uh... Yeah. I guess it is.
 }
 
+talk RandomTalk
+{
+	1:\b[2]Have you ever wondered how many others are in the same situation as us?
+	0:\b[4]I do not think we'll ever know. Too many, regardless.
+	1:I don't get it. What's the point of it all...?
+	0:Those that make a collection of the lives of others have ever been beyond my understanding. Our wizard is far from the first to do so, and will be far from the last.
+	1:... I don't like that.
+	0:Nor do I.
+}
+
 //———————————————————— Apart Talk ————————————————————
 
 talk ApartTalk
