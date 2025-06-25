@@ -237,15 +237,15 @@ talk ApartTalk
 }
 
 
-//———————————————————— Transition to together (from aitalk, mouse, and close) ————————————————————
+//———————————————————— Transition to together (from aitalk, mouse, and close*) ————————————————————
 talk TogetherTransitionTalk
 {
-	1:Yaaaay we are friends again :)
+	1:Yaaaay we are friends again!
 }
 
 
-//———————————————————— Transition to apart (from aitalk, mouse, and close) ————————————————————
+//———————————————————— Transition to apart (from aitalk, mouse, and close*) ————————————————————
 talk ApartTransitionTalk
 {
-	1:Heeeeey bring her baaaack :(
+	1:Heeeeey bring her baaaack
 }

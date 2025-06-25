@@ -80,7 +80,7 @@ function OnLastTalk
 
 function OnStroked
 {
-	//TODO the transitions here... they would have to be per-character -- or, or or or, i could have conditionals on the dialogue side?? i could do that...
+	//TODO the transitions here... they would have to be per-character -- or, or or or, i could have conditionals on the dialogue side?? i could do that... -- hm, although that gets really complicated... don't like it
 	return "{GetCoords}\![raise,OnSendStroked,,,,{Shiori.Reference[3]}]";
 }
 
@@ -95,7 +95,6 @@ function OnSendStroked
 	{
 		if (FarApart()) return SakuraApartStroked;
 		else return SakuraStroked;
-		return SakuraStroked;
 	}
 }
 
