@@ -33,6 +33,13 @@ sakura.bindgroup2100000.addid,2100100,2100200
 sakura.bindgroup2101000.name,Item,Pot spilled gray
 sakura.bindgroup2101000.addid,2101100,2101200
 
+sakura.bindgroup3000000.name,Item,Bottle green
+sakura.bindgroup3000000.addid,3000100,3000200
+sakura.bindgroup3001000.name,Item,Bottle red
+sakura.bindgroup3001000.addid,3001100,3001200
+
+
+
 
 kero.bindgroup1000000.name,Item,Gem upright red
 kero.bindgroup1000000.addid,1000100,1000200
@@ -51,3 +58,8 @@ kero.bindgroup2100000.name,Item,Pot spilled brown
 kero.bindgroup2100000.addid,2100100,2100200
 kero.bindgroup2101000.name,Item,Pot spilled gray
 kero.bindgroup2101000.addid,2101100,2101200
+
+kero.bindgroup3000000.name,Item,Bottle green
+kero.bindgroup3000000.addid,3000100,3000200
+kero.bindgroup3001000.name,Item,Bottle red
+kero.bindgroup3001000.addid,3001100,3001200
