@@ -29,7 +29,7 @@ function OnBoot
 function OnClose
 {
 	local output = "{GetCoords}\0\s[0]\1\s[10]";
-	if (FarApart()  != Save.Data.FarApart) //Mismatch means the state must have changed
+	if (FarApart() != Save.Data.FarApart) //Mismatch means the state must have changed
 	{
 		if (FarApart()) output += Reflection.Get("ApartTransitionTalk")();
 		else output += Reflection.Get("TogetherTransitionTalk")();
@@ -62,7 +62,7 @@ function OnSendTalk
 {
 	//Surface calls go *here* because if you put them in the talk builder then they bend to the whims of the talk builder
 	LastTalk = "\0\s[0]\1\s[10]";
-	if (FarApart()  != Save.Data.FarApart) //Mismatch means the state must have changed
+	if (FarApart() != Save.Data.FarApart) //Mismatch means the state must have changed
 	{
 		if (FarApart()) LastTalk += Reflection.Get("ApartTransitionTalk")();
 		else LastTalk += Reflection.Get("TogetherTransitionTalk")();
@@ -86,15 +86,21 @@ function OnStroked
 
 function OnSendStroked
 {
-	if (Shiori.Reference[3] == 1)
+	local which = "Sakura";
+	if (Shiori.Reference[3] == 1) which = "Kero";
+	
+	if (FarApart() != Save.Data.FarApart) //Mismatch means the state must have changed
 	{
-		if (FarApart()) return KeroApartStroked;
-		else return KeroStroked;
+		local output = "";
+		if (FarApart()) output += Reflection.Get("ApartTransition{which}")();
+		else output += Reflection.Get("TogetherTransition{which}")();
+		Save.Data.FarApart = FarApart();
+		return output;
 	}
 	else
 	{
-		if (FarApart()) return SakuraApartStroked;
-		else return SakuraStroked;
+		if (FarApart()) return Reflection.Get("{which}ApartStroked")();
+		else return Reflection.Get("{which}Stroked")();
 	}
 }
 
