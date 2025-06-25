@@ -165,6 +165,18 @@ talk RandomTalk
 	0:Nor do I.
 }
 
+talk RandomTalk
+{
+	1:\b[2]What actually happened for you to, uh... end up like this?
+	0:\b[4]Ah. I was attending to my duties as a protector of the lord's lands. There had been numerous reports of people going missing in recent years. Many of which were said to have gone to the wizard to seek assistance in some matter before their disappearances.
+	1:Oh no...
+	0:Indeed. The wizard did not care for anyone probing into what was taking place in this tower. I was prepared for the possibility that I might be combating the arcane, but the wizard was equally prepared for our confrontation and came out the victor.
+	1:... And you ended up like this?
+	0:I did.
+	1:I'm sorry...
+	0:There is only one to blame, and that is not you.
+}
+
 //———————————————————— Apart Talk ————————————————————
 
 talk ApartTalk
