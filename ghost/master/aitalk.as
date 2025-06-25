@@ -233,7 +233,7 @@ talk ApartTalk
 
 talk ApartTalk
 {
-	1:\b[0]Please put us back... I liked where we were... Or at least put me next to her... Please?
+	1:\b[0]Please put us back... I liked where we were... or at least put me next to her... please?
 }
 
 talk ApartTalk
@@ -243,9 +243,9 @@ talk ApartTalk
 
 talk ApartTalk
 {
-	1:\b[6]Hello? Hello...?
+	1:\b[6]Hello? hello...?
 	
-	... hello...?
+	\f[color,disable]... hello...?
 }
 
 talk ApartTalk
@@ -261,37 +261,26 @@ talk ApartTalk
 
 //———————————————————— Transition to together (from aitalk, mouse, and close*) ————————————————————
 //Add TogetherTransitionSakura for transitions that specifically can take place when stroking the sakura, and TogetherTransitionKero for transitions that specifically can take place when stroking the kero
-talk TogetherTransitionTalk, TogetherTransitionSakura
-{
-	0:At last.
-}
-
-talk TogetherTransitionTalk, TogetherTransitionKero
-{
-	1:Huzzah!
-}
 
 talk TogetherTransitionTalk
 {
-	1:Yaaaay we are friends again!
-	0:Indeed.
+	1:\b[0]Oh, it got warmer all of the sudden...?
+	0:\b[0]It seems we've been moved again.
+	1:...! A good move this time! Yay!
+	0:'Yay' indeed. Hello.
+	1:Hi!
 }
 
 
 //———————————————————— Transition to apart (from aitalk, mouse, and close*) ————————————————————
 //Add ApartTransitionSakura for transitions that specifically can take place when stroking the sakura, and ApartTransitionKero for transitions that specifically can take place when stroking the kero
-talk ApartTransitionTalk, ApartTransitionSakura
-{
-	0:Cruelty.
-}
-
-talk ApartTransitionTalk, ApartTransitionKero
-{
-	1:Heeeeey bring her baaaack...
-}
 
 talk ApartTransitionTalk
 {
-	1:Heeey don't leave me...!
-	0:Can't do anything about it.
+	1:\b[0]So, I was thinking...
+	
+	...? Are you there?
+	
+	... hello...?
+	0:\b[2]... If you possessed any sort of empathy, you would cease with these games. Keeping us here is torturous enough without taking away what few sources of comfort he has.
 }
