@@ -1,6 +1,7 @@
 function OnAosoraDefaultSaveData
 {
 	Save.Data.TalkInterval = 180;
+	Save.Data.FarApart = 0;
 }
 
 function OnAosoraLoad
@@ -28,8 +29,16 @@ function OnClose
 {
 	local output = "\0\s[0]\1\s[10]";
 	output += GetCoords();
-	if (FarApart()) output += CloseApartTalk();
+	
+	if (FarApart()  != Save.Data.FarApart) //Mismatch means the state must have changed
+	{
+		if (FarApart()) output += Reflection.Get("ApartTransitionTalk")();
+		else output += Reflection.Get("TogetherTransitionTalk")();
+		Save.Data.FarApart = FarApart();
+	}
+	else if (FarApart()) output += CloseApartTalk();
 	else output += CloseTalk();
+	
 	output += "\w8\w8\w8\-";
 	return output;
 }
@@ -40,11 +49,22 @@ function OnPromptTalk
 	return LastTalk;
 }
 
+//What I need for this far apart dealio is a latch...
+//Use a variable to track the current state, and we know what the function says the current state is
+//If they do not match, transition?
+//And then after transition, change the variable
+//Only problem is OnBoot, but for that I think we just fall back to the function and assume they had the transition dialogue while you were away
 function OnAITalk
 {
-	//Surface calls go _here_ because if you put them in the talk builder then they bend to the whims of the talk builder
+	//Surface calls go *here* because if you put them in the talk builder then they bend to the whims of the talk builder
 	LastTalk = "\0\s[0]\1\s[10]";
-	if (FarApart()) LastTalk += Reflection.Get("ApartTalk")();
+	if (FarApart()  != Save.Data.FarApart) //Mismatch means the state must have changed
+	{
+		if (FarApart()) LastTalk += Reflection.Get("ApartTransitionTalk")();
+		else LastTalk += Reflection.Get("TogetherTransitionTalk")();
+		Save.Data.FarApart = FarApart();
+	}
+	else if (FarApart()) LastTalk += Reflection.Get("ApartTalk")();
 	else LastTalk += Reflection.Get("RandomTalk")();
 	return LastTalk;
 }
@@ -56,6 +76,7 @@ function OnLastTalk
 
 function OnStroked
 {
+	//TODO the transitions here... they would have to be per-character -- or, or or or, i could have conditionals on the dialogue side?? i could do that...
 	if (Shiori.Reference[3] == 1)
 	{
 		if (FarApart()) return KeroApartStroked;

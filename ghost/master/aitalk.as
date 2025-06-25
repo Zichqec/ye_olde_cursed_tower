@@ -235,3 +235,17 @@ talk ApartTalk
 {
 	1:\b[6]Where did she go? What did you do with her?
 }
+
+
+//———————————————————— Transition to together (from aitalk, mouse, and close) ————————————————————
+talk TogetherTransitionTalk
+{
+	1:Yaaaay we are friends again :)
+}
+
+
+//———————————————————— Transition to apart (from aitalk, mouse, and close) ————————————————————
+talk ApartTransitionTalk
+{
+	1:Heeeeey bring her baaaack :(
+}
