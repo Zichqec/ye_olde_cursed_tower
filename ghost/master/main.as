@@ -167,7 +167,8 @@ function OnSendStroked
 
 function OnMouseDoubleClick
 {
-	return "{GetCoords}\![raise,OnSendMouseDoubleClick,,,,{Shiori.Reference[3]}]";
+	if (Save.Data.Vanishing == 1) return OnVanishButtonHold;
+	else return "{GetCoords}\![raise,OnSendMouseDoubleClick,,,,{Shiori.Reference[3]}]";
 }
 
 function OnSendMouseDoubleClick
