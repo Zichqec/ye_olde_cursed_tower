@@ -2,6 +2,8 @@ function OnAosoraDefaultSaveData
 {
 	Save.Data.TalkInterval = 180;
 	Save.Data.FarApart = 0;
+	Save.Data.Reinstalls = 0;
+	Save.Data.Vanishing = 0;
 }
 
 function OnAosoraLoad
@@ -16,8 +18,52 @@ function OnAosoraLoad
 	LastTalk = "";
 }
 
+function OnFirstBoot
+{
+	Save.Data.Reinstalls = Shiori.Reference[0];
+	local output = "\1\![bind,Item,Pot upright brown,1]";
+	if (Shiori.Reference[0] >= 2)
+	{
+		output += "\0\![bind,Hide,Hide,1]";
+		output += "\1\![bind,Hide,Hide,1]";
+		output += OnPromptTalk;
+	}
+	else if (Shiori.Reference[0] == 1) output += FirstBoot_2;
+	else output += FirstBoot_1;
+	return output;
+}
+
+function OnVanishSelected
+{
+	Save.Data.Vanishing = 1;
+	VanishTime = Time.GetNowUnixEpoch();
+	if (Save.Data.Reinstalls > 0) return Vanish_2;
+	else return Vanish_1;
+}
+
+function OnVanishButtonHold
+{
+	Save.Data.Vanishing = 0;
+	VanishTime = -1;
+	return Vanish_Cancel;
+}
+
+function OnSecondChange
+{
+	if (Save.Data.Vanishing == 1)
+	{
+		return "\t\*\_w[3000]\![raise,OnFirstBoot,{Save.Data.Reinstalls + 1}]";
+	}
+}
+
 function OnBoot
 {
+	if (Save.Data.Vanishing == 1)
+	{
+		Save.Data.Reinstalls++;
+		return "\![raise,OnFirstBoot,{Save.Data.Reinstalls}]";
+	}
+	
 	local output = "{GetCoords}\0\s[0]\1\s[10]";
 	if (FarApart()) output += BootApartTalk();
 	else output += BootTalk();
@@ -62,7 +108,11 @@ function OnSendTalk
 {
 	//Surface calls go *here* because if you put them in the talk builder then they bend to the whims of the talk builder
 	LastTalk = "\0\s[0]\1\s[10]";
-	if (FarApart() != Save.Data.FarApart) //Mismatch means the state must have changed
+	if (Save.Data.Reinstalls >= 2)
+	{
+		LastTalk += "\t\*\![enter,passivemode]" + Reflection.Get("FinalTalk")() + "\_w[5000]\![vanishbymyself]";
+	}
+	else if (FarApart() != Save.Data.FarApart) //Mismatch means the state must have changed
 	{
 		if (FarApart()) LastTalk += Reflection.Get("ApartTransitionTalk")();
 		else LastTalk += Reflection.Get("TogetherTransitionTalk")();

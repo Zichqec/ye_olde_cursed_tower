@@ -331,3 +331,11 @@ talk ApartTransitionTalk
 	... hello...?
 	0:\b[2]... If you possessed any sort of empathy, you would cease with these games. Keeping us here is torturous enough without taking away what few sources of comfort he has.
 }
+
+
+//———————————————————— FinalTalk ————————————————————
+talk FinalTalk
+{
+	1:Life outside is great :)
+	0:It sure is.
+}

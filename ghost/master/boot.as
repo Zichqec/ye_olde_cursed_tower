@@ -1,10 +1,3 @@
-talk OnFirstBoot
-{
-	0:Hi :3
-	1:Sup :3
-}
-
-
 //———————————————————— Boot together ————————————————————
 talk BootTalk
 {
@@ -120,4 +113,37 @@ talk CloseApartTalk
 	Afraid we will conspire together while you are not present?
 	
 	Such cowardice.
+}
+
+
+//———————————————————— Firstboot & Vanish ————————————————————
+talk FirstBoot_1
+{
+	0:Hi :3
+	1:Sup :3
+}
+
+talk FirstBoot_2
+{
+	0:(bleep bleep bleep)
+	1:(weeping)
+}
+
+talk Vanish_1
+{
+	1:Yay!
+	0:Goodbye forever.
+}
+
+talk Vanish_2
+{
+	1:... Yay!
+	0:Death time.
+}
+
+//Cancelling uninstallation
+talk OnVanishButtonHold
+{
+	0:Coward!!!!!
+	1:let us out!
 }

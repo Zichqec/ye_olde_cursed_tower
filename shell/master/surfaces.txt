@@ -525,4 +525,7 @@ surface0,10
 	animation10000000.pattern17,overlayfast,10000017,50,0,0
 	animation10000000.pattern18,overlayfast,10000018,50,0,0
 	animation10000000.pattern19,overlayfast,10000019,50,0,0
+	
+	animation10000001.interval,bind
+	animation10000001.pattern0,replace,10,0,0,0
 }
