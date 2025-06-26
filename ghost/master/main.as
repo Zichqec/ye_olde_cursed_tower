@@ -51,7 +51,7 @@ function OnVanishButtonHold
 {
 	Save.Data.Vanishing = 0;
 	VanishTime = -1;
-	return "\0\s[0]\![set,alpha,100]\1\s[10]\s[set,alpha,100]" + Vanish_Cancel();
+	return "\0\s[0]\![set,alpha,100]\1\s[10]\![set,alpha,100]" + Vanish_Cancel();
 }
 
 //I set this up to try and cover the first option of the uninstall block setting, but actually i think it is not necessary because the only way it comes into play is if you attempt to uninstall yourself? which that option blocks
