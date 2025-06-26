@@ -42,7 +42,7 @@ function OnVanishSelected
 	Save.Data.Vanishing = 1;
 	VanishTime = Time.GetNowUnixEpoch();
 	local output = "";
-	if (Save.Data.Reinstalls > 0) output += Vanish_2();
+	if (Save.Data.Reinstalls > 0) output += "\t\*" + Vanish_2();
 	else output += Vanish_1();
 	return output += "\_w[3000]";
 }
