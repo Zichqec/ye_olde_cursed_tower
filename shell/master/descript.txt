@@ -84,5 +84,5 @@ sakura.bindgroup11000000.name,Hide,Hide
 kero.bindgroup11000000.name,Hide,Hide
 
 
-sakura.menu,hidden
 kero.menu,hidden
+sakura.menu,hidden
