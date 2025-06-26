@@ -15,14 +15,18 @@ sakura.bindgroup1000000.default,1
 kero.bindoption1000000.group,Item,mustselect
 kero.bindgroup1000000.default,1
 
-sakura.bindgroup1000000.name,Item,Gem Upright Red
+sakura.bindgroup1000000.name,Item,Gem Lean_left Red
 sakura.bindgroup1000000.addid,1000100,1000200
-sakura.bindgroup1001000.name,Item,Gem Upright Purple
+sakura.bindgroup1001000.name,Item,Gem Lean_left Purple
 sakura.bindgroup1001000.addid,1001100,1001200
-sakura.bindgroup1100000.name,Item,Gem Side Red
+sakura.bindgroup1100000.name,Item,Gem Lean_right Red
 sakura.bindgroup1100000.addid,1100100,1100200
-sakura.bindgroup1101000.name,Item,Gem Side Purple
+sakura.bindgroup1101000.name,Item,Gem Lean_right Purple
 sakura.bindgroup1101000.addid,1101100,1101200
+sakura.bindgroup1200000.name,Item,Gem Side Red
+sakura.bindgroup1200000.addid,1200100,1200200
+sakura.bindgroup1201000.name,Item,Gem Side Purple
+sakura.bindgroup1201000.addid,1201100,1201200
 
 sakura.bindgroup2000000.name,Item,Pot Upright Brown
 sakura.bindgroup2000000.addid,2000100,2000200
@@ -41,14 +45,18 @@ sakura.bindgroup3001000.addid,3001100,3001200
 
 
 
-kero.bindgroup1000000.name,Item,Gem Upright Red
+kero.bindgroup1000000.name,Item,Gem Lean_left Red
 kero.bindgroup1000000.addid,1000100,1000200
-kero.bindgroup1001000.name,Item,Gem Upright Purple
+kero.bindgroup1001000.name,Item,Gem Lean_left Purple
 kero.bindgroup1001000.addid,1001100,1001200
-kero.bindgroup1100000.name,Item,Gem Side Red
+kero.bindgroup1100000.name,Item,Gem Lean_right Red
 kero.bindgroup1100000.addid,1100100,1100200
-kero.bindgroup1101000.name,Item,Gem Side Purple
+kero.bindgroup1101000.name,Item,Gem Lean_right Purple
 kero.bindgroup1101000.addid,1101100,1101200
+kero.bindgroup1200000.name,Item,Gem Side Red
+kero.bindgroup1200000.addid,1200100,1200200
+kero.bindgroup1201000.name,Item,Gem Side Purple
+kero.bindgroup1201000.addid,1201100,1201200
 
 kero.bindgroup2000000.name,Item,Pot Upright Brown
 kero.bindgroup2000000.addid,2000100,2000200

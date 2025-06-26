@@ -47,7 +47,7 @@ function OnSakuraMenu
 function OnItemMenu
 {
 	local items = [
-		{type: "Gem", positions: ["Upright", "Side"], colors: ["Red","Purple"]},
+		{type: "Gem", positions: ["Lean_left","Lean_right", "Side"], colors: ["Red","Purple"]},
 		{type: "Pot", positions: ["Upright", "Spilled"], colors: ["Brown","Gray"]},
 		{type: "Bottle", positions: ["Upright"], colors: ["Green","Red"]},
 	];
@@ -59,7 +59,7 @@ function OnItemMenu
 	
 	local output = "";
 	output += "\C\{scope}\![lock,balloonrepaint]\c";
-	output += "\{scope}\b[2]\s[0]";
+	output += "\{scope}\b[4]\s[0]";
 	output += "\![quicksection,true]\![set,autoscroll,disable]\![no-autopause]\f[anchorvisitedfontcolor,default.anchor]";
 	output += "\f[align,center]{emdash} Soul transfer {emdash}\n\f[align,left]";
 	
@@ -69,12 +69,13 @@ function OnItemMenu
 	for (local i = 0; i < items.length; i++)
 	{
 		local item = items[i];
+		local tag = "[OnItemChange,{scope},{item.type},{item.positions[0]},{item.colors[0]}]{item.type}";
 		if (item.type == CharacterItem[0])
 		{
-			output += "\_a[OnItemChange,{scope},{item.type},{item.positions[0]},{item.colors[0]}]{item.type}\_a  ";
+			output += "\_a{tag}\_a  ";
 			currentitem = item;
 		}
-		else output += "\__q[OnItemChange,{scope},{item.type},{item.positions[0]},{item.colors[0]}]{item.type}\__q  ";
+		else output += "\__q{tag}\__q  ";
 	}
 	output += "\c[char,2]";
 	output += "\n\n";
@@ -82,16 +83,19 @@ function OnItemMenu
 	output += "Position:\n";
 	for (local i = 0; i < currentitem.positions.length; i++)
 	{
-		if (currentitem.positions[i] == CharacterItem[1]) output += "\_a[OnItemChange,{scope},{CharacterItem[0]},{currentitem.positions[i]},{CharacterItem[2]}]{currentitem.positions[i]}\_a  ";
-		else output += "\__q[OnItemChange,{scope},{CharacterItem[0]},{currentitem.positions[i]},{CharacterItem[2]}]{currentitem.positions[i]}\__q  ";
+		local tag = "[OnItemChange,{scope},{CharacterItem[0]},{currentitem.positions[i]},{CharacterItem[2]}]{currentitem.positions[i].Replace('_',' ')}";
+		if (currentitem.positions[i] == CharacterItem[1]) output += "\_a{tag}\_a  ";
+		else output += "\__q{tag}\__q  ";
+		if (Save.Data.BalloonName == "Ye Olde Soul Spell" && i == 1) output += "\n";
 	}
 	output += "\c[char,2]\n\n";
 	
 	output += "Color:\n";
 	for (local i = 0; i < currentitem.colors.length; i++)
 	{
-		if (currentitem.colors[i] == CharacterItem[2]) output += "\_a[OnItemChange,{scope},{CharacterItem[0]},{CharacterItem[1]},{currentitem.colors[i]}]{currentitem.colors[i]}\_a  ";
-		else output += "\__q[OnItemChange,{scope},{CharacterItem[0]},{CharacterItem[1]},{currentitem.colors[i]}]{currentitem.colors[i]}\__q  ";
+		local tag = "[OnItemChange,{scope},{CharacterItem[0]},{CharacterItem[1]},{currentitem.colors[i]}]{currentitem.colors[i]}";
+		if (currentitem.colors[i] == CharacterItem[2]) output += "\_a{tag}\_a  ";
+		else output += "\__q{tag}\__q  ";
 	}
 	output += "\c[char,2]\n\n";
 	
@@ -106,7 +110,7 @@ function OnItemMenu
 
 function OnItemChange
 {
-	return "\C\![lock,balloonrepaint]\{Shiori.Reference[0]}\![bind,Item,{Shiori.Reference[1]} {Shiori.Reference[2]} {Shiori.Reference[3]},1] \![raise,OnItemMenu,{Shiori.Reference[0]}]";
+	return "\C\![lock,balloonrepaint]\![set,autoscroll,disable]\{Shiori.Reference[0]}\![bind,Item,{Shiori.Reference[1]} {Shiori.Reference[2]} {Shiori.Reference[3]},1] \![raise,OnItemMenu,{Shiori.Reference[0]}]";
 }
 
 function OnNotifyDressupInfo
