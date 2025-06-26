@@ -14,7 +14,7 @@ function OnSakuraMenu
 	
 	if (Save.Data.BalloonName == "Ye Olde Soul Spell")
 	{
-		output += "\![*]\__q[OnBalloonColorMenu]Spell choice\__q";
+		output += "\![*]\__q[OnBalloonColorMenu,0]Spell choice\__q";
 		output += "\n\n";
 	}
 	
@@ -60,45 +60,58 @@ function OnBalloonColorMenu
 	];
 	
 	local output = "";
-	output += "\C\0\![lock,balloonrepaint]\c\1\![lock,balloonrepaint]\c\0";
-	output += "\0\b[4]\s[10]\![quicksection,true]\![set,autoscroll,disable]\![no-autopause]\f[anchorvisitedfontcolor,default.anchor]";
-	output += "\0\f[align,center]{emdash} Spell choice {emdash}\n\f[align,left]";
-	for (local i = 0; i < colors.length; i++)
+	if (Shiori.Reference[0] == 1)
 	{
-		if (Save.Data.SakuraBalloonColor == colors[i].number)
-		{
-			output += "\![*]\_a[OnBalloonColorChange,0,{colors[i].number}]{colors[i].label}\_a\n";
-		}
-		else
-		{
-			output += "\![*]\__q[OnBalloonColorChange,0,{colors[i].number}]{colors[i].label}\__q\n";
-		}
+		output += "\1\![lock,balloonrepaint]\c\0";
+		output += "\1\b[4]\s[10]";
 	}
-	output += "\n";
-	output += "\![*]\__q[OnBalloonColorChange,0,{Random.GetIndex(0,colors.length)}]Random\__q";
-	output += "\n\n";
-	output += "\![*]\__q[OnSakuraMenu]Back\__q  \![*]\__q[blank]Close\__q";
-	
-	
-	output += "\1\b[4]\f[align,center]{emdash} Spell choice {emdash}\n\f[align,left]";
-	for (local i = 0; i < colors.length; i++)
+	else //0
 	{
-		if (Save.Data.KeroBalloonColor == colors[i].number)
-		{
-			output += "\![*]\_a[OnBalloonColorChange,1,{colors[i].number}]{colors[i].label}\_a\n";
-		}
-		else
-		{
-			output += "\![*]\__q[OnBalloonColorChange,1,{colors[i].number}]{colors[i].label}\__q\n";
-		}
+		output += "\C\0\![lock,balloonrepaint]\c\0";
+		output += "\0\b[4]\s[0]";
 	}
-	output += "\n";
-	output += "\![*]\__q[OnBalloonColorChange,1,{Random.GetIndex(0,colors.length)}]Random\__q";
-	//output += "\n\n";
-	//output += "\![*]\__q[OnSakuraMenu]Back\__q  \![*]\__q[blank]Close\__q";
+	output += "\![quicksection,true]\![set,autoscroll,disable]\![no-autopause]\f[anchorvisitedfontcolor,default.anchor]";
 	
-	
-	output += "\1\![unlock,balloonrepaint]\0\![unlock,balloonrepaint]";
+	if (Shiori.Reference[0] == 1)
+	{
+		output += "\f[align,center]{emdash} Spell choice {emdash}\n\f[align,left]";
+		for (local i = 0; i < colors.length; i++)
+		{
+			if (Save.Data.KeroBalloonColor == colors[i].number)
+			{
+				output += "\![*]\_a[OnBalloonColorChange,1,{colors[i].number}]{colors[i].label}\_a\n";
+			}
+			else
+			{
+				output += "\![*]\__q[OnBalloonColorChange,1,{colors[i].number}]{colors[i].label}\__q\n";
+			}
+		}
+		output += "\n";
+		output += "\![*]\__q[OnBalloonColorChange,1,{Random.GetIndex(0,colors.length)}]Random\__q";
+		output += "\n\n";
+		output += "\![*]\__q[OnKeroMenu]Back\__q  \![*]\__q[blank]Close\__q";
+		output += "\1\![unlock,balloonrepaint]";
+	}
+	else
+	{
+		output += "\f[align,center]{emdash} Spell choice {emdash}\n\f[align,left]";
+		for (local i = 0; i < colors.length; i++)
+		{
+			if (Save.Data.SakuraBalloonColor == colors[i].number)
+			{
+				output += "\![*]\_a[OnBalloonColorChange,0,{colors[i].number}]{colors[i].label}\_a\n";
+			}
+			else
+			{
+				output += "\![*]\__q[OnBalloonColorChange,0,{colors[i].number}]{colors[i].label}\__q\n";
+			}
+		}
+		output += "\n";
+		output += "\![*]\__q[OnBalloonColorChange,0,{Random.GetIndex(0,colors.length)}]Random\__q";
+		output += "\n\n";
+		output += "\![*]\__q[OnSakuraMenu]Back\__q  \![*]\__q[blank]Close\__q";
+		output += "\0\![unlock,balloonrepaint]";
+	}
 	
 	return output;
 }
@@ -113,7 +126,7 @@ function OnBalloonColorChange
 	{
 		Save.Data.SakuraBalloonColor = Shiori.Reference[1];
 	}
-	return OnBalloonColorMenu;
+	return "\![raise,OnBalloonColorMenu,{Shiori.Reference[0]}]";
 }
 
 function TalkRates
@@ -143,15 +156,21 @@ function OnKeroMenu
 	local output = "";
 	output += "\1\b[2]\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]\![quicksection,true]\![no-autopause]";
 	
-	if (FarApart()) output += "Lonely sad :(";
-	else output += "Friendship :)";
+	if (Save.Data.BalloonName == "Ye Olde Soul Spell")
+	{
+		output += "\![*]\__q[OnBalloonColorMenu,1]Spell choice\__q";
+		output += "\n\n";
+	}
 	
-	output += "\n\n";
+	// if (FarApart()) output += "Lonely sad :(";
+	// else output += "Friendship :)";
 	
-	output += "Sakura X: {Save.Data.SakuraCoords.x}\n";
-	output += "Sakura Y: {Save.Data.SakuraCoords.y}\n\n";
-	output += "Kero X: {Save.Data.KeroCoords.x}\n";
-	output += "Kero Y: {Save.Data.KeroCoords.y}\n\n";
+	// output += "\n\n";
+	
+	// output += "Sakura X: {Save.Data.SakuraCoords.x}\n";
+	// output += "Sakura Y: {Save.Data.SakuraCoords.y}\n\n";
+	// output += "Kero X: {Save.Data.KeroCoords.x}\n";
+	// output += "Kero Y: {Save.Data.KeroCoords.y}\n\n";
 	
 	output += "\![*]\__q[blank]As you were!\__q";
 	return output;
