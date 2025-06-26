@@ -264,7 +264,7 @@ function OnBalloonColorChange
 	{
 		Save.Data.SakuraBalloonColor = Shiori.Reference[1];
 	}
-	return "\![raise,OnBalloonColorMenu,{Shiori.Reference[0]}]";
+	return "\C\![raise,OnBalloonColorMenu,{Shiori.Reference[0]}]";
 }
 
 function TalkRates
