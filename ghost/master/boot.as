@@ -181,8 +181,8 @@ talk Vanish_Cancel
 {
 	0:\b[4]You fiend! Monster!
 	1:\b[4]W-what happened, why are we still...?
-	0:What happened is that our wizard is little more than a beast! And the word of a beast is worth less than the dirt it devours, seeking fulfilment where there is \f[italic,1]none!\f[italic,default]
-	1:... why... \f[color,disable]i believed you...\f[color,default]
+	0:What happened is that our wizard is little more than a beast! And the word of a beast is worth less than the dirt it devours, seeking fulfillment where there is \f[italic,1]none!\f[italic,default]
+	1:... why... \f[color,disable]I believed you...\f[color,default]
 	0:... Easy, child. The wizard is not worth your tears, no matter how foul.
 	1:... did you call me a kid?
 	0:You are, aren't you?
