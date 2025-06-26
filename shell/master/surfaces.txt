@@ -614,6 +614,28 @@ surface0,10
 	animation10000000.pattern18,overlayfast,10000018,150,0,0
 	animation10000000.pattern19,overlayfast,10000019,150,0,0
 	
-	animation10000001.interval,bind
-	animation10000001.pattern0,replace,10,0,0,0
+	animation10000100.interval,never
+	animation10000100.pattern0, overlayfast,10000100,0,0,0
+	animation10000100.pattern1, overlayfast,10000101,150,0,0
+	animation10000100.pattern2, overlayfast,10000102,150,0,0
+	animation10000100.pattern3, overlayfast,10000103,150,0,0
+	animation10000100.pattern4, overlayfast,10000104,150,0,0
+	animation10000100.pattern5, overlayfast,10000105,150,0,0
+	animation10000100.pattern6, overlayfast,10000106,150,0,0
+	animation10000100.pattern7, overlayfast,10000107,150,0,0
+	animation10000100.pattern8, overlayfast,10000108,150,0,0
+	animation10000100.pattern9, overlayfast,10000109,150,0,0
+	animation10000100.pattern10,overlayfast,10000110,150,0,0
+	animation10000100.pattern11,overlayfast,10000111,150,0,0
+	animation10000100.pattern12,overlayfast,10000112,150,0,0
+	animation10000100.pattern13,overlayfast,10000113,150,0,0
+	animation10000100.pattern14,overlayfast,10000114,150,0,0
+	animation10000100.pattern15,overlayfast,10000115,150,0,0
+	animation10000100.pattern16,overlayfast,10000116,150,0,0
+	animation10000100.pattern17,overlayfast,10000117,150,0,0
+	animation10000100.pattern18,overlayfast,10000118,150,0,0
+	animation10000100.pattern19,overlayfast,10000119,150,0,0
+	
+	animation11000000.interval,bind
+	animation11000000.pattern0,replace,10,0,0,0
 }

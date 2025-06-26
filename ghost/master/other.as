@@ -87,6 +87,11 @@ function whiteout
 	return "\i[10000000]";
 }
 
+function redout
+{
+	return "\i[10000100]";
+}
+
 function fadeout
 {
 	local output = "";

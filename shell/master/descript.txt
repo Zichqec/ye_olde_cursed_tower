@@ -72,8 +72,8 @@ kero.bindgroup3000000.addid,3000100,3000200
 kero.bindgroup3001000.name,Item,Bottle Upright Red
 kero.bindgroup3001000.addid,3001100,3001200
 
-sakura.bindgroup10000001.name,Hide,Hide
-kero.bindgroup10000001.name,Hide,Hide
+sakura.bindgroup11000000.name,Hide,Hide
+kero.bindgroup11000000.name,Hide,Hide
 
 
 sakura.menu,hidden
