@@ -1,4 +1,4 @@
-Content warnings: Dehumanization
+Content warnings: Dehumanization, user death
 
 An evil wizard sits atop a tower, collecting souls... for what purpose? Nobody is sure. What will happen to the people trapped within the tower's walls?
 
