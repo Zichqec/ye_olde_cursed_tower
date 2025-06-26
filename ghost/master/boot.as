@@ -164,7 +164,7 @@ talk Vanish_2
 {
 	1:\b[4]\f[color,disable]... oh...\f[color,default]
 	0:\b[4]... Go on then, wizard.\w8\w8\1{whiteout}\0{whiteout}\w8\w8\w8\w8 We've been here before. Neither of us have forgotten the last time.
-	1:\f[color,disable]... i don't think i want to see this...\f[color,default]
+	1:\f[color,disable]... I don't think I want to see this...\f[color,default]
 	0:Then close your eyes.\_w[1000]\0\i[10000101]\1\i[10000101]\_w[1000]\0\i[10000101]\1\i[10000101]\_w[1000]
 	1:\f[color,disable]Ugh... \0\i[10000101]\1\i[10000101]\_w[1000]\0\i[10000101]\1\i[10000101]\_w[1000]I feel sick...\0\i[10000101]\1\i[10000101]\_w[1000]\0\i[10000101]\1\i[10000101]\_w[1000]\f[color,default]\0{redout}\1{redout}\_w[4000] Can we go...? Isn't that... enough?
 	0:... Yes. You're right. It's time to go.
