@@ -56,7 +56,7 @@ function OnSecondChange
 {
 	if (Save.Data.Vanishing == 1)
 	{
-		return "\t\*\_w[3000]\![raise,OnFirstBoot,{Save.Data.Reinstalls.ToNumber() + 1}]";
+		return "\t\_w[3000]\![raise,OnFirstBoot,{Save.Data.Reinstalls.ToNumber() + 1}]";
 	}
 }
 
@@ -64,7 +64,7 @@ function OnBoot
 {
 	if (Save.Data.Vanishing == 1 || Save.Data.Reinstalls >= 2)
 	{
-		return "\![raise,OnFirstBoot,{Save.Data.Reinstalls.ToNumber() + 1}]";
+		return "\t\![raise,OnFirstBoot,{Save.Data.Reinstalls.ToNumber() + 1}]";
 	}
 	
 	local output = "{GetCoords}\0\s[0]\1\s[10]";
