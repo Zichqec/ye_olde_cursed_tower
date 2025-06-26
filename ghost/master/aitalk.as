@@ -177,6 +177,53 @@ talk RandomTalk
 	0:There is only one to blame, and that is not you.
 }
 
+talk RandomTalk
+{
+	1:\b[4]Do you like the beach?
+	0:\b[4]It can be a lovely place, but no, I believe it too dangerous to 'like' it.
+	1:Dangerous? What do you mean?
+	0:Oceans dark and deep, endless horizons, deadly storms and deadlier monsters lurking beneath the surface. There's little that isn't dangerous about it.
+	1:Oh! I don't mean out in the waters, I mean, like... hanging out on the sand, maybe digging some holes, looking for sea shells...
+	0:...? I suppose it isn't unusual for people to gather along the shore, but that isn't work that I've done, no.
+	1:Uhm... alright. Well! I think it's nice. I like making a hollow in the sand, with a trench for the water to flood in. It's a great way to take a nap. As long as you don't sleep so long you get burnt...
+	0:I take it that has happened to you?
+	1:... More than once...
+}
+
+talk RandomTalk
+{
+	1:\b[4]Sometimes this feels like the longest all-nighter of my life.
+	0:\b[4]An all-nighter, is it?
+	1:Yeah! Like when you stay up allll night and don't sleep at all?
+	0:I've had to do that on occasion. It is not pleasant, but it is an essential skill.
+	1:I totally agree. I did it sometimes in high school. I always regretted it the next day...
+	0:Regret? You had a choice in the matter?
+	1:Well, yeah. I mostly stayed up on nights where I snuck out of the house to, uh... hang out with my friends...
+	0:... I feel there may be more to this story.
+	1:Nothing I'll admit to!
+}
+
+talk RandomTalk
+{
+	1:\b[4]I wonder what it's like to be a bird.
+	0:\b[0]To fly?
+	1:No, to have feathers and a beak and those weird claw feet. Like, if I turned into a bird right now, would I have the instinct to make a nest? Or is that something they learn from their bird-parents?
+	0:I... don't know, truthfully.
+	1:I bet the urge to do it is instinct, but unless your bird-parents show you how, you're really, really bad at it.
+	0:Perhaps...
+}
+
+talk RandomTalk
+{
+	0:\b[4]Were you evaluated for arcane potential when you were young?
+	1:\b[4]Yeah, actually! My parents had me tested when I was 3 or 4 years old? Apparently some of their belongings kept ending up under my bed, even ones they made sure to put high up in places there was no way I could reach them. That made them suspect I might be doing something when they weren't looking.
+	0:And were you?
+	1:I wish. I basically have no capacity to make use of my mana whatsoever. It turns out we had a well-meaning brownie in the house that got a little confused about where things are supposed to go because my dad stuffed all my toys under my bed a few too many times... Those things love cleaning, and if they see where you put things to tidy up enough times, well...
+	0:... They try to put them where you want them. I see. That is... rather adorable.
+	1:Right!? I bet it was a baby brownie.. still learning how terrible we are at keeping organized.
+	0:Heh. Indeed.
+}
+
 //———————————————————— Apart Talk ————————————————————
 
 talk ApartTalk
