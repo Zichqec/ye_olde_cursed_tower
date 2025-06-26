@@ -228,3 +228,19 @@ function OnSurfaceRestore
 {
 	return "{GetCoords}\0\s[0]\![set,alpha,100]\1\s[10]\![set,alpha,100]";
 }
+
+function sakura@recommendsites
+{
+	local list = [
+		"Gallahttps://gallathegalla.github.io/gtg-ghosts/",
+		"Pommyhttps://www.youtube.com/@pommy_the_mimic",
+		"Zichqechttps://ukagaka.zichqec.com/",
+	];
+	
+	local output = "";
+	for (local i = 0; i < list.length; i++)
+	{
+		output += list[i];
+	}
+	return output;
+}
