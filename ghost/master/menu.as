@@ -92,7 +92,7 @@ function OnBalloonColorMenu
 		output += "\![*]\__q[OnKeroMenu]Back\__q  \![*]\__q[blank]Close\__q";
 		output += "\1\![unlock,balloonrepaint]";
 	}
-	else
+	else //Duplicating it like this is bad practice but I don't have time to make it nice, we're in the last 8ish hours of jam
 	{
 		output += "\f[align,center]{emdash} Spell choice {emdash}\n\f[align,left]";
 		for (local i = 0; i < colors.length; i++)
