@@ -258,7 +258,7 @@ function OnChangeTalkInterval
 function OnKeroMenu
 {
 	local output = "";
-	output += "\1\b[2]\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]\![quicksection,true]\![no-autopause]";
+	output += "\1\b[0]\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]\![quicksection,true]\![no-autopause]";
 	
 	output += "\![*]\__q[OnItemMenu,1]Soul transfer\__q";
 	output += "\n\n";
