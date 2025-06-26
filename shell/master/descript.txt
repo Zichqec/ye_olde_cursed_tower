@@ -15,77 +15,58 @@ sakura.bindgroup1000000.default,1
 kero.bindoption1000000.group,Item,mustselect
 kero.bindgroup1000000.default,1
 
-sakura.bindgroup1000000.name,Item,Gem upright red
+sakura.bindgroup1000000.name,Item,Gem Upright Red
 sakura.bindgroup1000000.addid,1000100,1000200
-sakura.bindgroup1001000.name,Item,Gem upright purple
+sakura.bindgroup1001000.name,Item,Gem Upright Purple
 sakura.bindgroup1001000.addid,1001100,1001200
-sakura.bindgroup1100000.name,Item,Gem side red
+sakura.bindgroup1100000.name,Item,Gem Side Red
 sakura.bindgroup1100000.addid,1100100,1100200
-sakura.bindgroup1101000.name,Item,Gem side purple
+sakura.bindgroup1101000.name,Item,Gem Side Purple
 sakura.bindgroup1101000.addid,1101100,1101200
 
-sakura.bindgroup2000000.name,Item,Pot upright brown
+sakura.bindgroup2000000.name,Item,Pot Upright Brown
 sakura.bindgroup2000000.addid,2000100,2000200
-sakura.bindgroup2001000.name,Item,Pot upright gray
+sakura.bindgroup2001000.name,Item,Pot Upright Gray
 sakura.bindgroup2001000.addid,2001100,2001200
-sakura.bindgroup2100000.name,Item,Pot spilled brown
+sakura.bindgroup2100000.name,Item,Pot Spilled Brown
 sakura.bindgroup2100000.addid,2100100,2100200
-sakura.bindgroup2101000.name,Item,Pot spilled gray
+sakura.bindgroup2101000.name,Item,Pot Spilled Gray
 sakura.bindgroup2101000.addid,2101100,2101200
 
-sakura.bindgroup3000000.name,Item,Bottle green
+sakura.bindgroup3000000.name,Item,Bottle Upright Green
 sakura.bindgroup3000000.addid,3000100,3000200
-sakura.bindgroup3001000.name,Item,Bottle red
+sakura.bindgroup3001000.name,Item,Bottle Upright Red
 sakura.bindgroup3001000.addid,3001100,3001200
 
 
 
 
-kero.bindgroup1000000.name,Item,Gem upright red
+kero.bindgroup1000000.name,Item,Gem Upright Red
 kero.bindgroup1000000.addid,1000100,1000200
-kero.bindgroup1001000.name,Item,Gem upright purple
+kero.bindgroup1001000.name,Item,Gem Upright Purple
 kero.bindgroup1001000.addid,1001100,1001200
-kero.bindgroup1100000.name,Item,Gem side red
+kero.bindgroup1100000.name,Item,Gem Side Red
 kero.bindgroup1100000.addid,1100100,1100200
-kero.bindgroup1101000.name,Item,Gem side purple
+kero.bindgroup1101000.name,Item,Gem Side Purple
 kero.bindgroup1101000.addid,1101100,1101200
 
-kero.bindgroup2000000.name,Item,Pot upright brown
+kero.bindgroup2000000.name,Item,Pot Upright Brown
 kero.bindgroup2000000.addid,2000100,2000200
-kero.bindgroup2001000.name,Item,Pot upright gray
+kero.bindgroup2001000.name,Item,Pot Upright Gray
 kero.bindgroup2001000.addid,2001100,2001200
-kero.bindgroup2100000.name,Item,Pot spilled brown
+kero.bindgroup2100000.name,Item,Pot Spilled Brown
 kero.bindgroup2100000.addid,2100100,2100200
-kero.bindgroup2101000.name,Item,Pot spilled gray
+kero.bindgroup2101000.name,Item,Pot Spilled Gray
 kero.bindgroup2101000.addid,2101100,2101200
 
-kero.bindgroup3000000.name,Item,Bottle green
+kero.bindgroup3000000.name,Item,Bottle Upright Green
 kero.bindgroup3000000.addid,3000100,3000200
-kero.bindgroup3001000.name,Item,Bottle red
+kero.bindgroup3001000.name,Item,Bottle Upright Red
 kero.bindgroup3001000.addid,3001100,3001200
 
 sakura.bindgroup10000001.name,Hide,Hide
 kero.bindgroup10000001.name,Hide,Hide
 
 
-sakura.menuitem0,1000000
-sakura.menuitem1,1001000
-sakura.menuitem2,1100000
-sakura.menuitem3,1101000
-sakura.menuitem4,2000000
-sakura.menuitem5,2001000
-sakura.menuitem6,2100000
-sakura.menuitem7,2101000
-sakura.menuitem8,3000000
-sakura.menuitem9,3001000
-
-kero.menuitem0,1000000
-kero.menuitem1,1001000
-kero.menuitem2,1100000
-kero.menuitem3,1101000
-kero.menuitem4,2000000
-kero.menuitem5,2001000
-kero.menuitem6,2100000
-kero.menuitem7,2101000
-kero.menuitem8,3000000
-kero.menuitem9,3001000
+sakura.menu,hidden
+kero.menu,hidden

@@ -9,7 +9,9 @@ function OnSakuraMenu
 	
 	if (LastTalk == "") output += "\f[color,disable]Repeat!\f[color,default]";
 	else output += "\__q[OnLastTalk]Repeat!\__q";
+	output += "\n\n";
 	
+	output += "\![*]\__q[OnItemMenu,0]Soul transfer\__q";
 	output += "\n\n";
 	
 	if (Save.Data.BalloonName == "Ye Olde Soul Spell")
@@ -40,6 +42,104 @@ function OnSakuraMenu
 	output += "\![*]\__q[blank]As you were!\__q";
 	
 	return output;
+}
+
+function OnItemMenu
+{
+	local items = [
+		{type: "Gem", positions: ["Upright", "Side"], colors: ["Red","Purple"]},
+		{type: "Pot", positions: ["Upright", "Spilled"], colors: ["Brown","Gray"]},
+		{type: "Bottle", positions: ["Upright"], colors: ["Green","Red"]},
+	];
+	
+	local CharacterItem = [];
+	if (Shiori.Reference[0] == "1") CharacterItem = CurrentKeroItem;
+	else CharacterItem = CurrentSakuraItem;
+	local scope = Shiori.Reference[0]; //I should check if this is empty buuuuuuut we'll pretend it never will be! (fix later TODO lol)
+	
+	local output = "";
+	output += "\C\{scope}\![lock,balloonrepaint]\c";
+	output += "\{scope}\b[2]\s[0]";
+	output += "\![quicksection,true]\![set,autoscroll,disable]\![no-autopause]\f[anchorvisitedfontcolor,default.anchor]";
+	output += "\f[align,center]{emdash} Soul transfer {emdash}\n\f[align,left]";
+	
+	
+	local currentitem = {};
+	output += "Item:\n";
+	for (local i = 0; i < items.length; i++)
+	{
+		local item = items[i];
+		if (item.type == CharacterItem[0])
+		{
+			output += "\_a[OnItemChange,{scope},{item.type},{item.positions[0]},{item.colors[0]}]{item.type}\_a  ";
+			currentitem = item;
+		}
+		else output += "\__q[OnItemChange,{scope},{item.type},{item.positions[0]},{item.colors[0]}]{item.type}\__q  ";
+	}
+	output += "\c[char,2]";
+	output += "\n\n";
+	
+	output += "Position:\n";
+	for (local i = 0; i < currentitem.positions.length; i++)
+	{
+		if (currentitem.positions[i] == CharacterItem[1]) output += "\_a[OnItemChange,{scope},{CharacterItem[0]},{currentitem.positions[i]},{CharacterItem[2]}]{currentitem.positions[i]}\_a  ";
+		else output += "\__q[OnItemChange,{scope},{CharacterItem[0]},{currentitem.positions[i]},{CharacterItem[2]}]{currentitem.positions[i]}\__q  ";
+	}
+	output += "\c[char,2]\n\n";
+	
+	output += "Color:\n";
+	for (local i = 0; i < currentitem.colors.length; i++)
+	{
+		if (currentitem.colors[i] == CharacterItem[2]) output += "\_a[OnItemChange,{scope},{CharacterItem[0]},{CharacterItem[1]},{currentitem.colors[i]}]{currentitem.colors[i]}\_a  ";
+		else output += "\__q[OnItemChange,{scope},{CharacterItem[0]},{CharacterItem[1]},{currentitem.colors[i]}]{currentitem.colors[i]}\__q  ";
+	}
+	output += "\c[char,2]\n\n";
+	
+	if (Shiori.Reference[0] == "1") output += "\![*]\__q[OnKeroMenu]Back\__q";
+	else output += "\![*]\__q[OnSakuraMenu]Back\__q";
+	
+	output += "  \![*]\__q[blank]Close\__q";
+	output += "\![unlock,balloonrepaint]";
+	
+	return output;
+}
+
+function OnItemChange
+{
+	return "\C\![lock,balloonrepaint]\{Shiori.Reference[0]}\![bind,Item,{Shiori.Reference[1]} {Shiori.Reference[2]} {Shiori.Reference[3]},1] \![raise,OnItemMenu,{Shiori.Reference[0]}]";
+}
+
+function OnNotifyDressupInfo
+{
+	//[character ID, category name, part name, option, on-1/off-0, thumbnail path]
+	/*
+	
+	[0] character ID
+	[1] category name
+	[2] part name
+	[3] option
+	[4] on-1/off-0
+	[5] thumbnail path
+	
+	*/
+	CurrentSakuraItem = [];
+	CurrentKeroItem = [];
+	for (local i = 0; i < Shiori.Reference.length; i++)
+	{
+		local dressup = Shiori.Reference[i];
+		local byte1 = (1).ToAscii();
+		dressup = dressup.Split(byte1);
+		
+		//if (dressup[1] == "Hide") continue; //Currently bugged in Aosora, it seems. Will report after jam!
+		if (dressup[1] != "Hide") //Bandaid patch in the meantime
+		{
+			if (dressup[4] == "1")
+			{
+				if (dressup[0] == "1") CurrentKeroItem = dressup[2].Split(" ");
+				else CurrentSakuraItem = dressup[2].Split(" ");
+			}
+		}
+	}
 }
 
 function OnBalloonColorMenu
@@ -156,11 +256,16 @@ function OnKeroMenu
 	local output = "";
 	output += "\1\b[2]\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]\![quicksection,true]\![no-autopause]";
 	
+	output += "\![*]\__q[OnItemMenu,1]Soul transfer\__q";
+	output += "\n\n";
+	
 	if (Save.Data.BalloonName == "Ye Olde Soul Spell")
 	{
 		output += "\![*]\__q[OnBalloonColorMenu,1]Spell choice\__q";
 		output += "\n\n";
 	}
+	
+	//output += "{CurrentSakuraItem[0]},{CurrentSakuraItem[1]},{CurrentSakuraItem[2]}\n{CurrentKeroItem[0]},{CurrentKeroItem[1]},{CurrentKeroItem[2]},\n\n";
 	
 	// if (FarApart()) output += "Lonely sad :(";
 	// else output += "Friendship :)";
