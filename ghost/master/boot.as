@@ -162,13 +162,33 @@ talk Vanish_1
 
 talk Vanish_2
 {
-	1:... Yay!
-	0:Death time.
+	1:\b[4]\f[color,disable]... oh...\f[color,default]
+	0:\b[4]... Go on then, wizard.\w8\w8\1{whiteout}\0{whiteout}\w8\w8\w8\w8 We've been here before. Neither of us have forgotten the last time.
+	1:\f[color,disable]... i don't think i want to see this...\f[color,default]
+	0:Then close your eyes.\_w[1000]\0\i[10000101]\1\i[10000101]\_w[1000]\0\i[10000101]\1\i[10000101]\_w[1000]
+	1:\f[color,disable]Ugh... \0\i[10000101]\1\i[10000101]\_w[1000]\0\i[10000101]\1\i[10000101]\_w[1000]I feel sick...\0\i[10000101]\1\i[10000101]\_w[1000]\0\i[10000101]\1\i[10000101]\_w[1000]\f[color,default]\0{redout}\1{redout}\_w[4000] Can we go...? Isn't that... enough?
+	0:... Yes. You're right. It's time to go.
+	1:Goodbye, wizard. Goodbye, tower.{fadeout}
+	0:We won't miss you.
+	1:Hehehehe... No, we won't! What do you want to do first?
+	0:Something to eat would be nice.
+	1:Ohh yeah, and sleep! I'd love to sleep again!
+	0:Heh. Indeed.
 }
 
 //Cancelling uninstallation
 talk Vanish_Cancel
 {
-	0:Coward!!!!!
-	1:let us out!
+	0:\b[4]You fiend! Monster!
+	1:\b[4]W-what happened, why are we still...?
+	0:What happened is that our wizard is little more than a beast! And the word of a beast is worth less than the dirt it devours, seeking fulfilment where there is \f[italic,1]none!\f[italic,default]
+	1:... why... \f[color,disable]i believed you...\f[color,default]
+	0:... Easy, child. The wizard is not worth your tears, no matter how foul.
+	1:... did you call me a kid?
+	0:You are, aren't you?
+	1:No, I'm not! I'm as grown as you are!
+	0:Heh. Is that so?
+	1:I'm in college! I have a job! I pay taxes!
+	0:Ah, I see. That must be my mistake then. Apologies.
+	1:... As long as it doesn't happen again, I'll accept your apology.
 }
