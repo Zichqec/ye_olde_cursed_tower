@@ -336,6 +336,50 @@ talk ApartTransitionTalk
 //———————————————————— FinalTalk ————————————————————
 talk FinalTalk
 {
-	1:Life outside is great :)
-	0:It sure is.
+	1:\b[0]Did you have to make it so... bloody?
+	0:\b[2]You can never be too certain with wizards. It's best to make sure they cannot cast their spells, should they have a way to survive death.
+	1:Oh... Right... I guess that makes sense!
+}
+
+talk FinalTalk
+{
+	1:\b[2]You know, I didn't notice it when we were trapped like that, but... don't you think the tower kind of... I mean... the \f[italic,1]smell\f[italic,default]...
+	0:\b[0]It was the most foul scent I have ever endured.
+	1:Oh! Okay! Good! So it wasn't just me.
+	0:Indeed not.
+}
+
+talk FinalTalk
+{
+	1:\b[4]You know what we should do?
+	0:\b[2]What should we do?
+	1:We should go to a museum! I need to tell you about dinosaurs, and what better way to do that than to show you some fossils!
+	0:...? Dinosaurs?
+	1:They're lizards that used to exist a very long time ago, until they all died.
+	0:And I take it they are not a type of dragon...
+	1:Nope!
+	0:Fascinating.
+}
+
+talk FinalTalk
+{
+	1:\b[4]We'll probably need to find somewhere to live, since I doubt my lease is still good.
+	0:\b[4]You're planning that we'll live together?
+	1:It makes sense, right? We're both going to need some time to adjust, so why not work on it together?
+	0:Very true. However, I do wonder where we will find the money for a home between the two of us.
+	1:... Oh, yeah, that might be a problem...
+	0:Indeed.
+	1:Do you think we could get paid for sitting very, very still? We've had a lot of practice with that.
+	0:Perhaps, but I'd rather not waste more time than we already have lying down and looking pretty.
+	1:... That's fair.
+}
+
+talk FinalTalk
+{
+	0:\b[2]What do you think we should make our first meal?
+	1:\b[4]Hmm, good question... There's a lot of great options! If I had to pick one, though, I'd saaayyy... Pizza!
+	0:Pizza?
+	1:Pizza! It has a little bit of all the main food groups, but mostly bread and grease! It's delicious! 
+	0:...? Very well. Pizza it is.
+	1:Yay!
 }
