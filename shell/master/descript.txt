@@ -41,6 +41,10 @@ sakura.bindgroup3000000.name,Item,Bottle Upright Green
 sakura.bindgroup3000000.addid,3000100,3000200
 sakura.bindgroup3001000.name,Item,Bottle Upright Red
 sakura.bindgroup3001000.addid,3001100,3001200
+sakura.bindgroup3100000.name,Item,Bottle Toppled Green
+sakura.bindgroup3100000.addid,3100100,3100200
+sakura.bindgroup3101000.name,Item,Bottle Toppled Red
+sakura.bindgroup3101000.addid,3101100,3101200
 
 
 
@@ -71,6 +75,10 @@ kero.bindgroup3000000.name,Item,Bottle Upright Green
 kero.bindgroup3000000.addid,3000100,3000200
 kero.bindgroup3001000.name,Item,Bottle Upright Red
 kero.bindgroup3001000.addid,3001100,3001200
+kero.bindgroup3100000.name,Item,Bottle Toppled Green
+kero.bindgroup3100000.addid,3100100,3100200
+kero.bindgroup3101000.name,Item,Bottle Toppled Red
+kero.bindgroup3101000.addid,3101100,3101200
 
 sakura.bindgroup11000000.name,Hide,Hide
 kero.bindgroup11000000.name,Hide,Hide

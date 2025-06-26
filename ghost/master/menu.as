@@ -49,7 +49,7 @@ function OnItemMenu
 	local items = [
 		{type: "Gem", positions: ["Lean_left","Lean_right", "Side"], colors: ["Red","Purple"]},
 		{type: "Pot", positions: ["Upright", "Spilled"], colors: ["Brown","Gray"]},
-		{type: "Bottle", positions: ["Upright"], colors: ["Green","Red"]},
+		{type: "Bottle", positions: ["Upright", "Toppled"], colors: ["Green","Red"]},
 	];
 	
 	local CharacterItem = [];
@@ -134,6 +134,8 @@ function OnItemRandom
 		"Pot Spilled Gray",
 		"Bottle Upright Green",
 		"Bottle Upright Red",
+		"Bottle Toppled Red",
+		"Bottle Toppled Green",
 	];
 	
 	local pick = Shiori.Reference[1];
