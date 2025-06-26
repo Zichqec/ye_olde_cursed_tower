@@ -13,7 +13,7 @@ sakura.bindoption1000000.group,Item,mustselect
 sakura.bindgroup1000000.default,1
 
 kero.bindoption1000000.group,Item,mustselect
-kero.bindgroup1000000.default,1
+kero.bindgroup3000000.default,1
 
 sakura.bindgroup1000000.name,Item,Gem Lean_left Red
 sakura.bindgroup1000000.addid,1000100,1000200

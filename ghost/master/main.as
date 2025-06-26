@@ -22,7 +22,7 @@ function OnFirstBoot
 {
 	Save.Data.Vanishing = 0;
 	Save.Data.Reinstalls = Shiori.Reference[0];
-	local output = "\0\s[0]\1\![bind,Item,Pot Upright Brown,1]\s[10]";
+	local output = "\0\s[0]\1\s[10]";
 	if (Shiori.Reference[0] >= 2)
 	{
 		if (Save.Data.TalkInterval == 0) Save.Data.TalkInterval = 180; //If talking was disabled, make it not that anymore
