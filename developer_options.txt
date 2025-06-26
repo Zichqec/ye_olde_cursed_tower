@@ -2,3 +2,4 @@
 .gitattributes,nonar,noupdate
 ye_olde_soul_spell_zi/,noupdate
 3D Models/,nonar,noupdate
+ghost/master/savedata.asv,nonar,noupdate
