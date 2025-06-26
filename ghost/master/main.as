@@ -244,3 +244,8 @@ function sakura@recommendsites
 	}
 	return output;
 }
+
+function sakura@portalsites
+{
+	return "Leave a Reviewhttps://docs.google.com/forms/d/e/1FAIpQLSdQvI9uWCeT3mD_bUcpIpgN25om1LZYinhkwJxCkrTo203_Cg/viewform";
+}
