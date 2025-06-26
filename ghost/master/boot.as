@@ -142,7 +142,7 @@ talk Vanish_2
 }
 
 //Cancelling uninstallation
-talk OnVanishButtonHold
+talk Vanish_Cancel
 {
 	0:Coward!!!!!
 	1:let us out!

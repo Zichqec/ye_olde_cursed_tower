@@ -20,16 +20,18 @@ function OnAosoraLoad
 
 function OnFirstBoot
 {
+	Save.Data.Vanishing = 0;
 	Save.Data.Reinstalls = Shiori.Reference[0];
-	local output = "\1\![bind,Item,Pot upright brown,1]";
+	local output = "\0\s[0]\1\![bind,Item,Pot upright brown,1]\s[10]";
 	if (Shiori.Reference[0] >= 2)
 	{
+		if (Save.Data.TalkInterval == 0) Save.Data.TalkInterval = 180; //If talking was disabled, make it not that anymore
 		output += "\0\![bind,Hide,Hide,1]";
 		output += "\1\![bind,Hide,Hide,1]";
-		output += OnPromptTalk;
+		output += OnPromptTalk();
 	}
-	else if (Shiori.Reference[0] == 1) output += FirstBoot_2;
-	else output += FirstBoot_1;
+	else if (Shiori.Reference[0] == 1) output += FirstBoot_2();
+	else output += FirstBoot_1();
 	return output;
 }
 
@@ -37,8 +39,10 @@ function OnVanishSelected
 {
 	Save.Data.Vanishing = 1;
 	VanishTime = Time.GetNowUnixEpoch();
-	if (Save.Data.Reinstalls > 0) return Vanish_2;
-	else return Vanish_1;
+	local output = "";
+	if (Save.Data.Reinstalls > 0) output += Vanish_2();
+	else output += Vanish_1();
+	return output += "\_w[3000]";
 }
 
 function OnVanishButtonHold
@@ -52,16 +56,15 @@ function OnSecondChange
 {
 	if (Save.Data.Vanishing == 1)
 	{
-		return "\t\*\_w[3000]\![raise,OnFirstBoot,{Save.Data.Reinstalls + 1}]";
+		return "\t\*\_w[3000]\![raise,OnFirstBoot,{Save.Data.Reinstalls.ToNumber() + 1}]";
 	}
 }
 
 function OnBoot
 {
-	if (Save.Data.Vanishing == 1)
+	if (Save.Data.Vanishing == 1 || Save.Data.Reinstalls >= 2)
 	{
-		Save.Data.Reinstalls++;
-		return "\![raise,OnFirstBoot,{Save.Data.Reinstalls}]";
+		return "\![raise,OnFirstBoot,{Save.Data.Reinstalls.ToNumber() + 1}]";
 	}
 	
 	local output = "{GetCoords}\0\s[0]\1\s[10]";
@@ -74,6 +77,11 @@ function OnBoot
 //Yes, I tried to do like the other functions and separate this into a function to get the coords and then one to close. Problem with that is it only works in multi-ghost settings... if they're the only ghost you have open, SSP forces them to close when OnClose is done, regardless of other functions you try to raise. Probably the same is true of clicking quit, and maybe various other cases. This is a problem I would have to solve at the source.
 function OnClose
 {
+	if (Save.Data.Reinstalls >= 2)
+	{
+		return "\-";
+	}
+	
 	local output = "{GetCoords}\0\s[0]\1\s[10]";
 	if (FarApart() != Save.Data.FarApart) //Mismatch means the state must have changed
 	{
@@ -110,7 +118,7 @@ function OnSendTalk
 	LastTalk = "\0\s[0]\1\s[10]";
 	if (Save.Data.Reinstalls >= 2)
 	{
-		LastTalk += "\t\*\![enter,passivemode]" + Reflection.Get("FinalTalk")() + "\_w[5000]\![vanishbymyself]";
+		LastTalk += "\t\*" + Reflection.Get("FinalTalk")() + "\_w[5000]\![vanishbymyself]";
 	}
 	else if (FarApart() != Save.Data.FarApart) //Mismatch means the state must have changed
 	{
