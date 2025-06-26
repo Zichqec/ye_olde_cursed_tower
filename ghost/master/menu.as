@@ -86,9 +86,12 @@ function OnItemMenu
 		local tag = "[OnItemChange,{scope},{CharacterItem[0]},{currentitem.positions[i]},{CharacterItem[2]}]{currentitem.positions[i].Replace('_',' ')}";
 		if (currentitem.positions[i] == CharacterItem[1]) output += "\_a{tag}\_a  ";
 		else output += "\__q{tag}\__q  ";
-		if (Save.Data.BalloonName == "Ye Olde Soul Spell" && i == 1) output += "\n";
+		if (Save.Data.BalloonName == "Ye Olde Soul Spell" && i == 1) output += "\n"; //Bandaid patch for word wrap awkwardness...
 	}
 	output += "\c[char,2]\n\n";
+	
+	//Bandaid patch because the above patch makes for awkwardness with buttons jumping around...
+	if (Save.Data.BalloonName == "Ye Olde Soul Spell" && CharacterItem[0] != "Gem") output += "\n";
 	
 	output += "Color:\n";
 	for (local i = 0; i < currentitem.colors.length; i++)
@@ -98,6 +101,9 @@ function OnItemMenu
 		else output += "\__q{tag}\__q  ";
 	}
 	output += "\c[char,2]\n\n";
+	
+	output += "\![*]\__q[OnItemRandom,{scope},{CharacterItem[0]} {CharacterItem[1]} {CharacterItem[2]}]Random\__q";
+	output += "\n\n";
 	
 	if (Shiori.Reference[0] == "1") output += "\![*]\__q[OnKeroMenu]Back\__q";
 	else output += "\![*]\__q[OnSakuraMenu]Back\__q";
@@ -111,6 +117,32 @@ function OnItemMenu
 function OnItemChange
 {
 	return "\C\![lock,balloonrepaint]\![set,autoscroll,disable]\{Shiori.Reference[0]}\![bind,Item,{Shiori.Reference[1]} {Shiori.Reference[2]} {Shiori.Reference[3]},1] \![raise,OnItemMenu,{Shiori.Reference[0]}]";
+}
+
+//I have a headache, so we're gonna do this dirty and fix it later!
+function OnItemRandom
+{
+	local items = [
+		"Gem Lean_left Red",
+		"Gem Lean_left Purple",
+		"Gem Lean_right Red",
+		"Gem Lean_right Purple",
+		"Gem Side Red",
+		"Pot Upright Brown",
+		"Pot Upright Gray",
+		"Pot Spilled Brown",
+		"Pot Spilled Gray",
+		"Bottle Upright Green",
+		"Bottle Upright Red",
+	];
+	
+	local pick = Shiori.Reference[1];
+	while (pick == Shiori.Reference[1])
+	{
+		pick = Random.Select(items);
+	}
+	
+	return "\C\![lock,balloonrepaint]\![set,autoscroll,disable]\{Shiori.Reference[0]}\![bind,Item,{pick},1] \![raise,OnItemMenu,{Shiori.Reference[0]}]";
 }
 
 function OnNotifyDressupInfo
