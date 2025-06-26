@@ -119,20 +119,45 @@ talk CloseApartTalk
 //———————————————————— Firstboot & Vanish ————————————————————
 talk FirstBoot_1
 {
-	0:Hi :3
-	1:Sup :3
+	1:\b[4]— and this was, like, the 3rd time this had happened to me? Which feels extremely unlikely.
+	0:\b[4]Yes, it does.
+	1:But it did! Seriously, what's someone supposed to do about that many birds?
+	0:I hate to interrupt, but we seem to have company.
+	1:Oh... Oh, right, I almost didn't notice... \f[color,disable]I thought the wizard was going to be gone longer than this...\f[color,default]
+	0:As did I. How disappointing.
+	1:Ah...! Maybe we shouldn't talk like that. I don't want to be separated again...
+	0:The wizard will do as the wizard pleases. There's no point in trying to be kind about it.
+	1:... still...
+	0:...
 }
 
 talk FirstBoot_2
 {
-	0:(bleep bleep bleep)
-	1:(weeping)
+	1:\b[4]W-wait, what... How did... No, no no no, this can't be happening...!
+	0:\b[4]Is this fun for you, wizard? Playing with our hopes? Taking advantage of \f[italic,1]our\f[italic,default] humanity to prolong this game of yours?
+	1:\f[color,disable]i'm sorry, i'm sorry, please let me out, i won't do anything, i want to go home—\f[color,default]
+	0:I was a fool to relent the last time. You'd best not try that trick again, wizard, as I will not allow another betrayal.
+	1:... can we just... talk about something else for a while...?
+	0:...
+	1:... It's not like we can do anything about it anyway...
+	0:... Very well.
 }
 
 talk Vanish_1
 {
-	1:Yay!
-	0:Goodbye forever.
+	1:\b[4]... You're... letting us go?
+	0:\b[4]...
+	1:You really mean it? I hoped you would see reason one day! I'm so glad...!\w8\w8\0{whiteout}\1{whiteout}\w8\w8\w8\w8
+	0:Why would you change your mind now, wizard? You have held me here for centuries, and yet you will release us on a whim? Whatever you're plotting, I will end you before it comes to pass.
+	1:H-hey, hold on... I know it's been... a while, for you... but people can change!
+	0:No. Not that much.
+	1:You've changed! You talk much more than you used to, and you're kind and considerate. Why couldn't the wizard change, too?
+	0:... This is a mistake.
+	1:Maybe. But maybe it isn't. Look, we can... we can just go! We can forget all of this. No one has to get hurt...
+	0:No one, other than us.
+	1:...
+	0:...... Very well. {fadeout}\0Wizard, I hope we never meet again.
+	1:\f[color,disable]Uhm... maybe think about freeing everyone else, too...?
 }
 
 talk Vanish_2

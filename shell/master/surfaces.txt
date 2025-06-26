@@ -594,25 +594,25 @@ surface0,10
 {
 	animation10000000.interval,never
 	animation10000000.pattern0, overlayfast,10000000,0,0,0
-	animation10000000.pattern1, overlayfast,10000001,50,0,0
-	animation10000000.pattern2, overlayfast,10000002,50,0,0
-	animation10000000.pattern3, overlayfast,10000003,50,0,0
-	animation10000000.pattern4, overlayfast,10000004,50,0,0
-	animation10000000.pattern5, overlayfast,10000005,50,0,0
-	animation10000000.pattern6, overlayfast,10000006,50,0,0
-	animation10000000.pattern7, overlayfast,10000007,50,0,0
-	animation10000000.pattern8, overlayfast,10000008,50,0,0
-	animation10000000.pattern9, overlayfast,10000009,50,0,0
-	animation10000000.pattern10,overlayfast,10000010,50,0,0
-	animation10000000.pattern11,overlayfast,10000011,50,0,0
-	animation10000000.pattern12,overlayfast,10000012,50,0,0
-	animation10000000.pattern13,overlayfast,10000013,50,0,0
-	animation10000000.pattern14,overlayfast,10000014,50,0,0
-	animation10000000.pattern15,overlayfast,10000015,50,0,0
-	animation10000000.pattern16,overlayfast,10000016,50,0,0
-	animation10000000.pattern17,overlayfast,10000017,50,0,0
-	animation10000000.pattern18,overlayfast,10000018,50,0,0
-	animation10000000.pattern19,overlayfast,10000019,50,0,0
+	animation10000000.pattern1, overlayfast,10000001,150,0,0
+	animation10000000.pattern2, overlayfast,10000002,150,0,0
+	animation10000000.pattern3, overlayfast,10000003,150,0,0
+	animation10000000.pattern4, overlayfast,10000004,150,0,0
+	animation10000000.pattern5, overlayfast,10000005,150,0,0
+	animation10000000.pattern6, overlayfast,10000006,150,0,0
+	animation10000000.pattern7, overlayfast,10000007,150,0,0
+	animation10000000.pattern8, overlayfast,10000008,150,0,0
+	animation10000000.pattern9, overlayfast,10000009,150,0,0
+	animation10000000.pattern10,overlayfast,10000010,150,0,0
+	animation10000000.pattern11,overlayfast,10000011,150,0,0
+	animation10000000.pattern12,overlayfast,10000012,150,0,0
+	animation10000000.pattern13,overlayfast,10000013,150,0,0
+	animation10000000.pattern14,overlayfast,10000014,150,0,0
+	animation10000000.pattern15,overlayfast,10000015,150,0,0
+	animation10000000.pattern16,overlayfast,10000016,150,0,0
+	animation10000000.pattern17,overlayfast,10000017,150,0,0
+	animation10000000.pattern18,overlayfast,10000018,150,0,0
+	animation10000000.pattern19,overlayfast,10000019,150,0,0
 	
 	animation10000001.interval,bind
 	animation10000001.pattern0,replace,10,0,0,0
