@@ -119,25 +119,8 @@ function OnItemChange
 	return "\C\![lock,balloonrepaint]\![set,autoscroll,disable]\{Shiori.Reference[0]}\![bind,Item,{Shiori.Reference[1]} {Shiori.Reference[2]} {Shiori.Reference[3]},1]\_w[1]\![raise,OnItemMenu,{Shiori.Reference[0]}]";
 }
 
-//I have a headache, so we're gonna do this dirty and fix it later!
 function OnItemRandom
 {
-	local items = [
-		"Gem Lean_left Red",
-		"Gem Lean_left Purple",
-		"Gem Lean_right Red",
-		"Gem Lean_right Purple",
-		"Gem Side Red",
-		"Pot Upright Brown",
-		"Pot Upright Gray",
-		"Pot Spilled Brown",
-		"Pot Spilled Gray",
-		"Bottle Upright Green",
-		"Bottle Upright Red",
-		"Bottle Toppled Red",
-		"Bottle Toppled Green",
-	];
-	
 	local pick = Shiori.Reference[1];
 	while (pick == Shiori.Reference[1]) pick = Random.Select(AvailableDressups); //don't pick same item
 	
@@ -159,6 +142,7 @@ function OnNotifyDressupInfo
 	*/
 	CurrentSakuraItem = [];
 	CurrentKeroItem = [];
+	AvailableDressups = [];
 	for (local i = 0; i < Shiori.Reference.length; i++)
 	{
 		local dressup = Shiori.Reference[i];
@@ -173,6 +157,7 @@ function OnNotifyDressupInfo
 				if (dressup[0] == "1") CurrentKeroItem = dressup[2].Split(" ");
 				else CurrentSakuraItem = dressup[2].Split(" ");
 			}
+			if (dressup[0] == "0") AvailableDressups.Add(dressup[2]);
 		}
 	}
 }
