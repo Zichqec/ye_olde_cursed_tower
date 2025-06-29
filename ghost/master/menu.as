@@ -197,59 +197,33 @@ function OnBalloonColorMenu
 		{number: "11", label: "Chromatic Pulse"},
 	];
 	
-	local output = "";
+	local scope = {num: "0", name: "Sakura", surface: "0"};
+	local CurrentBalloonColor = Save.Data.SakuraBalloonColor;
 	if (Shiori.Reference[0] == 1)
 	{
-		output += "\1\![lock,balloonrepaint]\c\0";
-		output += "\1\b[4]\s[10]";
+		scope = {num: "1", name: "Kero", surface: "10"}; //TODO i think probably we should normalize this to just surface0...
+		CurrentBalloonColor = Save.Data.KeroBalloonColor;
 	}
-	else //0
-	{
-		output += "\C\0\![lock,balloonrepaint]\c\0";
-		output += "\0\b[4]\s[0]";
-	}
+	
+	local output = "";
+	output += "\C\{scope.num}\![lock,balloonrepaint]\c";
+	output += "\{scope.num}\b[4]\s[{scope.surface}]";
+	
 	output += "\![quicksection,true]\![set,autoscroll,disable]\![no-autopause]\f[anchorvisitedfontcolor,default.anchor]";
 	
-	if (Shiori.Reference[0] == 1)
+	output += "\f[align,center]{emdash} Spell choice {emdash}\n\f[align,left]";
+	for (local i = 0; i < colors.length; i++)
 	{
-		output += "\f[align,center]{emdash} Spell choice {emdash}\n\f[align,left]";
-		for (local i = 0; i < colors.length; i++)
-		{
-			if (Save.Data.KeroBalloonColor == colors[i].number)
-			{
-				output += "\![*]\_a[OnBalloonColorChange,1,{colors[i].number}]{colors[i].label}\_a\n";
-			}
-			else
-			{
-				output += "\![*]\__q[OnBalloonColorChange,1,{colors[i].number}]{colors[i].label}\__q\n";
-			}
-		}
-		output += "\n";
-		output += "\![*]\__q[OnBalloonColorChange,1,{Random.GetIndex(0,colors.length)}]Random\__q";
-		output += "\n\n";
-		output += "\![*]\__q[OnKeroMenu]Back\__q  \![*]\__q[blank]Close\__q";
-		output += "\1\![unlock,balloonrepaint]";
+		local tag = "[OnBalloonColorChange,{scope.num},{colors[i].number}]{colors[i].label}";
+		
+		if (CurrentBalloonColor == colors[i].number) output += "\![*]\_a{tag}\_a\n";
+		else output += "\![*]\__q{tag}\__q\n";
 	}
-	else //Duplicating it like this is bad practice but I don't have time to make it nice, we're in the last 8ish hours of jam
-	{
-		output += "\f[align,center]{emdash} Spell choice {emdash}\n\f[align,left]";
-		for (local i = 0; i < colors.length; i++)
-		{
-			if (Save.Data.SakuraBalloonColor == colors[i].number)
-			{
-				output += "\![*]\_a[OnBalloonColorChange,0,{colors[i].number}]{colors[i].label}\_a\n";
-			}
-			else
-			{
-				output += "\![*]\__q[OnBalloonColorChange,0,{colors[i].number}]{colors[i].label}\__q\n";
-			}
-		}
-		output += "\n";
-		output += "\![*]\__q[OnBalloonColorChange,0,{Random.GetIndex(0,colors.length)}]Random\__q";
-		output += "\n\n";
-		output += "\![*]\__q[OnSakuraMenu]Back\__q  \![*]\__q[blank]Close\__q";
-		output += "\0\![unlock,balloonrepaint]";
-	}
+	output += "\n";
+	output += "\![*]\__q[OnBalloonColorChange,{scope.num},{Random.GetIndex(0,colors.length)}]Random\__q";
+	output += "\n\n";
+	output += "\![*]\__q[On{scope.name}Menu]Back\__q  \![*]\__q[blank]Close\__q";
+	output += "\![unlock,balloonrepaint]";
 	
 	return output;
 }
