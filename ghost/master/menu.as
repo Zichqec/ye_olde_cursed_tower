@@ -139,10 +139,7 @@ function OnItemRandom
 	];
 	
 	local pick = Shiori.Reference[1];
-	while (pick == Shiori.Reference[1])
-	{
-		pick = Random.Select(items);
-	}
+	while (pick == Shiori.Reference[1]) pick = Random.Select(AvailableDressups); //don't pick same item
 	
 	return "\C\![lock,balloonrepaint]\![set,autoscroll,disable]\{Shiori.Reference[0]}\![bind,Item,{pick},1]\_w[1]\![raise,OnItemMenu,{Shiori.Reference[0]}]";
 }
@@ -168,8 +165,8 @@ function OnNotifyDressupInfo
 		local byte1 = (1).ToAscii();
 		dressup = dressup.Split(byte1);
 		
-		//if (dressup[1] == "Hide") continue; //Currently bugged in Aosora, it seems. Will report after jam!
-		if (dressup[1] != "Hide") //Bandaid patch in the meantime
+		//if (dressup[1] == "Hide") continue;
+		if (dressup[1] != "Hide") //Bandaid patch until continue bug is fixed
 		{
 			if (dressup[4] == "1")
 			{
