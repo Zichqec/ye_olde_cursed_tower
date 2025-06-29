@@ -116,7 +116,7 @@ function OnItemMenu
 
 function OnItemChange
 {
-	return "\C\![lock,balloonrepaint]\![set,autoscroll,disable]\{Shiori.Reference[0]}\![bind,Item,{Shiori.Reference[1]} {Shiori.Reference[2]} {Shiori.Reference[3]},1] \![raise,OnItemMenu,{Shiori.Reference[0]}]";
+	return "\C\![lock,balloonrepaint]\![set,autoscroll,disable]\{Shiori.Reference[0]}\![bind,Item,{Shiori.Reference[1]} {Shiori.Reference[2]} {Shiori.Reference[3]},1]\_w[1]\![raise,OnItemMenu,{Shiori.Reference[0]}]";
 }
 
 //I have a headache, so we're gonna do this dirty and fix it later!
@@ -144,7 +144,7 @@ function OnItemRandom
 		pick = Random.Select(items);
 	}
 	
-	return "\C\![lock,balloonrepaint]\![set,autoscroll,disable]\{Shiori.Reference[0]}\![bind,Item,{pick},1] \![raise,OnItemMenu,{Shiori.Reference[0]}]";
+	return "\C\![lock,balloonrepaint]\![set,autoscroll,disable]\{Shiori.Reference[0]}\![bind,Item,{pick},1]\_w[1]\![raise,OnItemMenu,{Shiori.Reference[0]}]";
 }
 
 function OnNotifyDressupInfo
