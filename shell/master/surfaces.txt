@@ -72,6 +72,7 @@ surface0,10
 	animation1001100.pattern5,replace,1001105,65,0,0
 	animation1001100.pattern6,replace,1001106,65,0,0
 	animation1001100.pattern7,replace, -1,65,0,0
+	animation1001100.option,shared-index
 	
 	//Talk
 	animation1001200.interval,bind+talk,4
@@ -116,6 +117,7 @@ surface0,10
 	animation1100100.pattern5,replace,1100105,65,0,0
 	animation1100100.pattern6,replace,1100106,65,0,0
 	animation1100100.pattern7,replace, -1,65,0,0
+	animation1100100.option,shared-index
 	
 	//Talk
 	animation1100200.interval,bind+talk,4
@@ -161,6 +163,7 @@ surface0,10
 	animation1101100.pattern5,replace,1101105,65,0,0
 	animation1101100.pattern6,replace,1101106,65,0,0
 	animation1101100.pattern7,replace, -1,65,0,0
+	animation1101100.option,shared-index
 	
 	//Talk
 	animation1101200.interval,bind+talk,4
@@ -206,6 +209,7 @@ surface0,10
 	animation1200100.pattern6,replace,1200106,65,0,0
 	animation1200100.pattern7,replace,1200107,65,0,0
 	animation1200100.pattern8,replace, -1,65,0,0
+	animation1200100.option,shared-index
 	
 	//Talk
 	animation1200200.interval,bind+talk,4
@@ -252,6 +256,7 @@ surface0,10
 	animation1201100.pattern6,replace,1201106,65,0,0
 	animation1201100.pattern7,replace,1201107,65,0,0
 	animation1201100.pattern8,replace, -1,65,0,0
+	animation1201100.option,shared-index
 	
 	//Talk
 	animation1201200.interval,bind+talk,4
@@ -306,6 +311,7 @@ surface0,10
 	animation2000100.pattern11,replace,2000111,65,0,0
 	animation2000100.pattern12,replace,2000112,65,0,0
 	animation2000100.pattern13,replace, -1,65,0,0
+	animation2000100.option,shared-index
 	
 	//Talk
 	animation2000200.interval,bind+talk,4
@@ -357,6 +363,7 @@ surface0,10
 	animation2001100.pattern11,replace,2001111,65,0,0
 	animation2001100.pattern12,replace,2001112,65,0,0
 	animation2001100.pattern13,replace, -1,65,0,0
+	animation2001100.option,shared-index
 	
 	//Talk
 	animation2001200.interval,bind+talk,4
@@ -406,6 +413,7 @@ surface0,10
 	animation2100100.pattern9, replace,2100109,65,0,0
 	animation2100100.pattern10,replace,2100110,65,0,0
 	animation2100100.pattern11,replace, -1,65,0,0
+	animation2100100.option,shared-index
 	
 	//Talk
 	animation2100200.interval,bind+talk,4
@@ -455,6 +463,7 @@ surface0,10
 	animation2101100.pattern9, replace,2101109,65,0,0
 	animation2101100.pattern10,replace,2101110,65,0,0
 	animation2101100.pattern11,replace, -1,65,0,0
+	animation2101100.option,shared-index
 	
 	//Talk
 	animation2101200.interval,bind+talk,4
@@ -509,6 +518,7 @@ surface0,10
 	animation3000100.pattern11,replace,3000111,65,0,0
 	animation3000100.pattern12,replace,3000112,65,0,0
 	animation3000100.pattern13,replace, -1,65,0,0
+	animation3000100.option,shared-index
 	
 	//Talk
 	animation3000200.interval,bind+talk,4
@@ -560,6 +570,7 @@ surface0,10
 	animation3001100.pattern11,replace,3001111,65,0,0
 	animation3001100.pattern12,replace,3001112,65,0,0
 	animation3001100.pattern13,replace, -1,65,0,0
+	animation3001100.option,shared-index
 	
 	//Talk
 	animation3001200.interval,bind+talk,4
@@ -607,7 +618,8 @@ surface0,10
 	animation3100100.pattern7, replace,3100107,65,0,0
 	animation3100100.pattern8, replace,3100108,65,0,0
 	animation3100100.pattern9, replace,3100109,65,0,0
-	animation3100100.pattern13,replace, -1,65,0,0
+	animation3100100.pattern10,replace, -1,65,0,0
+	animation3100100.option,shared-index
 	
 	//Talk
 	animation3100200.interval,bind+talk,4
@@ -655,7 +667,8 @@ surface0,10
 	animation3101100.pattern7, replace,3101107,65,0,0
 	animation3101100.pattern8, replace,3101108,65,0,0
 	animation3101100.pattern9, replace,3101109,65,0,0
-	animation3101100.pattern13,replace, -1,65,0,0
+	animation3101100.pattern10,replace, -1,65,0,0
+	animation3101100.option,shared-index
 	
 	//Talk
 	animation3101200.interval,bind+talk,4
