@@ -202,7 +202,7 @@ function OnBalloonColorMenu
 		else output += "\![*]\__q{tag}\__q\n";
 	}
 	output += "\n";
-	output += "\![*]\__q[OnBalloonColorChange,{scope.num},{Random.GetIndex(0,colors.length)}]Random\__q";
+	output += "\![*]\__q[OnBalloonColorChange,{scope.num},{CurrentBalloonColor},random]Random\__q";
 	output += "\n\n";
 	output += "\![*]\__q[On{scope.name}Menu]Back\__q  \![*]\__q[blank]Close\__q";
 	output += "\![unlock,balloonrepaint]";
@@ -212,14 +212,17 @@ function OnBalloonColorMenu
 
 function OnBalloonColorChange
 {
-	if (Shiori.Reference[0] == 1)
+	local pick = Shiori.Reference[1];
+	
+	//I am not sure if I need to check for null here... it seems to be handling it, at least for the references...?
+	if (Shiori.Reference[2] == "random")
 	{
-		Save.Data.KeroBalloonColor = Shiori.Reference[1];
+		while (pick == Shiori.Reference[1]) pick = Random.GetIndex(0,12); //don't pick same color
 	}
-	else //0
-	{
-		Save.Data.SakuraBalloonColor = Shiori.Reference[1];
-	}
+	
+	if (Shiori.Reference[0] == 1) Save.Data.KeroBalloonColor = pick;
+	else Save.Data.SakuraBalloonColor = pick;
+	
 	return "\C\![raise,OnBalloonColorMenu,{Shiori.Reference[0]}]";
 }
 
