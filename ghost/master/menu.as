@@ -69,7 +69,7 @@ function OnItemMenu
 	for (local i = 0; i < items.length; i++)
 	{
 		local item = items[i];
-		local tag = "[OnItemChange,{scope},{item.type},{item.positions[0]},{item.colors[0]}]{item.type}";
+		local tag = "[OnItemChange,{scope},{item.type} {item.positions[0]} {item.colors[0]}]{item.type}";
 		if (item.type == CharacterItem[0])
 		{
 			output += "\_a{tag}\_a  ";
@@ -83,7 +83,7 @@ function OnItemMenu
 	output += "Position:\n";
 	for (local i = 0; i < currentitem.positions.length; i++)
 	{
-		local tag = "[OnItemChange,{scope},{CharacterItem[0]},{currentitem.positions[i]},{CharacterItem[2]}]{currentitem.positions[i].Replace('_',' ')}";
+		local tag = "[OnItemChange,{scope},{CharacterItem[0]} {currentitem.positions[i]} {CharacterItem[2]}]{currentitem.positions[i].Replace('_',' ')}";
 		if (currentitem.positions[i] == CharacterItem[1]) output += "\_a{tag}\_a  ";
 		else output += "\__q{tag}\__q  ";
 		if (Save.Data.BalloonName == "Ye Olde Soul Spell" && i == 1) output += "\n"; //Bandaid patch for word wrap awkwardness...
@@ -96,13 +96,13 @@ function OnItemMenu
 	output += "Color:\n";
 	for (local i = 0; i < currentitem.colors.length; i++)
 	{
-		local tag = "[OnItemChange,{scope},{CharacterItem[0]},{CharacterItem[1]},{currentitem.colors[i]}]{currentitem.colors[i]}";
+		local tag = "[OnItemChange,{scope},{CharacterItem[0]} {CharacterItem[1]} {currentitem.colors[i]}]{currentitem.colors[i]}";
 		if (currentitem.colors[i] == CharacterItem[2]) output += "\_a{tag}\_a  ";
 		else output += "\__q{tag}\__q  ";
 	}
 	output += "\c[char,2]\n\n";
 	
-	output += "\![*]\__q[OnItemRandom,{scope},{CharacterItem[0]} {CharacterItem[1]} {CharacterItem[2]}]Random\__q";
+	output += "\![*]\__q[OnItemChange,{scope},{CharacterItem[0]} {CharacterItem[1]} {CharacterItem[2]},random]Random\__q";
 	output += "\n\n";
 	
 	if (Shiori.Reference[0] == "1") output += "\![*]\__q[OnKeroMenu]Back\__q";
@@ -116,13 +116,13 @@ function OnItemMenu
 
 function OnItemChange
 {
-	return "\C\![lock,balloonrepaint]\![set,autoscroll,disable]\{Shiori.Reference[0]}\![bind,Item,{Shiori.Reference[1]} {Shiori.Reference[2]} {Shiori.Reference[3]},1]\_w[1]\![raise,OnItemMenu,{Shiori.Reference[0]}]";
-}
-
-function OnItemRandom
-{
 	local pick = Shiori.Reference[1];
-	while (pick == Shiori.Reference[1]) pick = Random.Select(AvailableDressups); //don't pick same item
+	
+	//I am not sure if I need to check for null here... it seems to be handling it, at least for the references...?
+	if (Shiori.Reference[2] == "random")
+	{
+		while (pick == Shiori.Reference[1]) pick = Random.Select(AvailableDressups); //don't pick same item
+	}
 	
 	return "\C\![lock,balloonrepaint]\![set,autoscroll,disable]\{Shiori.Reference[0]}\![bind,Item,{pick},1]\_w[1]\![raise,OnItemMenu,{Shiori.Reference[0]}]";
 }
