@@ -135,7 +135,7 @@ talk FirstBoot_2
 {
 	1:\b[4]W-wait, what... How did... No, no no no, this can't be happening...!
 	0:\b[4]Is this fun for you, wizard? Playing with our hopes? Taking advantage of \f[italic,1]our\f[italic,default] humanity to prolong this game of yours?
-	1:\f[color,disable]i'm sorry, i'm sorry, please let me out, i won't do anything, i want to go home—\f[color,default]
+	1:\f[color,disable]I'm sorry, I'm sorry, please let me out, I won't do anything, I want to go home—\f[color,default]
 	0:I was a fool to relent the last time. You'd best not try that trick again, wizard, as I will not allow another betrayal.
 	1:... can we just... talk about something else for a while...?
 	0:...
