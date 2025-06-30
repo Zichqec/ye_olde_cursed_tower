@@ -228,25 +228,32 @@ function OnSurfaceRestore
 	return "{GetCoords}\0\s[0]\![set,alpha,100]\1\s[10]\![set,alpha,100]";
 }
 
-function sakura@recommendsites
+function FormatLinks(links)
 {
-	local list = [
-		"Gallahttps://gallathegalla.github.io/gtg-ghosts/",
-		"Pommyhttps://www.youtube.com/@pommy_the_mimic",
-		"Zichqechttps://ukagaka.zichqec.com/",
-	];
-	
 	local output = "";
-	for (local i = 0; i < list.length; i++)
+	for (i = 0; i < links.length; i++)
 	{
-		output += list[i];
+		//Name then 0x01, URL then 0x02
+		output += links[i].name + (1).ToAscii();
+		output += links[i].url + (2).ToAscii();
 	}
 	return output;
 }
 
+function sakura@recommendsites
+{
+	return FormatLinks([
+		{name: "Galla", url: "https://gallathegalla.github.io/gtg-ghosts/"},
+		{name: "Pommy", url: "https://www.youtube.com/@pommy_the_mimic"},
+		{name: "Zichqec", url: "https://ukagaka.zichqec.com/"},
+	]);
+}
+
 function sakura@portalsites
 {
-	return "Leave a Reviewhttps://docs.google.com/forms/d/e/1FAIpQLSdQvI9uWCeT3mD_bUcpIpgN25om1LZYinhkwJxCkrTo203_Cg/viewform";
+	return FormatLinks([
+		{name: "Leave a Review", url: "https://docs.google.com/forms/d/e/1FAIpQLSdQvI9uWCeT3mD_bUcpIpgN25om1LZYinhkwJxCkrTo203_Cg/viewform"},
+	]);
 }
 
 function homeurl
