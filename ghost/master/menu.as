@@ -129,16 +129,13 @@ function OnItemChange
 
 function OnNotifyDressupInfo
 {
-	//[character ID, category name, part name, option, on-1/off-0, thumbnail path]
 	/*
-	
 	[0] character ID
 	[1] category name
 	[2] part name
 	[3] option
 	[4] on-1/off-0
 	[5] thumbnail path
-	
 	*/
 	CurrentSakuraItem = [];
 	CurrentKeroItem = [];
@@ -263,5 +260,6 @@ function OnKeroMenu
 	}
 	
 	output += "\![*]\__q[blank]As you were!\__q";
+	
 	return output;
 }
