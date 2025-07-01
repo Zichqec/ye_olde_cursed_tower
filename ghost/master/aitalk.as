@@ -220,7 +220,7 @@ talk RandomTalk
 	0:And were you?
 	1:I wish. I basically have no capacity to make use of my mana whatsoever. It turns out we had a well-meaning brownie in the house that got a little confused about where things are supposed to go because my dad stuffed all my toys under my bed a few too many times... Those things love cleaning, and if they see where you put things to tidy up enough times, well...
 	0:... They try to put them where you want them. I see. That is... rather adorable.
-	1:Right!? I bet it was a baby brownie.. still learning how terrible we are at keeping organized.
+	1:Right!? I bet it was a baby brownie... still learning how terrible we are at keeping organized.
 	0:Heh. Indeed.
 }
 
