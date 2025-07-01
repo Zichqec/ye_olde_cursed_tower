@@ -1,3 +1,4 @@
+//—————————— Misc SHIORI events ——————————
 function OnTranslate
 {
 	local talkstr = Shiori.Reference[0]; //I REMEMBERED THIS TIME
@@ -57,6 +58,94 @@ function OnTranslate
 	return talkstr;
 }
 
+function OnKeyPress
+{
+	if (Shiori.Reference[0] == "f1") return "\![open,readme]";
+	else if (Shiori.Reference[0] == "t") return OnPromptTalk;
+	else if (Shiori.Reference[0] == "r") return OnLastTalk;
+}
+
+function OnSurfaceRestore
+{
+	return "{GetCoords}\0\s[0]\![set,alpha,100]\1\s[10]\![set,alpha,100]";
+}
+
+
+//—————————— Update related ——————————
+function homeurl
+{
+	return "https://raw.githubusercontent.com/Zichqec/ye_olde_cursed_tower/main/";
+}
+
+function ghostver
+{
+	return "v1.0.0";
+}
+
+
+//—————————— Right click menu ——————————
+function sakura@recommendsites
+{
+	return FormatLinks([
+		{name: "Galla", url: "https://gallathegalla.github.io/gtg-ghosts/"},
+		{name: "Pommy", url: "https://www.youtube.com/@pommy_the_mimic"},
+		{name: "Zichqec", url: "https://ukagaka.zichqec.com/"},
+	]);
+}
+
+function sakura@portalsites
+{
+	return FormatLinks([
+		{name: "Leave a Review", url: "https://docs.google.com/forms/d/e/1FAIpQLSdQvI9uWCeT3mD_bUcpIpgN25om1LZYinhkwJxCkrTo203_Cg/viewform"},
+	]);
+}
+
+function FormatLinks(links)
+{
+	local output = "";
+	for (i = 0; i < links.length; i++)
+	{
+		//Name then 0x01, URL then 0x02
+		output += links[i].name + (1).ToAscii();
+		output += links[i].url + (2).ToAscii();
+	}
+	return output;
+}
+
+//—————————— State checks (which are also just shortcuts but shhh) ——————————
+function GetCoords
+{
+	return "\![get,property,OnGetCoords,currentghost.scope(0).x,currentghost.scope(0).y,currentghost.scope(1).x,currentghost.scope(1).y]";
+}
+
+function OnGetCoords
+{
+	Save.Data.SakuraCoords = {x: Shiori.Reference[0].ToNumber(), y: Shiori.Reference[1].ToNumber()};
+	Save.Data.KeroCoords = {x: Shiori.Reference[2].ToNumber(), y: Shiori.Reference[3].ToNumber()};
+}
+
+function FarApart
+{
+	local maxdistance = 500; //px
+	
+	local xdiff = Save.Data.SakuraCoords.x - Save.Data.KeroCoords.x;
+	local ydiff = Save.Data.SakuraCoords.y - Save.Data.KeroCoords.y;
+	
+	if (xdiff < 0) xdiff *= -1;
+	if (ydiff < 0) ydiff *= -1;
+	
+	if (xdiff > maxdistance || ydiff > maxdistance) return 1;
+	else return 0;
+}
+
+function BalloonIsOpen
+{
+	local status = Shiori.Headers.Status.ToString();
+	
+	if (status.Contains("balloon") || status.Contains("choosing")) return 1;
+	else return 0;
+}
+
 function OnNotifySelfInfo
 {
 	Save.Data.BalloonName = Shiori.Reference[5];
@@ -67,6 +156,8 @@ function OnBalloonChange
 	Save.Data.BalloonName = Shiori.Reference[0];
 }
 
+
+//—————————— Shortcuts ——————————
 function emdash
 {
 	return "\f[name,calibri]—\f[name,default]";
