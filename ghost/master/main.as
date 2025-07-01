@@ -40,7 +40,6 @@ function OnFirstBoot
 function OnVanishSelected
 {
 	Save.Data.Vanishing = 1;
-	VanishTime = Time.GetNowUnixEpoch();
 	local output = "";
 	if (Save.Data.Reinstalls > 0) output += "\t\*" + Vanish_2();
 	else output += Vanish_1();
@@ -50,7 +49,6 @@ function OnVanishSelected
 function OnVanishButtonHold
 {
 	Save.Data.Vanishing = 0;
-	VanishTime = -1;
 	return "\0\s[0]\![set,alpha,100]\1\s[10]\![set,alpha,100]" + Vanish_Cancel();
 }
 
