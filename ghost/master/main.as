@@ -61,15 +61,6 @@ function OnVanishButtonHold
 	return "\0\s[0]\![set,alpha,100]\1\s[10]\![set,alpha,100]" + Vanish_Cancel();
 }
 
-//I set this up to try and cover the first option of the uninstall block setting, but actually i think it is not necessary because the only way it comes into play is if you attempt to uninstall yourself? which that option blocks
-// function OnSecondChange
-// {
-	// if (Save.Data.Vanishing == 1)
-	// {
-		// return "\t\_w[3000]\![raise,OnFirstBoot,{Save.Data.Reinstalls.ToNumber() + 1}]";
-	// }
-// }
-
 function OnBoot
 {
 	if (Save.Data.Vanishing == 1 || Save.Data.Reinstalls >= 2)
