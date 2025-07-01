@@ -24,16 +24,23 @@ function OnFirstBoot
 {
 	Save.Data.Vanishing = 0;
 	Save.Data.Reinstalls = Shiori.Reference[0];
-	local output = "\0\s[0]\1\s[10]";
+	local output = "";
+	
 	if (Shiori.Reference[0] >= 2)
 	{
-		if (Save.Data.TalkInterval == 0) Save.Data.TalkInterval = 180; //If talking was disabled, make it not that anymore
+		if (Save.Data.TalkInterval == 0) Save.Data.TalkInterval = 180; //If talking was disabled, make it not that anymore (because you can't access the menu in this mode)
 		output += "\0\![bind,Hide,Hide,1]";
 		output += "\1\![bind,Hide,Hide,1]";
 		output += OnPromptTalk();
 	}
-	else if (Shiori.Reference[0] == 1) output += FirstBoot_2();
-	else output += FirstBoot_1();
+	else
+	{
+		output += "\0\s[0]\1\s[10]";
+		
+		if (Shiori.Reference[0] == 1) output += FirstBoot_2();
+		else output += FirstBoot_1();
+	}
+	
 	return output;
 }
 
@@ -41,8 +48,10 @@ function OnVanishSelected
 {
 	Save.Data.Vanishing = 1;
 	local output = "";
+	
 	if (Save.Data.Reinstalls > 0) output += "\t\*" + Vanish_2();
 	else output += Vanish_1();
+	
 	return output += "\_w[3000]";
 }
 
