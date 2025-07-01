@@ -262,18 +262,6 @@ function OnKeroMenu
 		output += "\n\n";
 	}
 	
-	//output += "{CurrentSakuraItem[0]},{CurrentSakuraItem[1]},{CurrentSakuraItem[2]}\n{CurrentKeroItem[0]},{CurrentKeroItem[1]},{CurrentKeroItem[2]},\n\n";
-	
-	// if (FarApart()) output += "Lonely sad :(";
-	// else output += "Friendship :)";
-	
-	// output += "\n\n";
-	
-	// output += "Sakura X: {Save.Data.SakuraCoords.x}\n";
-	// output += "Sakura Y: {Save.Data.SakuraCoords.y}\n\n";
-	// output += "Kero X: {Save.Data.KeroCoords.x}\n";
-	// output += "Kero Y: {Save.Data.KeroCoords.y}\n\n";
-	
 	output += "\![*]\__q[blank]As you were!\__q";
 	return output;
 }
