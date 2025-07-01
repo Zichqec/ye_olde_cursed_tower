@@ -78,16 +78,15 @@ function OnBoot
 //Yes, I tried to do like the other functions and separate this into a function to get the coords and then one to close. Problem with that is it only works in multi-ghost settings... if they're the only ghost you have open, SSP forces them to close when OnClose is done, regardless of other functions you try to raise. Probably the same is true of clicking quit, and maybe various other cases. This is a problem I would have to solve at the source.
 function OnClose
 {
-	if (Save.Data.Reinstalls >= 2)
-	{
-		return "\-";
-	}
+	if (Save.Data.Reinstalls >= 2) return "\-";
 	
 	local output = "{GetCoords}\0\s[0]\1\s[10]";
+	
 	if (FarApart() != Save.Data.FarApart) //Mismatch means the state must have changed
 	{
 		if (FarApart()) output += Reflection.Get("ApartTransitionTalk")();
 		else output += Reflection.Get("TogetherTransitionTalk")();
+		
 		Save.Data.FarApart = FarApart();
 	}
 	else if (FarApart()) output += CloseApartTalk();
@@ -103,11 +102,6 @@ function OnPromptTalk
 	return LastTalk;
 }
 
-//What I need for this far apart dealio is a latch...
-//Use a variable to track the current state, and we know what the function says the current state is
-//If they do not match, transition?
-//And then after transition, change the variable
-//Only problem is OnBoot, but for that I think we just fall back to the function and assume they had the transition dialogue while you were away
 function OnAITalk
 {
 	return "{GetCoords}\![raise,OnSendTalk]";
@@ -117,6 +111,7 @@ function OnSendTalk
 {
 	//Surface calls go *here* because if you put them in the talk builder then they bend to the whims of the talk builder
 	LastTalk = "\0\s[0]\1\s[10]";
+	
 	if (Save.Data.Reinstalls >= 2)
 	{
 		LastTalk += "\t\*" + Reflection.Get("FinalTalk")() + "\_w[5000]\![vanishbymyself]";
@@ -125,10 +120,12 @@ function OnSendTalk
 	{
 		if (FarApart()) LastTalk += Reflection.Get("ApartTransitionTalk")();
 		else LastTalk += Reflection.Get("TogetherTransitionTalk")();
+		
 		Save.Data.FarApart = FarApart();
 	}
 	else if (FarApart()) LastTalk += Reflection.Get("ApartTalk")();
 	else LastTalk += Reflection.Get("RandomTalk")();
+	
 	return LastTalk;
 }
 
@@ -150,8 +147,10 @@ function OnSendStroked
 	if (FarApart() != Save.Data.FarApart) //Mismatch means the state must have changed
 	{
 		local output = "";
+		
 		if (FarApart()) output += Reflection.Get("ApartTransition{which}")();
 		else output += Reflection.Get("TogetherTransition{which}")();
+		
 		Save.Data.FarApart = FarApart();
 		return output;
 	}
@@ -183,9 +182,9 @@ function OnKeyPress
 
 function OnMouseDragEnd
 {
-	local output = "";
-	if (BalloonIsOpen()) output += "\C";
-	output += "{GetCoords}";
+	local output = "{GetCoords}";
+	if (BalloonIsOpen()) output = "\C" + output;
+	
 	return output;
 }
 
@@ -217,6 +216,7 @@ function FarApart
 function BalloonIsOpen
 {
 	local status = Shiori.Headers.Status.ToString();
+	
 	if (status.Contains("balloon") || status.Contains("choosing")) return 1;
 	else return 0;
 }
