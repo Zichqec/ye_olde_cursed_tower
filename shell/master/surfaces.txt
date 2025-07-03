@@ -27,6 +27,7 @@ surface0,10
 	animation1000100.pattern5,replace,1000105,65,0,0
 	animation1000100.pattern6,replace,1000106,65,0,0
 	animation1000100.pattern7,replace, -1,65,0,0
+	animation1000100.option,shared-index
 	
 	//Talk
 	animation1000200.interval,bind+talk,4
