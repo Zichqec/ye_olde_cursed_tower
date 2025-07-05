@@ -14,14 +14,14 @@ function OnSakuraMenu
 	output += "\![*]\__q[OnItemMenu,0]Soul transfer\__q";
 	output += "\n\n";
 	
-	if (Save.Data.BalloonName == "Ye Olde Soul Spell")
+	if (DefaultBalloon())
 	{
 		output += "\![*]\__q[OnBalloonColorMenu,0]Spell choice\__q";
 		output += "\n\n";
 	}
 	
 	local talkrates = TalkRates();
-	if (Save.Data.BalloonName == "Ye Olde Soul Spell") output += "Talk rate:      ";
+	if (DefaultBalloon()) output += "Talk rate:      ";
 	else output += "Talk rate:  ";
 	
 	if (Save.Data.TalkInterval == 0) output += "\f[underline,true]\_a[OnChangeTalkInterval,0]Silence!\_a\f[underline,default]";
@@ -33,7 +33,7 @@ function OnSakuraMenu
 		if (talkrates[i].time == Save.Data.TalkInterval) output += "\f[underline,true]\_a[OnChangeTalkInterval,{talkrates[i].time}]{talkrates[i].label}\_a\f[underline,default]";
 		else output += "\__q[OnChangeTalkInterval,{talkrates[i].time}]{talkrates[i].label}\__q";
 		
-		if (Save.Data.BalloonName == "Ye Olde Soul Spell") output += " ";
+		if (DefaultBalloon()) output += " ";
 		else output += "  ";
 	}
 	
@@ -55,7 +55,7 @@ function OnItemMenu
 	local CharacterItem = [];
 	if (Shiori.Reference[0] == "1") CharacterItem = CurrentKeroItem;
 	else CharacterItem = CurrentSakuraItem;
-	local scope = Shiori.Reference[0]; //I should check if this is empty buuuuuuut we'll pretend it never will be! (fix later TODO lol)
+	local scope = Shiori.Reference[0]; //I should check if this is empty buuuuuuut we'll pretend it never will be! -- It seems to be working fine for references...?
 	
 	local output = "";
 	output += "\C\{scope}\![lock,balloonrepaint]\c";
@@ -86,12 +86,12 @@ function OnItemMenu
 		local tag = "[OnItemChange,{scope},{CharacterItem[0]} {currentitem.positions[i]} {CharacterItem[2]}]{currentitem.positions[i].Replace('_',' ')}";
 		if (currentitem.positions[i] == CharacterItem[1]) output += "\_a{tag}\_a  ";
 		else output += "\__q{tag}\__q  ";
-		if (Save.Data.BalloonName == "Ye Olde Soul Spell" && i == 1) output += "\n"; //Bandaid patch for word wrap awkwardness...
+		if (DefaultBalloon() && i == 1) output += "\n"; //Bandaid patch for word wrap awkwardness...
 	}
 	output += "\c[char,2]\n\n";
 	
 	//Bandaid patch because the above patch makes for awkwardness with buttons jumping around...
-	if (Save.Data.BalloonName == "Ye Olde Soul Spell" && CharacterItem[0] != "Gem") output += "\n";
+	if (DefaultBalloon() && CharacterItem[0] != "Gem") output += "\n";
 	
 	output += "Color:\n";
 	for (local i = 0; i < currentitem.colors.length; i++)
@@ -253,7 +253,7 @@ function OnKeroMenu
 	output += "\![*]\__q[OnItemMenu,1]Soul transfer\__q";
 	output += "\n\n";
 	
-	if (Save.Data.BalloonName == "Ye Olde Soul Spell")
+	if (DefaultBalloon())
 	{
 		output += "\![*]\__q[OnBalloonColorMenu,1]Spell choice\__q";
 		output += "\n\n";
