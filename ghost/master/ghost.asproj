@@ -2,6 +2,7 @@ aitalk.as
 boot.as
 main.as
 menu.as
+meta.as
 mouse.as
 other.as
 word.as
