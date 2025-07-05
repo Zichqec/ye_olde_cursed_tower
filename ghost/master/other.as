@@ -37,7 +37,7 @@ function OnTranslate
 		talkstr = talkstr.Replace("!\0","!\w8\w8\0");
 	}
 	
-	if (ExpectedBalloon())
+	if (DefaultBalloon())
 	{
 		talkstr = talkstr.Replace("\0\b[0]","\0\b[{SakuraBalloonColor}0]");
 		talkstr = talkstr.Replace("\0\b[2]","\0\b[{SakuraBalloonColor}2]");
@@ -173,7 +173,7 @@ function KeroBalloonColor
 	return Save.Data.KeroBalloonColor;
 }
 
-function ExpectedBalloon
+function DefaultBalloon
 {
 	return Save.Data.BalloonName == "Ye Olde Soul Spell";
 }
@@ -200,13 +200,13 @@ function fadeout
 
 function br
 {
-	if (ExpectedBalloon()) return "\n";
+	if (DefaultBalloon()) return "\n";
 	else return " ";
 }
 
 //This is the same idea as br, but to be used if you have to put it immediately after a punctuation mark that gets a \w tag added. This way you get the space that triggers autopause, but the \c cleans it up
 function brc
 {
-	if (ExpectedBalloon()) return " \c[char,1]\n";
+	if (DefaultBalloon()) return " \c[char,1]\n";
 	else return " ";
 }
