@@ -19,7 +19,7 @@ talk RandomTalk
 	0:I think you may have some misunderstanding of what it means to combat a dragon.
 	1:... Okaaay...
 	0:Most dragons do not possess the intelligence to be more of a threat to man than any large predator.
-	1:Wait, then the old 'knight slays a dragon' cliché is made up!?
+	1:Wait, then the old{br}'knight slays a dragon' cliché is made up!?
 	0:Not entirely. Those that do possess notable intelligence often become violent tyrants, uncontrolled by the lord whose lands they reside within. Lords do not care for the competition.
 	1:... Yeah, that... that makes sense, actually...
 }
@@ -64,7 +64,7 @@ talk RandomTalk
 {
 	1:\b[2]Hehehehe...
 	0:\b[0]Is something funny?
-	1:I was just thinking that if you were put into a lightbulb, you'd be a nightlight...
+	1:I was just thinking that if you were put into a lightbulb, you'd{br}be a nightlight...
 	0:...
 	1:You know... because you're a knight... and you would be a light...?
 	0:Heh. That is funny.
@@ -118,7 +118,7 @@ talk RandomTalk
 talk RandomTalk
 {
 	1:\b[4]Did you have any pets? As a kid, or before all of this, whatever.
-	0:\b[2]In a way. I had a horse that I raised and trained by hand. He served me well in combat.
+	0:\b[2]In a way. I had a horse that I raised and trained by hand.{brc}He served me well in combat.
 	1:Combat, sure... I had an ant farm, and when I was younger, my family had a dog.
 	0:Ah, my family also had dogs. They kept our home entertaining.
 	1:Yeah, right? I wouldn't mind getting a puppy once we're out of here.
@@ -168,7 +168,7 @@ talk RandomTalk
 talk RandomTalk
 {
 	1:\b[2]What actually happened for you to, uh... end up like this?
-	0:\b[4]Ah. I was attending to my duties as a protector of the lord's lands. There had been numerous reports of people going missing in recent years. Many of which were said to have gone to the wizard to seek assistance in some matter before their disappearances.
+	0:\b[4]Ah. I was attending to my duties as a protector of the{br}lord's lands. There had been numerous reports of people going missing in recent years. Many of which were said to have gone to the wizard to seek assistance in some matter before their disappearances.
 	1:Oh no...
 	0:Indeed. The wizard did not care for anyone probing into what was taking place in this tower. I was prepared for the possibility that I might be combating the arcane, but the wizard was equally prepared for our confrontation and came out the victor.
 	1:... And you ended up like this?
@@ -182,10 +182,10 @@ talk RandomTalk
 	1:\b[4]Do you like the beach?
 	0:\b[4]It can be a lovely place, but no, I believe it too dangerous to 'like' it.
 	1:Dangerous? What do you mean?
-	0:Oceans dark and deep, endless horizons, deadly storms and deadlier monsters lurking beneath the surface. There's little that isn't dangerous about it.
+	0:Oceans dark and deep, endless horizons, deadly storms and deadlier monsters lurking beneath the surface.{brc}There's little that{br}isn't dangerous about it.
 	1:Oh! I don't mean out in the waters, I mean, like... hanging out on the sand, maybe digging some holes, looking for sea shells...
 	0:...? I suppose it isn't unusual for people to gather along the shore, but that isn't work that I've done, no.
-	1:Uhm... alright. Well! I think it's nice. I like making a hollow in the sand, with a trench for the water to flood in. It's a great way to take a nap. As long as you don't sleep so long you get burnt...
+	1:Uhm... alright. Well!{brc}I think it's nice. I like making a hollow in the sand, with a trench for the water to flood in. It's a great way to take a nap. As long as you don't sleep so long you get burnt...
 	0:I take it that has happened to you?
 	1:... More than once...
 }
