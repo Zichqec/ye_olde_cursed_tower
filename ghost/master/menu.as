@@ -146,16 +146,14 @@ function OnNotifyDressupInfo
 		local byte1 = (1).ToAscii();
 		dressup = dressup.Split(byte1);
 		
-		//if (dressup[1] == "Hide") continue;
-		if (dressup[1] != "Hide") //Bandaid patch until continue bug is fixed
+		if (dressup[1] == "Hide") continue;
+		
+		if (dressup[4] == "1")
 		{
-			if (dressup[4] == "1")
-			{
-				if (dressup[0] == "1") CurrentKeroItem = dressup[2].Split(" ");
-				else CurrentSakuraItem = dressup[2].Split(" ");
-			}
-			if (dressup[0] == "0") AvailableDressups.Add(dressup[2]);
+			if (dressup[0] == "1") CurrentKeroItem = dressup[2].Split(" ");
+			else CurrentSakuraItem = dressup[2].Split(" ");
 		}
+		if (dressup[0] == "0") AvailableDressups.Add(dressup[2]);
 	}
 }
 
