@@ -212,6 +212,7 @@ function OnChangeTalkInterval
 	return OnSakuraMenu;
 }
 
+
 //———————————————————— Kero menu ————————————————————
 function OnKeroMenu
 {
