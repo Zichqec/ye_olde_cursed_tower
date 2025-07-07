@@ -156,6 +156,36 @@ function OnBalloonChange
 	Save.Data.BalloonName = Shiori.Reference[0];
 }
 
+function OnNotifyDressupInfo
+{
+	/*
+	[0] character ID
+	[1] category name
+	[2] part name
+	[3] option
+	[4] on-1/off-0
+	[5] thumbnail path
+	*/
+	CurrentSakuraItem = [];
+	CurrentKeroItem = [];
+	AvailableDressups = [];
+	for (local i = 0; i < Shiori.Reference.length; i++)
+	{
+		local dressup = Shiori.Reference[i];
+		local byte1 = (1).ToAscii();
+		dressup = dressup.Split(byte1);
+		
+		if (dressup[1] == "Hide") continue;
+		
+		if (dressup[4] == "1")
+		{
+			if (dressup[0] == "1") CurrentKeroItem = dressup[2].Split(" ");
+			else CurrentSakuraItem = dressup[2].Split(" ");
+		}
+		if (dressup[0] == "0") AvailableDressups.Add(dressup[2]);
+	}
+}
+
 
 //—————————— Shortcuts ——————————
 function emdash
