@@ -225,7 +225,6 @@ talk RandomTalk
 }
 
 //———————————————————— Apart Talk ————————————————————
-
 talk ApartTalk
 {
 	0:\b[6]... Disgusting.
@@ -379,7 +378,7 @@ talk FinalTalk
 	0:\b[2]What do you think we should make our first meal?
 	1:\b[4]Hmm, good question... There's a lot of great options! If I had to pick one, though, I'd saaayyy... Pizza!
 	0:Pizza?
-	1:Pizza! It has a little bit of all the main food groups, but mostly bread and grease! It's delicious! 
+	1:Pizza! It has a little bit of all the main food groups, but mostly bread and grease! It's delicious!
 	0:...? Very well. Pizza it is.
 	1:Yay!
 }
