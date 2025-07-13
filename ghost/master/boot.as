@@ -31,6 +31,15 @@ talk BootTalk
 	1:Heheh... I have a good teacher!
 }
 
+talk BootTalk
+{
+	1:\b[4]{emdash} and then next thing I knew I was face to face with this big spider that{emdash}\w8\w8 AAH!
+	0:\b[0]Calm yourself. It is only the wizard.
+	1:Oh... I... I thought it was that spider coming back to take a bite out of me...
+	0:You did not defeat it at the time?
+	1:Um, you know, maybe I'll tell this story another day...
+}
+
 
 //———————————————————— Boot apart ————————————————————
 talk BootApartTalk
@@ -52,6 +61,12 @@ talk BootApartTalk
 talk BootApartTalk
 {
 	0:\b[6]Finally returned, have you?
+}
+
+talk BootApartTalk
+{
+	0:\b[0]You took your time. I suppose it does not matter much to you,{brc}since you can come and go as you please.
+	1:\b[6]... hello...? is... is someone there...?
 }
 
 
@@ -89,6 +104,17 @@ talk CloseTalk
 	1:Right, right...
 }
 
+talk CloseTalk
+{
+	0:\b[2]Solace at last.
+	1:\b[0]Huh? What do you mean?
+	0:Can you feel how the magical field has shifted?
+	1:Oh... OH! Of course. Yay!
+	0:Wait a few moments more to begin celebrations.
+	1:Okay, okay...
+}
+
+
 //———————————————————— Close apart ————————————————————
 talk CloseApartTalk
 {
@@ -115,11 +141,17 @@ talk CloseApartTalk
 	Such cowardice.
 }
 
+talk CloseApartTalk
+{
+	0:\b[0]Off to do important wizard things, are you? Such cruelty, to not allow us even each other's company while you are absent.
+	1:\b[6]... wait, don't...{brc}Don't go...!
+}
+
 
 //———————————————————— Firstboot & Vanish ————————————————————
 talk FirstBoot_1
 {
-	1:\b[4]— and this was, like, the 3rd time this had happened to me? Which feels extremely unlikely.
+	1:\b[4]{emdash} and this was, like, the 3rd time this had happened to me? Which feels extremely unlikely.
 	0:\b[4]Yes, it does.
 	1:But it did! Seriously, what's someone supposed to do about that many birds?
 	0:I hate to interrupt, but we seem to have company.
