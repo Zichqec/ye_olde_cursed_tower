@@ -9,9 +9,23 @@ surface0,10
 }
 
 
+sakura.cursor
+{
+	mouseup0,stroke,system:hand
+	mousedown0,stroke,system:grip
+}
+
+kero.cursor
+{
+	mouseup0,stroke,system:hand
+	mousedown0,stroke,system:grip
+}
+
 //——————————————— Gem ———————————————
 surface0,10
 {
+	collision0,0,0,256,256,stroke
+	
 	//——————————————— Main position / main color ———————————————
 	//Base
 	animation1000000.interval,bind
