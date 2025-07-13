@@ -609,17 +609,22 @@ surface0,10
 	
 	//Idle
 	animation3100100.interval,bind+random,20
-	animation3100100.pattern0, replace,3100100,0,0,0
-	animation3100100.pattern1, replace,3100101,65,0,0
-	animation3100100.pattern2, replace,3100102,65,0,0
-	animation3100100.pattern3, replace,3100103,65,0,0
-	animation3100100.pattern4, replace,3100104,65,0,0
-	animation3100100.pattern5, replace,3100105,65,0,0
-	animation3100100.pattern6, replace,3100106,65,0,0
-	animation3100100.pattern7, replace,3100107,65,0,0
-	animation3100100.pattern8, replace,3100108,65,0,0
-	animation3100100.pattern9, replace,3100109,65,0,0
-	animation3100100.pattern10,replace, -1,65,0,0
+	animation3100100.pattern0 ,replace,3100100,0,0,0
+	animation3100100.pattern1 ,replace,3100101,65,0,0
+	animation3100100.pattern2 ,replace,3100102,65,0,0
+	animation3100100.pattern3 ,replace,3100103,65,0,0
+	animation3100100.pattern4 ,replace,3100104,65,0,0
+	animation3100100.pattern5 ,replace,3100105,65,0,0
+	animation3100100.pattern6 ,replace,3100106,65,0,0
+	animation3100100.pattern7 ,replace,3100107,65,0,0
+	animation3100100.pattern8 ,replace,3100108,65,0,0
+	animation3100100.pattern9 ,replace,3100109,65,0,0
+	animation3100100.pattern10,replace,3100110,65,0,0
+	animation3100100.pattern11,replace,3100111,65,0,0
+	animation3100100.pattern12,replace,3100112,65,0,0
+	animation3100100.pattern13,replace,3100113,65,0,0
+	animation3100100.pattern14,replace,3100114,65,0,0
+	animation3100100.pattern15,replace, -1,65,0,0
 	animation3100100.option,shared-index
 	
 	//Talk
@@ -658,17 +663,22 @@ surface0,10
 	
 	//Idle
 	animation3101100.interval,bind+random,20
-	animation3101100.pattern0, replace,3101100,0,0,0
-	animation3101100.pattern1, replace,3101101,65,0,0
-	animation3101100.pattern2, replace,3101102,65,0,0
-	animation3101100.pattern3, replace,3101103,65,0,0
-	animation3101100.pattern4, replace,3101104,65,0,0
-	animation3101100.pattern5, replace,3101105,65,0,0
-	animation3101100.pattern6, replace,3101106,65,0,0
-	animation3101100.pattern7, replace,3101107,65,0,0
-	animation3101100.pattern8, replace,3101108,65,0,0
-	animation3101100.pattern9, replace,3101109,65,0,0
-	animation3101100.pattern10,replace, -1,65,0,0
+	animation3101100.pattern 0,replace,3101100,0,0,0
+	animation3101100.pattern 1,replace,3101101,65,0,0
+	animation3101100.pattern 2,replace,3101102,65,0,0
+	animation3101100.pattern 3,replace,3101103,65,0,0
+	animation3101100.pattern 4,replace,3101104,65,0,0
+	animation3101100.pattern 5,replace,3101105,65,0,0
+	animation3101100.pattern 6,replace,3101106,65,0,0
+	animation3101100.pattern 7,replace,3101107,65,0,0
+	animation3101100.pattern 8,replace,3101108,65,0,0
+	animation3101100.pattern 9,replace,3101109,65,0,0
+	animation3101100.pattern10,replace,3101110,65,0,0
+	animation3101100.pattern11,replace,3101111,65,0,0
+	animation3101100.pattern12,replace,3101112,65,0,0
+	animation3101100.pattern13,replace,3101113,65,0,0
+	animation3101100.pattern14,replace,3101114,65,0,0
+	animation3101100.pattern15,replace, -1,65,0,0
 	animation3101100.option,shared-index
 	
 	//Talk
