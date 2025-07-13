@@ -167,7 +167,7 @@ talk RandomTalk
 
 talk RandomTalk
 {
-	1:\b[2]What actually happened for you to, uh... end up like this?
+	1:\b[2]What actually happened for you to,{brc}uh... end up like this?
 	0:\b[4]Ah. I was attending to my duties as a protector of the{br}lord's lands. There had been numerous reports of people going missing in recent years. Many of which were said to have gone to the wizard to seek assistance in some matter before their disappearances.
 	1:Oh no...
 	0:Indeed. The wizard did not care for anyone probing into what was taking place in this tower. I was prepared for the possibility that I might be combating the arcane, but the wizard was equally prepared for our confrontation and came out the victor.
@@ -254,6 +254,11 @@ talk ApartTalk
 
 talk ApartTalk
 {
+	0:\b[6]... What a wretched creature.
+}
+
+talk ApartTalk
+{
 	1:\b[6]... It's so quiet...
 }
 
@@ -304,6 +309,13 @@ talk ApartTalk
 	1:\b[6]Where did she go? What did you do with her?
 }
 
+talk ApartTalk
+{
+	1:\b[0]Hello? Are you out there...?
+	
+	... you must be somewhere...
+}
+
 
 //———————————————————— Transition to together (from aitalk, mouse, and close*) ————————————————————
 //Add TogetherTransitionSakura for transitions that specifically can take place when stroking the sakura, and TogetherTransitionKero for transitions that specifically can take place when stroking the kero
@@ -317,18 +329,37 @@ talk TogetherTransitionTalk
 	1:Hi!
 }
 
+talk TogetherTransitionTalk
+{
+	1:\b[0]...? Hello?
+	0:\b[6]Hello.
+	1:Aha! I thought that was you! Hi!
+	0:Indeed it is.
+	1:I'm so glad...
+}
+
 
 //———————————————————— Transition to apart (from aitalk, mouse, and close*) ————————————————————
 //Add ApartTransitionSakura for transitions that specifically can take place when stroking the sakura, and ApartTransitionKero for transitions that specifically can take place when stroking the kero
 
 talk ApartTransitionTalk
 {
-	1:\b[0]So, I was thinking...
+	1:\b[0]So, I was thinking...\w8\w8
 	
-	...? Are you there?
+	...? Are you there?\w8
 	
 	... hello...?
 	0:\b[2]... If you possessed any sort of empathy, you would cease with these games. Keeping us here is torturous enough without taking away what few sources of comfort he has.
+}
+
+talk ApartTransitionTalk
+{
+	1:\b[2]Oh, oh, I thought of a joke. Are you ready?\w8\w8\w8\w8
+	
+	...? Hello...?\w8\w8
+	
+	... where did you take her...?
+	0:\b[0]... I have to wonder what possesses someone to act with such cruelty.
 }
 
 

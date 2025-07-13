@@ -23,6 +23,11 @@ talk KeroStroked
 	1:\b[6]A little polish and shine!
 }
 
+talk KeroStroked
+{
+	1:\b[6]Hehehehe, that tickles!
+}
+
 talk KeroApartStroked
 {
 	1:\b[6]... warm...
