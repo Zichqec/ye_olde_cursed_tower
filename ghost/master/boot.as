@@ -65,7 +65,7 @@ talk BootApartTalk
 
 talk BootApartTalk
 {
-	0:\b[0]You took your time. I suppose it does not matter much to you,{brc}since you can come and go as you please.
+	0:\b[0]You took your time. I suppose it does not matter much to you,{br}since you can come and go as you please.
 	1:\b[6]... hello...? is... is someone there...?
 }
 
@@ -144,7 +144,7 @@ talk CloseApartTalk
 talk CloseApartTalk
 {
 	0:\b[0]Off to do important wizard things, are you? Such cruelty, to not allow us even each other's company while you are absent.
-	1:\b[6]... wait, don't...{brc}Don't go...!
+	1:\b[6]... wait, don't...{br}Don't go...!
 }
 
 
