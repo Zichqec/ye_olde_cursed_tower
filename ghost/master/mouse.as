@@ -59,6 +59,16 @@ talk ApartTransitionSakura
 	\f[color,disable]... hello...?
 }
 
+talk ApartTransitionTalk
+{
+	0:\b[6]... Fiend.
+	1:\b[2]Hey, did you hear something?\w8\w8
+	
+	... Hey? Are you there...?\w8\w8
+	
+	\f[color,disable]... not again, not again...
+}
+
 talk ApartTransitionKero
 {
 	1:\b[0]Oh! We're not moving somewhere, are we?

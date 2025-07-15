@@ -20,3 +20,18 @@ function liveyourlife
 		"capture a new soul for your collection",
 	]);
 }
+
+function toes
+{
+	return Random.Select([
+		"toes",
+		"fingers",
+		"hands",
+		"feet",
+		"fingernails",
+		"arms",
+		"legs",
+		"teeth",
+		"eyelids",
+	]);
+}

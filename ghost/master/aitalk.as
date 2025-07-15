@@ -224,6 +224,36 @@ talk RandomTalk
 	0:Heh. Indeed.
 }
 
+talk RandomTalk
+{
+	1:\b[2]Brrr! Goosebumps!
+	0:\b[2]Feeling chilled again?
+	1:Yeah! I wonder if the wizard opened a window or something?
+	0:Perhaps, perhaps not. I have ceased to experience those sensations, and I suspect the same will be true for you eventually.
+	1:... Yeah, maybe.
+}
+//Do these two contradict each other, they feel like maybe they do
+talk RandomTalk
+{
+	1:\b[4]Can you feel your {toes}?
+	0:\b[2]...? Not in particular, no.
+	1:Sometimes I feel like I can, but not really? Like they're there... but they're also not. You know?
+	0:Hm. Now that you mention it, I did used to have a similar feeling a very long time ago.
+	1:Oh... but not anymore?
+	0:No.
+	1:oh...
+}
+
+talk RandomTalk
+{
+	1:\b[4]Hey, I thought of one good thing about being in here!
+	0:\b[0]Oh?
+	1:I'm not allergic to flowers anymore!
+	0:Ah. You are afflicted with the hay fever?
+	1:Yeah, usually. Every spring and fall it gets bad, I get sneezy and my eyes water. But now I don't even \f[italic,1]have\f[italic,default] eyes or a nose!
+	0:That is one way of looking at it.
+}
+
 
 //———————————————————— Apart Talk ————————————————————
 talk ApartTalk
@@ -413,4 +443,15 @@ talk FinalTalk
 	1:Pizza! It has a little bit of all the main food groups, but mostly bread and grease! It's delicious!
 	0:...? Very well. Pizza it is.
 	1:Yay!
+}
+
+talk FinalTalk
+{
+	1:\b[4]We've got to get you some casual clothing.
+	0:\b[2]This attire is not suitable?
+	1:No way! A full suit of armor!? Who wears armor these days!
+	0:Usually, those who wish to return safely home after a battle.
+	1:Exactly, and we're not heading off to a battle, we're heading to the mall to get you something to wear!
+	0:Have you coin to purchase new clothing?
+	1:Not yet, but I'll figure something out!
 }
