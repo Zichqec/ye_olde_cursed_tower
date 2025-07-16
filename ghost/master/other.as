@@ -233,3 +233,36 @@ function br
 	if (DefaultBalloon()) return " \c[char,1]\n";
 	else return " ";
 }
+
+function getaistate
+{
+	local Points = [
+		{name: "RandomTalk", val: RandomTalk.length},
+		{name: "ApartTalk", val: ApartTalk.length},
+		{name: "FinalTalk", val: FinalTalk.length},
+		{name: "SakuraStroked", val: SakuraStroked.length},
+		{name: "SakuraApartStroked", val: SakuraApartStroked.length},
+		{name: "KeroStroked", val: KeroStroked.length},
+		{name: "KeroApartStroked", val: KeroApartStroked.length},
+		{name: "ToTransitionTalk", val: TogetherTransitionTalk.length},
+		{name: "ToTransitionSakura", val: TogetherTransitionSakura.length},
+		{name: "ToTransitionKero", val: TogetherTransitionKero.length},
+		{name: "ApTransitionTalk", val: ApartTransitionTalk.length},
+		{name: "ApTransitionSakura", val: ApartTransitionSakura.length},
+		{name: "ApTransitionKero", val: ApartTransitionKero.length},
+	];
+	
+	local labels = "";
+	local values = "";
+	
+	for (local i = 0; i < Points.length; i++)
+	{
+		if (values != "") values += ","; //there might be a better method in aosora but i'm not sure
+		values += Points[i].val;
+		
+		if (labels != "") labels += ",";
+		labels += Points[i].name;
+	}
+	
+	return values + "{(1).ToAscii}" + labels;	
+}
