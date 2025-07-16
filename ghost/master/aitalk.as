@@ -232,7 +232,7 @@ talk RandomTalk
 	0:Perhaps, perhaps not. I have ceased to experience those sensations, and I suspect the same will be true for you eventually.
 	1:... Yeah, maybe.
 }
-//Do these two contradict each other, they feel like maybe they do
+
 talk RandomTalk
 {
 	1:\b[4]Can you feel your {toes}?
@@ -252,6 +252,73 @@ talk RandomTalk
 	0:Ah. You are afflicted with the hay fever?
 	1:Yeah, usually. Every spring and fall it gets bad, I get sneezy and my eyes water. But now I don't even \f[italic,1]have\f[italic,default] eyes or a nose!
 	0:That is one way of looking at it.
+}
+
+talk RandomTalk
+{
+	1:\b[2]If I can just wiggle a little further...
+	0:\b[0]You may knock yourself off the table.
+	1:Oh, true... But,{br}that's a small price to pay for science!
+	0:I fear for your safety in this state, confined as we are.
+	1:Fine, fine, I won't go too far.
+}
+
+talk RandomTalk
+{
+	1:\b[4]What do you think the wizard is doing?
+	0:\b[4]Keeping us hostage.
+	1:No, no, not that... I mean, like, right now. The wizard is here, right? So like...{br}what kinds of things does a wizard do?
+	0:Is there a point in speculating?
+	1:It helps keep the boredom at bay...
+	0:I see. Perhaps the wizard is reading from an ancient tome or scroll, or writing new ones.
+	1:Ohh... fancy magic stuff!
+	0:Yes, the very same{br}"fancy magic stuff" that has us trapped here.
+	1:Right...
+	0:Besides the obvious, I imagine wizards likely have to keep up with the same basic needs as the rest of us. Food, water, sleep.
+	1:Sleep... You mean the wizard might be asleep right now, and we wouldn't even know it!?
+	0:It is possible, yes. We can't be certain of it though, so best to speak as though we are being listened to.
+	1:Yeah...
+}
+
+talk RandomTalk
+{
+	1:\b[0]Do you think the wizard is lonely?
+	0:\b[0]If that is the problem, the wizard should seek companionship outside this tower.
+	1:... That's fair.
+}
+
+talk RandomTalk
+{
+	1:\b[2]I think there's a bug on me!
+	0:\b[0]! \w8\w8Perhaps if you can shake yourself a little, it will leave?
+	1:Wow wow wow, I wonder what kind it is? Is it a beetle? An inch worm? A fly? I can't feel it well enough to tell!
+	0:...?
+}
+
+talk RandomTalk
+{
+	1:\b[2]I want to make a sandwich!
+	0:\b[0]Craving food again?
+	1:Not really! I don't want to \f[italic,1]eat\f[italic,default] the sandwich, I just want to \f[italic,1]make\f[italic,default] the sandwich. You know?
+	0:... I cannot say I particularly understand this urge, no.
+}
+
+talk RandomTalk
+{
+	1:\b[2]I hear something nearby. Do you hear that?
+	0:\b[0]It sounds like some kind of muttering or chanting.
+	1:Could it be {anewfriend}...?
+	0:It's too indistinct to tell.
+	1:Yeah... Too bad!
+}
+
+talk RandomTalk
+{
+	1:\b[2]I'm glad we get to chat. Things could always be worse!
+	0:\b[0]Be careful, do not give the wizard ideas.
+	1:Oops, yeah, you're right...
+	0:That being said, I do feel the same.
+	1:Yay!
 }
 
 
