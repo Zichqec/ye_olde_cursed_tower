@@ -36,12 +36,12 @@ function toes
 	]);
 }
 
-function anewfriend
+function ashowontv
 {
 	return Random.Select([
 		"a new friend",
-		"the wizard up to something",
 		"a show on TV",
+		"the wizard up to something",
 		"the radio",
 		"the wizard reading aloud",
 		"some kind of spell being cast",
