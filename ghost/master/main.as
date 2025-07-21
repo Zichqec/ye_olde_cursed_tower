@@ -7,6 +7,8 @@ function OnAosoraDefaultSaveData
 	Save.Data.Vanishing = 0;
 	Save.Data.SakuraBalloonColor = "3";
 	Save.Data.KeroBalloonColor = "6";
+	Save.Data.CurrentAiGraph = 0;
+	Save.Data.DebugMode = 0;
 }
 
 function OnAosoraLoad

@@ -63,6 +63,17 @@ function OnKeyPress
 	if (Shiori.Reference[0] == "f1") return "\![open,readme]";
 	else if (Shiori.Reference[0] == "t") return OnPromptTalk;
 	else if (Shiori.Reference[0] == "r") return OnLastTalk;
+	else if (Save.Data.DebugMode && (Shiori.Reference[0] == "right" || Shiori.Reference[0] == "left"))
+	{
+		if (Shiori.Reference[0] == "left") Save.Data.CurrentAiGraph--;
+		else if (Shiori.Reference[0] == "right") Save.Data.CurrentAiGraph++;
+		
+		//Loop around
+		if (Save.Data.CurrentAiGraph < 0) Save.Data.CurrentAiGraph = 3;
+		if (Save.Data.CurrentAiGraph > 3) Save.Data.CurrentAiGraph = 0;
+		
+		return "\![reload,aigraph]";
+	}
 }
 
 function OnSurfaceRestore
@@ -236,21 +247,44 @@ function br
 
 function getaistate
 {
-	local Points = [
-		{name: "RandomTalk", val: RandomTalk.length},
-		{name: "ApartTalk", val: ApartTalk.length},
-		{name: "FinalTalk", val: FinalTalk.length},
-		{name: "SakuraStroked", val: SakuraStroked.length},
-		{name: "SakuraApartStroked", val: SakuraApartStroked.length},
-		{name: "KeroStroked", val: KeroStroked.length},
-		{name: "KeroApartStroked", val: KeroApartStroked.length},
-		{name: "ToTransitionTalk", val: TogetherTransitionTalk.length},
-		{name: "ToTransitionSakura", val: TogetherTransitionSakura.length},
-		{name: "ToTransitionKero", val: TogetherTransitionKero.length},
-		{name: "ApTransitionTalk", val: ApartTransitionTalk.length},
-		{name: "ApTransitionSakura", val: ApartTransitionSakura.length},
-		{name: "ApTransitionKero", val: ApartTransitionKero.length},
-	];
+	local Points = [];
+	if (Save.Data.CurrentAiGraph == 0)
+	{
+		Points = [
+			{name: "RandomTalk", val: RandomTalk.length},
+			{name: "ApartTalk", val: ApartTalk.length},
+			{name: "FinalTalk", val: FinalTalk.length},
+		];
+	}
+	else if (Save.Data.CurrentAiGraph == 1)
+	{
+		Points = [
+			{name: "SakuraPet", val: SakuraStroked.length},
+			{name: "SakuraApPet", val: SakuraApartStroked.length},
+			{name: "KeroPet", val: KeroStroked.length},
+			{name: "KeroApPet", val: KeroApartStroked.length},
+		];
+	}
+	else if (Save.Data.CurrentAiGraph == 2)
+	{
+		Points = [
+			{name: "><Talk", val: TogetherTransitionTalk.length},
+			{name: "><Sakura", val: TogetherTransitionSakura.length},
+			{name: "><Kero", val: TogetherTransitionKero.length},
+			{name: "< >Talk", val: ApartTransitionTalk.length},
+			{name: "< >Sakura", val: ApartTransitionSakura.length},
+			{name: "< >Kero", val: ApartTransitionKero.length},
+		];
+	}
+	else if (Save.Data.CurrentAiGraph == 3)
+	{
+		Points = [
+			{name: "BootTalk", val: BootTalk.length},
+			{name: "CloseTalk", val: CloseTalk.length},
+			{name: "BootApartTalk", val: BootApartTalk.length},
+			{name: "CloseApartTalk", val: CloseApartTalk.length},
+		];
+	}
 	
 	local labels = "";
 	local values = "";
@@ -265,4 +299,9 @@ function getaistate
 	}
 	
 	return values + "{(1).ToAscii}" + labels;	
+}
+
+function enable_debug
+{
+	Save.Data.DebugMode = Shiori.Reference[0].ToNumber();
 }
