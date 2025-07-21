@@ -59,9 +59,9 @@ talk ApartTransitionSakura
 	\f[color,disable]... hello...?
 }
 
-talk ApartTransitionTalk
+talk ApartTransitionSakura
 {
-	0:\b[6]... Fiend.
+	0:\b[6]... Fiend.\w8\w8
 	1:\b[2]Hey, did you hear something?\w8\w8
 	
 	... Hey? Are you there...?\w8\w8
