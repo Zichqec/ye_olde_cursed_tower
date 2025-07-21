@@ -69,6 +69,13 @@ talk BootApartTalk
 	1:\b[6]... hello...? is... is someone there...?
 }
 
+talk BootApartTalk
+{
+	1:\b[0]hello... hello...?
+	
+	\f[color,disable]... hello...\f[color,default]
+}
+
 
 //———————————————————— Close together ————————————————————
 talk CloseTalk
@@ -145,6 +152,16 @@ talk CloseApartTalk
 {
 	0:\b[0]Off to do important wizard things, are you? Such cruelty, to not allow us even each other's company while you are absent.
 	1:\b[6]... wait, don't...{br}Don't go...!
+}
+
+talk CloseApartTalk
+{
+	1:\b[6]... don't... don't go, don't go don't go...!
+}
+
+talk CloseApartTalk
+{
+	1:\b[0]no no no no, don't leave me alone,{br}don't leave me alone here, please...
 }
 
 
