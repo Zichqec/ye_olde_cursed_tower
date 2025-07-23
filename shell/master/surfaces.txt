@@ -40,7 +40,7 @@ surface0,10
 	animation1000100.pattern4,replace,1000104,65,0,0
 	animation1000100.pattern5,replace,1000105,65,0,0
 	animation1000100.pattern6,replace,1000106,65,0,0
-	animation1000100.pattern7,replace, -1,65,0,0
+	animation1000100.pattern7,replace,-1,65,0,0
 	animation1000100.option,shared-index
 	
 	//Talk
@@ -53,7 +53,7 @@ surface0,10
 	animation1000201.pattern2,replace,1000200,65,0,0
 	animation1000201.pattern3,replace,1000202,65,0,0
 	animation1000201.pattern4,replace,1000201,65,0,0
-	animation1000201.pattern5,replace, -1,65,0,0
+	animation1000201.pattern5,replace,-1,65,0,0
 	
 	animation1000202.interval,never
 	animation1000202.pattern0,replace,1000200,0,0,0
@@ -61,7 +61,7 @@ surface0,10
 	animation1000202.pattern2,replace,1000203,65,0,0
 	animation1000202.pattern3,replace,1000201,65,0,0
 	animation1000202.pattern4,replace,1000202,65,0,0
-	animation1000202.pattern5,replace, -1,65,0,0
+	animation1000202.pattern5,replace,-1,65,0,0
 	
 	animation1000203.interval,never
 	animation1000203.pattern0,replace,1000201,0,0,0
@@ -69,7 +69,7 @@ surface0,10
 	animation1000203.pattern2,replace,1000201,65,0,0
 	animation1000203.pattern3,replace,1000200,65,0,0
 	animation1000203.pattern4,replace,1000201,65,0,0
-	animation1000203.pattern5,replace, -1,65,0,0
+	animation1000203.pattern5,replace,-1,65,0,0
 
 	
 	//——————————————— Main position / alt color ———————————————
@@ -86,7 +86,7 @@ surface0,10
 	animation1001100.pattern4,replace,1001104,65,0,0
 	animation1001100.pattern5,replace,1001105,65,0,0
 	animation1001100.pattern6,replace,1001106,65,0,0
-	animation1001100.pattern7,replace, -1,65,0,0
+	animation1001100.pattern7,replace,-1,65,0,0
 	animation1001100.option,shared-index
 	
 	//Talk
@@ -99,7 +99,7 @@ surface0,10
 	animation1001201.pattern2,replace,1001200,65,0,0
 	animation1001201.pattern3,replace,1001202,65,0,0
 	animation1001201.pattern4,replace,1001201,65,0,0
-	animation1001201.pattern5,replace, -1,65,0,0
+	animation1001201.pattern5,replace,-1,65,0,0
 	
 	animation1001202.interval,never
 	animation1001202.pattern0,replace,1001200,0,0,0
@@ -107,7 +107,7 @@ surface0,10
 	animation1001202.pattern2,replace,1001203,65,0,0
 	animation1001202.pattern3,replace,1001201,65,0,0
 	animation1001202.pattern4,replace,1001202,65,0,0
-	animation1001202.pattern5,replace, -1,65,0,0
+	animation1001202.pattern5,replace,-1,65,0,0
 	
 	animation1001203.interval,never
 	animation1001203.pattern0,replace,1001201,0,0,0
@@ -115,7 +115,7 @@ surface0,10
 	animation1001203.pattern2,replace,1001201,65,0,0
 	animation1001203.pattern3,replace,1001200,65,0,0
 	animation1001203.pattern4,replace,1001201,65,0,0
-	animation1001203.pattern5,replace, -1,65,0,0
+	animation1001203.pattern5,replace,-1,65,0,0
 	
 	//——————————————— Reversed position / main color ———————————————
 	//Base
@@ -131,7 +131,7 @@ surface0,10
 	animation1100100.pattern4,replace,1100104,65,0,0
 	animation1100100.pattern5,replace,1100105,65,0,0
 	animation1100100.pattern6,replace,1100106,65,0,0
-	animation1100100.pattern7,replace, -1,65,0,0
+	animation1100100.pattern7,replace,-1,65,0,0
 	animation1100100.option,shared-index
 	
 	//Talk
@@ -144,7 +144,7 @@ surface0,10
 	animation1100201.pattern2,replace,1100200,65,0,0
 	animation1100201.pattern3,replace,1100202,65,0,0
 	animation1100201.pattern4,replace,1100201,65,0,0
-	animation1100201.pattern5,replace, -1,65,0,0
+	animation1100201.pattern5,replace,-1,65,0,0
 	
 	animation1100202.interval,never
 	animation1100202.pattern0,replace,1100200,0,0,0
@@ -152,7 +152,7 @@ surface0,10
 	animation1100202.pattern2,replace,1100203,65,0,0
 	animation1100202.pattern3,replace,1100201,65,0,0
 	animation1100202.pattern4,replace,1100202,65,0,0
-	animation1100202.pattern5,replace, -1,65,0,0
+	animation1100202.pattern5,replace,-1,65,0,0
 	
 	animation1100203.interval,never
 	animation1100203.pattern0,replace,1100201,0,0,0
@@ -160,7 +160,7 @@ surface0,10
 	animation1100203.pattern2,replace,1100201,65,0,0
 	animation1100203.pattern3,replace,1100200,65,0,0
 	animation1100203.pattern4,replace,1100201,65,0,0
-	animation1100203.pattern5,replace, -1,65,0,0
+	animation1100203.pattern5,replace,-1,65,0,0
 
 	
 	//——————————————— Reversed position / alt color ———————————————
@@ -177,7 +177,7 @@ surface0,10
 	animation1101100.pattern4,replace,1101104,65,0,0
 	animation1101100.pattern5,replace,1101105,65,0,0
 	animation1101100.pattern6,replace,1101106,65,0,0
-	animation1101100.pattern7,replace, -1,65,0,0
+	animation1101100.pattern7,replace,-1,65,0,0
 	animation1101100.option,shared-index
 	
 	//Talk
@@ -190,7 +190,7 @@ surface0,10
 	animation1101201.pattern2,replace,1101200,65,0,0
 	animation1101201.pattern3,replace,1101202,65,0,0
 	animation1101201.pattern4,replace,1101201,65,0,0
-	animation1101201.pattern5,replace, -1,65,0,0
+	animation1101201.pattern5,replace,-1,65,0,0
 	
 	animation1101202.interval,never
 	animation1101202.pattern0,replace,1101200,0,0,0
@@ -198,7 +198,7 @@ surface0,10
 	animation1101202.pattern2,replace,1101203,65,0,0
 	animation1101202.pattern3,replace,1101201,65,0,0
 	animation1101202.pattern4,replace,1101202,65,0,0
-	animation1101202.pattern5,replace, -1,65,0,0
+	animation1101202.pattern5,replace,-1,65,0,0
 	
 	animation1101203.interval,never
 	animation1101203.pattern0,replace,1101201,0,0,0
@@ -206,7 +206,7 @@ surface0,10
 	animation1101203.pattern2,replace,1101201,65,0,0
 	animation1101203.pattern3,replace,1101200,65,0,0
 	animation1101203.pattern4,replace,1101201,65,0,0
-	animation1101203.pattern5,replace, -1,65,0,0
+	animation1101203.pattern5,replace,-1,65,0,0
 	
 	//——————————————— Alt position / main color ———————————————
 	//Base
@@ -223,7 +223,7 @@ surface0,10
 	animation1200100.pattern5,replace,1200105,65,0,0
 	animation1200100.pattern6,replace,1200106,65,0,0
 	animation1200100.pattern7,replace,1200107,65,0,0
-	animation1200100.pattern8,replace, -1,65,0,0
+	animation1200100.pattern8,replace,-1,65,0,0
 	animation1200100.option,shared-index
 	
 	//Talk
@@ -236,7 +236,7 @@ surface0,10
 	animation1200201.pattern2,replace,1200200,65,0,0
 	animation1200201.pattern3,replace,1200202,65,0,0
 	animation1200201.pattern4,replace,1200201,65,0,0
-	animation1200201.pattern5,replace, -1,65,0,0
+	animation1200201.pattern5,replace,-1,65,0,0
 	
 	animation1200202.interval,never
 	animation1200202.pattern0,replace,1200200,0,0,0
@@ -244,7 +244,7 @@ surface0,10
 	animation1200202.pattern2,replace,1200203,65,0,0
 	animation1200202.pattern3,replace,1200201,65,0,0
 	animation1200202.pattern4,replace,1200202,65,0,0
-	animation1200202.pattern5,replace, -1,65,0,0
+	animation1200202.pattern5,replace,-1,65,0,0
 	
 	animation1200203.interval,never
 	animation1200203.pattern0,replace,1200201,0,0,0
@@ -252,7 +252,7 @@ surface0,10
 	animation1200203.pattern2,replace,1200201,65,0,0
 	animation1200203.pattern3,replace,1200200,65,0,0
 	animation1200203.pattern4,replace,1200201,65,0,0
-	animation1200203.pattern5,replace, -1,65,0,0
+	animation1200203.pattern5,replace,-1,65,0,0
 	
 	
 	//——————————————— Alt position / alt color ———————————————
@@ -270,7 +270,7 @@ surface0,10
 	animation1201100.pattern5,replace,1201105,65,0,0
 	animation1201100.pattern6,replace,1201106,65,0,0
 	animation1201100.pattern7,replace,1201107,65,0,0
-	animation1201100.pattern8,replace, -1,65,0,0
+	animation1201100.pattern8,replace,-1,65,0,0
 	animation1201100.option,shared-index
 	
 	//Talk
@@ -283,7 +283,7 @@ surface0,10
 	animation1201201.pattern2,replace,1201200,65,0,0
 	animation1201201.pattern3,replace,1201202,65,0,0
 	animation1201201.pattern4,replace,1201201,65,0,0
-	animation1201201.pattern5,replace, -1,65,0,0
+	animation1201201.pattern5,replace,-1,65,0,0
 	
 	animation1201202.interval,never
 	animation1201202.pattern0,replace,1201200,0,0,0
@@ -291,7 +291,7 @@ surface0,10
 	animation1201202.pattern2,replace,1201203,65,0,0
 	animation1201202.pattern3,replace,1201201,65,0,0
 	animation1201202.pattern4,replace,1201202,65,0,0
-	animation1201202.pattern5,replace, -1,65,0,0
+	animation1201202.pattern5,replace,-1,65,0,0
 	
 	animation1201203.interval,never
 	animation1201203.pattern0,replace,1201201,0,0,0
@@ -299,7 +299,7 @@ surface0,10
 	animation1201203.pattern2,replace,1201201,65,0,0
 	animation1201203.pattern3,replace,1201200,65,0,0
 	animation1201203.pattern4,replace,1201201,65,0,0
-	animation1201203.pattern5,replace, -1,65,0,0
+	animation1201203.pattern5,replace,-1,65,0,0
 }
 
 //——————————————— Pot ———————————————
@@ -325,7 +325,7 @@ surface0,10
 	animation2000100.pattern10,replace,2000110,65,0,0
 	animation2000100.pattern11,replace,2000111,65,0,0
 	animation2000100.pattern12,replace,2000112,65,0,0
-	animation2000100.pattern13,replace, -1,65,0,0
+	animation2000100.pattern13,replace,-1,65,0,0
 	animation2000100.option,shared-index
 	
 	//Talk
@@ -338,7 +338,7 @@ surface0,10
 	animation2000201.pattern2,replace,2000200,65,0,0
 	animation2000201.pattern3,replace,2000202,65,0,0
 	animation2000201.pattern4,replace,2000201,65,0,0
-	animation2000201.pattern5,replace, -1,65,0,0
+	animation2000201.pattern5,replace,-1,65,0,0
 	
 	animation2000202.interval,never
 	animation2000202.pattern0,replace,2000200,0,0,0
@@ -346,7 +346,7 @@ surface0,10
 	animation2000202.pattern2,replace,2000203,65,0,0
 	animation2000202.pattern3,replace,2000201,65,0,0
 	animation2000202.pattern4,replace,2000202,65,0,0
-	animation2000202.pattern5,replace, -1,65,0,0
+	animation2000202.pattern5,replace,-1,65,0,0
 	
 	animation2000203.interval,never
 	animation2000203.pattern0,replace,2000201,0,0,0
@@ -354,7 +354,7 @@ surface0,10
 	animation2000203.pattern2,replace,2000201,65,0,0
 	animation2000203.pattern3,replace,2000200,65,0,0
 	animation2000203.pattern4,replace,2000201,65,0,0
-	animation2000203.pattern5,replace, -1,65,0,0
+	animation2000203.pattern5,replace,-1,65,0,0
 	
 	
 	//——————————————— Main position / alt color ———————————————
@@ -377,7 +377,7 @@ surface0,10
 	animation2001100.pattern10,replace,2001110,65,0,0
 	animation2001100.pattern11,replace,2001111,65,0,0
 	animation2001100.pattern12,replace,2001112,65,0,0
-	animation2001100.pattern13,replace, -1,65,0,0
+	animation2001100.pattern13,replace,-1,65,0,0
 	animation2001100.option,shared-index
 	
 	//Talk
@@ -390,7 +390,7 @@ surface0,10
 	animation2001201.pattern2,replace,2001200,65,0,0
 	animation2001201.pattern3,replace,2001202,65,0,0
 	animation2001201.pattern4,replace,2001201,65,0,0
-	animation2001201.pattern5,replace, -1,65,0,0
+	animation2001201.pattern5,replace,-1,65,0,0
 	
 	animation2001202.interval,never
 	animation2001202.pattern0,replace,2001200,0,0,0
@@ -398,7 +398,7 @@ surface0,10
 	animation2001202.pattern2,replace,2001203,65,0,0
 	animation2001202.pattern3,replace,2001201,65,0,0
 	animation2001202.pattern4,replace,2001202,65,0,0
-	animation2001202.pattern5,replace, -1,65,0,0
+	animation2001202.pattern5,replace,-1,65,0,0
 	
 	animation2001203.interval,never
 	animation2001203.pattern0,replace,2001201,0,0,0
@@ -406,7 +406,7 @@ surface0,10
 	animation2001203.pattern2,replace,2001201,65,0,0
 	animation2001203.pattern3,replace,2001200,65,0,0
 	animation2001203.pattern4,replace,2001201,65,0,0
-	animation2001203.pattern5,replace, -1,65,0,0
+	animation2001203.pattern5,replace,-1,65,0,0
 	
 	
 	//——————————————— Alt position / main color ———————————————
@@ -427,7 +427,7 @@ surface0,10
 	animation2100100.pattern8, replace,2100108,65,0,0
 	animation2100100.pattern9, replace,2100109,65,0,0
 	animation2100100.pattern10,replace,2100110,65,0,0
-	animation2100100.pattern11,replace, -1,65,0,0
+	animation2100100.pattern11,replace,-1,65,0,0
 	animation2100100.option,shared-index
 	
 	//Talk
@@ -440,7 +440,7 @@ surface0,10
 	animation2100201.pattern2,replace,2100200,65,0,0
 	animation2100201.pattern3,replace,2100202,65,0,0
 	animation2100201.pattern4,replace,2100201,65,0,0
-	animation2100201.pattern5,replace, -1,65,0,0
+	animation2100201.pattern5,replace,-1,65,0,0
 	
 	animation2100202.interval,never
 	animation2100202.pattern0,replace,2100200,0,0,0
@@ -448,7 +448,7 @@ surface0,10
 	animation2100202.pattern2,replace,2100203,65,0,0
 	animation2100202.pattern3,replace,2100201,65,0,0
 	animation2100202.pattern4,replace,2100202,65,0,0
-	animation2100202.pattern5,replace, -1,65,0,0
+	animation2100202.pattern5,replace,-1,65,0,0
 	
 	animation2100203.interval,never
 	animation2100203.pattern0,replace,2100201,0,0,0
@@ -456,7 +456,7 @@ surface0,10
 	animation2100203.pattern2,replace,2100201,65,0,0
 	animation2100203.pattern3,replace,2100200,65,0,0
 	animation2100203.pattern4,replace,2100201,65,0,0
-	animation2100203.pattern5,replace, -1,65,0,0
+	animation2100203.pattern5,replace,-1,65,0,0
 	
 	
 	//——————————————— Alt position / alt color ———————————————
@@ -477,7 +477,7 @@ surface0,10
 	animation2101100.pattern8, replace,2101108,65,0,0
 	animation2101100.pattern9, replace,2101109,65,0,0
 	animation2101100.pattern10,replace,2101110,65,0,0
-	animation2101100.pattern11,replace, -1,65,0,0
+	animation2101100.pattern11,replace,-1,65,0,0
 	animation2101100.option,shared-index
 	
 	//Talk
@@ -490,7 +490,7 @@ surface0,10
 	animation2101201.pattern2,replace,2101200,65,0,0
 	animation2101201.pattern3,replace,2101202,65,0,0
 	animation2101201.pattern4,replace,2101201,65,0,0
-	animation2101201.pattern5,replace, -1,65,0,0
+	animation2101201.pattern5,replace,-1,65,0,0
 	
 	animation2101202.interval,never
 	animation2101202.pattern0,replace,2101200,0,0,0
@@ -498,7 +498,7 @@ surface0,10
 	animation2101202.pattern2,replace,2101203,65,0,0
 	animation2101202.pattern3,replace,2101201,65,0,0
 	animation2101202.pattern4,replace,2101202,65,0,0
-	animation2101202.pattern5,replace, -1,65,0,0
+	animation2101202.pattern5,replace,-1,65,0,0
 	
 	animation2101203.interval,never
 	animation2101203.pattern0,replace,2101201,0,0,0
@@ -506,7 +506,7 @@ surface0,10
 	animation2101203.pattern2,replace,2101201,65,0,0
 	animation2101203.pattern3,replace,2101200,65,0,0
 	animation2101203.pattern4,replace,2101201,65,0,0
-	animation2101203.pattern5,replace, -1,65,0,0
+	animation2101203.pattern5,replace,-1,65,0,0
 }
 
 //——————————————— Bottle ———————————————
@@ -532,7 +532,7 @@ surface0,10
 	animation3000100.pattern10,replace,3000110,65,0,0
 	animation3000100.pattern11,replace,3000111,65,0,0
 	animation3000100.pattern12,replace,3000112,65,0,0
-	animation3000100.pattern13,replace, -1,65,0,0
+	animation3000100.pattern13,replace,-1,65,0,0
 	animation3000100.option,shared-index
 	
 	//Talk
@@ -545,7 +545,7 @@ surface0,10
 	animation3000201.pattern2,replace,3000200,65,0,0
 	animation3000201.pattern3,replace,3000202,65,0,0
 	animation3000201.pattern4,replace,3000201,65,0,0
-	animation3000201.pattern5,replace, -1,65,0,0
+	animation3000201.pattern5,replace,-1,65,0,0
 	
 	animation3000202.interval,never
 	animation3000202.pattern0,replace,3000200,0,0,0
@@ -553,7 +553,7 @@ surface0,10
 	animation3000202.pattern2,replace,3000203,65,0,0
 	animation3000202.pattern3,replace,3000201,65,0,0
 	animation3000202.pattern4,replace,3000202,65,0,0
-	animation3000202.pattern5,replace, -1,65,0,0
+	animation3000202.pattern5,replace,-1,65,0,0
 	
 	animation3000203.interval,never
 	animation3000203.pattern0,replace,3000201,0,0,0
@@ -561,7 +561,7 @@ surface0,10
 	animation3000203.pattern2,replace,3000201,65,0,0
 	animation3000203.pattern3,replace,3000200,65,0,0
 	animation3000203.pattern4,replace,3000201,65,0,0
-	animation3000203.pattern5,replace, -1,65,0,0
+	animation3000203.pattern5,replace,-1,65,0,0
 	
 	
 	//——————————————— Main position / alt color ———————————————
@@ -584,7 +584,7 @@ surface0,10
 	animation3001100.pattern10,replace,3001110,65,0,0
 	animation3001100.pattern11,replace,3001111,65,0,0
 	animation3001100.pattern12,replace,3001112,65,0,0
-	animation3001100.pattern13,replace, -1,65,0,0
+	animation3001100.pattern13,replace,-1,65,0,0
 	animation3001100.option,shared-index
 	
 	//Talk
@@ -597,7 +597,7 @@ surface0,10
 	animation3001201.pattern2,replace,3001200,65,0,0
 	animation3001201.pattern3,replace,3001202,65,0,0
 	animation3001201.pattern4,replace,3001201,65,0,0
-	animation3001201.pattern5,replace, -1,65,0,0
+	animation3001201.pattern5,replace,-1,65,0,0
 	
 	animation3001202.interval,never
 	animation3001202.pattern0,replace,3001200,0,0,0
@@ -605,7 +605,7 @@ surface0,10
 	animation3001202.pattern2,replace,3001203,65,0,0
 	animation3001202.pattern3,replace,3001201,65,0,0
 	animation3001202.pattern4,replace,3001202,65,0,0
-	animation3001202.pattern5,replace, -1,65,0,0
+	animation3001202.pattern5,replace,-1,65,0,0
 	
 	animation3001203.interval,never
 	animation3001203.pattern0,replace,3001201,0,0,0
@@ -613,7 +613,7 @@ surface0,10
 	animation3001203.pattern2,replace,3001201,65,0,0
 	animation3001203.pattern3,replace,3001200,65,0,0
 	animation3001203.pattern4,replace,3001201,65,0,0
-	animation3001203.pattern5,replace, -1,65,0,0
+	animation3001203.pattern5,replace,-1,65,0,0
 	
 	
 	//——————————————— Alt position / main color ———————————————
@@ -638,7 +638,7 @@ surface0,10
 	animation3100100.pattern12,replace,3100112,65,0,0
 	animation3100100.pattern13,replace,3100113,65,0,0
 	animation3100100.pattern14,replace,3100114,65,0,0
-	animation3100100.pattern15,replace, -1,65,0,0
+	animation3100100.pattern15,replace,-1,65,0,0
 	animation3100100.option,shared-index
 	
 	//Talk
@@ -651,7 +651,7 @@ surface0,10
 	animation3100201.pattern2,replace,3100200,65,0,0
 	animation3100201.pattern3,replace,3100202,65,0,0
 	animation3100201.pattern4,replace,3100201,65,0,0
-	animation3100201.pattern5,replace, -1,65,0,0
+	animation3100201.pattern5,replace,-1,65,0,0
 	
 	animation3100202.interval,never
 	animation3100202.pattern0,replace,3100200,0,0,0
@@ -659,7 +659,7 @@ surface0,10
 	animation3100202.pattern2,replace,3100203,65,0,0
 	animation3100202.pattern3,replace,3100201,65,0,0
 	animation3100202.pattern4,replace,3100202,65,0,0
-	animation3100202.pattern5,replace, -1,65,0,0
+	animation3100202.pattern5,replace,-1,65,0,0
 	
 	animation3100203.interval,never
 	animation3100203.pattern0,replace,3100201,0,0,0
@@ -667,7 +667,7 @@ surface0,10
 	animation3100203.pattern2,replace,3100201,65,0,0
 	animation3100203.pattern3,replace,3100200,65,0,0
 	animation3100203.pattern4,replace,3100201,65,0,0
-	animation3100203.pattern5,replace, -1,65,0,0
+	animation3100203.pattern5,replace,-1,65,0,0
 	
 	
 	//——————————————— Alt position / alt color ———————————————
@@ -692,7 +692,7 @@ surface0,10
 	animation3101100.pattern12,replace,3101112,65,0,0
 	animation3101100.pattern13,replace,3101113,65,0,0
 	animation3101100.pattern14,replace,3101114,65,0,0
-	animation3101100.pattern15,replace, -1,65,0,0
+	animation3101100.pattern15,replace,-1,65,0,0
 	animation3101100.option,shared-index
 	
 	//Talk
@@ -705,7 +705,7 @@ surface0,10
 	animation3101201.pattern2,replace,3101200,65,0,0
 	animation3101201.pattern3,replace,3101202,65,0,0
 	animation3101201.pattern4,replace,3101201,65,0,0
-	animation3101201.pattern5,replace, -1,65,0,0
+	animation3101201.pattern5,replace,-1,65,0,0
 	
 	animation3101202.interval,never
 	animation3101202.pattern0,replace,3101200,0,0,0
@@ -713,7 +713,7 @@ surface0,10
 	animation3101202.pattern2,replace,3101203,65,0,0
 	animation3101202.pattern3,replace,3101201,65,0,0
 	animation3101202.pattern4,replace,3101202,65,0,0
-	animation3101202.pattern5,replace, -1,65,0,0
+	animation3101202.pattern5,replace,-1,65,0,0
 	
 	animation3101203.interval,never
 	animation3101203.pattern0,replace,3101201,0,0,0
@@ -721,7 +721,7 @@ surface0,10
 	animation3101203.pattern2,replace,3101201,65,0,0
 	animation3101203.pattern3,replace,3101200,65,0,0
 	animation3101203.pattern4,replace,3101201,65,0,0
-	animation3101203.pattern5,replace, -1,65,0,0
+	animation3101203.pattern5,replace,-1,65,0,0
 }
 
 surface0,10
