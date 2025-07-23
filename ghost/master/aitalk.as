@@ -415,7 +415,7 @@ talk ApartTalk
 }
 
 
-//———————————————————— Transition to together (from aitalk, mouse, and close*) ————————————————————
+//———————————————————— Transition to together (from aitalk, mouse, and close) ————————————————————
 //Add TogetherTransitionSakura for transitions that specifically can take place when stroking the sakura, and TogetherTransitionKero for transitions that specifically can take place when stroking the kero
 
 talk TogetherTransitionTalk
@@ -447,7 +447,7 @@ talk TogetherTransitionTalk
 }
 
 
-//———————————————————— Transition to apart (from aitalk, mouse, and close*) ————————————————————
+//———————————————————— Transition to apart (from aitalk, mouse, and close) ————————————————————
 //Add ApartTransitionSakura for transitions that specifically can take place when stroking the sakura, and ApartTransitionKero for transitions that specifically can take place when stroking the kero
 
 talk ApartTransitionTalk

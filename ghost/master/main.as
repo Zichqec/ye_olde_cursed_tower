@@ -77,13 +77,20 @@ function OnBoot
 	return output;
 }
 
-//Known issue: if you drag them around during a dialogue, they won't have a chance to update their coords, and then the user might close the ghost before it has a chance to update. There's not anything I can do about this without introducing a SAORI, which I do not want to do for various reasons
-//Yes, I tried to do like the other functions and separate this into a function to get the coords and then one to close. Problem with that is it only works in multi-ghost settings... if they're the only ghost you have open, SSP forces them to close when OnClose is done, regardless of other functions you try to raise. Probably the same is true of clicking quit, and maybe various other cases. This is a problem I would have to solve at the source.
+//This one doesn't work like the others because you can't just jump to another event outside of OnClose, if you do, SSP will force itself to quit if you chose to completely close SSP, and probably in some other instances as well. However! You can certainly use embed tags to evaluate which dialogue to pick on the fly... :3c
 function OnClose
 {
 	if (Save.Data.Reinstalls >= 2) return "\-";
 	
-	local output = "{GetCoords}\0\s[0]\1\s[10]";
+	local output = "{GetCoords}\![embed,OnClosePick]";
+	
+	output += "\w8\w8\w8\-";
+	return output;
+}
+
+function OnClosePick
+{
+	local output = "\0\s[0]\1\s[10]";
 	
 	if (FarApart() != Save.Data.FarApart) //Mismatch means the state must have changed
 	{
@@ -95,7 +102,6 @@ function OnClose
 	else if (FarApart()) output += CloseApartTalk();
 	else output += CloseTalk();
 	
-	output += "\w8\w8\w8\-";
 	return output;
 }
 
