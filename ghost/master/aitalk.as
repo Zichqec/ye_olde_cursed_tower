@@ -436,6 +436,16 @@ talk TogetherTransitionTalk
 	1:I'm so glad...
 }
 
+talk TogetherTransitionTalk
+{
+	1:\b[2]Is that...?
+	0:\b[2]It is I.
+	1:Aha! I could sense you were nearby.
+	0:Your skill continues to grow commendably.
+	1:Hehehehe... thanks!{br}... I'm glad you're okay.
+	0:The same towards you.
+}
+
 
 //———————————————————— Transition to apart (from aitalk, mouse, and close*) ————————————————————
 //Add ApartTransitionSakura for transitions that specifically can take place when stroking the sakura, and ApartTransitionKero for transitions that specifically can take place when stroking the kero
@@ -458,6 +468,16 @@ talk ApartTransitionTalk
 	
 	... where did you take her...?
 	0:\b[0]... I have to wonder what possesses someone to act with such cruelty.
+}
+
+talk ApartTransitionTalk
+{
+	0:\b[0]... Have you not toyed with us enough as it is? Will these games perpetuate into eternity? I will not continue to play.
+	1:\b[0]...? Hey, are... are you still there?\w8\w8
+	
+	... Hello...?\w8\w8
+	
+	\f[color,disable]... what did we do wrong...?\f[color,default]
 }
 
 
