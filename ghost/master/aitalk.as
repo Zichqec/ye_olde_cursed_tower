@@ -307,9 +307,22 @@ talk RandomTalk
 {
 	1:\b[2]I hear something nearby. Do you hear that?
 	0:\b[0]It sounds like some kind of muttering or chanting.
-	1:Could it be {anewfriend}...?
+	
+	>RandomTalk_NearbySounds
+}
+
+talk RandomTalk_NearbySounds
+{
+	1:Could it be {ashowontv}...?
 	0:It's too indistinct to tell.
 	1:Yeah... Too bad!
+}
+
+talk RandomTalk_NearbySounds
+{
+	1:Could it be someone new...?
+	0:It's too indistinct to tell.
+	1:Yeah... let's hope not, anyway.
 }
 
 talk RandomTalk
