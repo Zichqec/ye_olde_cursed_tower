@@ -179,13 +179,16 @@ function OnSendStroked
 function OnMouseDoubleClick
 {
 	if (Save.Data.Vanishing == 1) return OnVanishButtonHold;
-	else return "{GetCoords}\![raise,OnSendMouseDoubleClick,,,,{Shiori.Reference[3]}]";
+	else return "{GetCoords}\![raise,OnSendMouseDoubleClick,,,,{Shiori.Reference[3]},,{Shiori.Reference[5]}]";
 }
 
 function OnSendMouseDoubleClick
 {
-	if (Shiori.Reference[3] == 1) return OnKeroMenu;
-	else return OnSakuraMenu;
+	if (Shiori.Reference[5] == 0)
+	{
+		if (Shiori.Reference[3] == 1) return OnKeroMenu;
+		else return OnSakuraMenu;
+	}
 }
 
 function OnMouseDragEnd
