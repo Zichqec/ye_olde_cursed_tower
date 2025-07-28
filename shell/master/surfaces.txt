@@ -32,7 +32,7 @@ surface0,10
 	animation1000000.pattern0,replace,1000000,0,0,0
 	
 	//Idle
-	animation1000100.interval,bind+random,10
+	animation1000100.interval,bind+random,15
 	animation1000100.pattern0,replace,1000100,0,0,0
 	animation1000100.pattern1,replace,1000101,65,0,0
 	animation1000100.pattern2,replace,1000102,65,0,0
@@ -78,7 +78,7 @@ surface0,10
 	animation1001000.pattern0,replace,1001000,0,0,0
 	
 	//Idle
-	animation1001100.interval,bind+random,10
+	animation1001100.interval,bind+random,15
 	animation1001100.pattern0,replace,1001100,0,0,0
 	animation1001100.pattern1,replace,1001101,65,0,0
 	animation1001100.pattern2,replace,1001102,65,0,0
@@ -123,7 +123,7 @@ surface0,10
 	animation1100000.pattern0,replace,1100000,0,0,0
 	
 	//Idle
-	animation1100100.interval,bind+random,10
+	animation1100100.interval,bind+random,15
 	animation1100100.pattern0,replace,1100100,0,0,0
 	animation1100100.pattern1,replace,1100101,65,0,0
 	animation1100100.pattern2,replace,1100102,65,0,0
@@ -169,7 +169,7 @@ surface0,10
 	animation1101000.pattern0,replace,1101000,0,0,0
 	
 	//Idle
-	animation1101100.interval,bind+random,10
+	animation1101100.interval,bind+random,15
 	animation1101100.pattern0,replace,1101100,0,0,0
 	animation1101100.pattern1,replace,1101101,65,0,0
 	animation1101100.pattern2,replace,1101102,65,0,0
@@ -214,7 +214,7 @@ surface0,10
 	animation1200000.pattern0,replace,1200000,0,0,0
 	
 	//Idle
-	animation1200100.interval,bind+random,20
+	animation1200100.interval,bind+random,15
 	animation1200100.pattern0,replace,1200100,0,0,0
 	animation1200100.pattern1,replace,1200101,0,0,0
 	animation1200100.pattern2,replace,1200102,65,0,0
@@ -261,7 +261,7 @@ surface0,10
 	animation1201000.pattern0,replace,1201000,0,0,0
 	
 	//Idle
-	animation1201100.interval,bind+random,20
+	animation1201100.interval,bind+random,15
 	animation1201100.pattern0,replace,1201100,0,0,0
 	animation1201100.pattern1,replace,1201101,0,0,0
 	animation1201100.pattern2,replace,1201102,65,0,0
@@ -311,7 +311,7 @@ surface0,10
 	animation2000000.pattern0,replace,2000000,0,0,0
 	
 	//Idle
-	animation2000100.interval,bind+random,10
+	animation2000100.interval,bind+random,15
 	animation2000100.pattern0, replace,2000100,0,0,0
 	animation2000100.pattern1, replace,2000101,65,0,0
 	animation2000100.pattern2, replace,2000102,65,0,0
@@ -363,7 +363,7 @@ surface0,10
 	animation2001000.pattern0,replace,2001000,0,0,0
 	
 	//Idle
-	animation2001100.interval,bind+random,10
+	animation2001100.interval,bind+random,15
 	animation2001100.pattern0, replace,2001100,0,0,0
 	animation2001100.pattern1, replace,2001101,65,0,0
 	animation2001100.pattern2, replace,2001102,65,0,0
@@ -415,7 +415,7 @@ surface0,10
 	animation2100000.pattern0,replace,2100000,0,0,0
 	
 	//Idle
-	animation2100100.interval,bind+random,10
+	animation2100100.interval,bind+random,15
 	animation2100100.pattern0, replace,2100100,0,0,0
 	animation2100100.pattern1, replace,2100101,65,0,0
 	animation2100100.pattern2, replace,2100102,65,0,0
@@ -465,7 +465,7 @@ surface0,10
 	animation2101000.pattern0,replace,2101000,0,0,0
 	
 	//Idle
-	animation2101100.interval,bind+random,10
+	animation2101100.interval,bind+random,15
 	animation2101100.pattern0, replace,2101100,0,0,0
 	animation2101100.pattern1, replace,2101101,65,0,0
 	animation2101100.pattern2, replace,2101102,65,0,0
@@ -518,7 +518,7 @@ surface0,10
 	animation3000000.pattern0,replace,3000000,0,0,0
 	
 	//Idle
-	animation3000100.interval,bind+random,20
+	animation3000100.interval,bind+random,15
 	animation3000100.pattern0, replace,3000100,0,0,0
 	animation3000100.pattern1, replace,3000101,65,0,0
 	animation3000100.pattern2, replace,3000102,65,0,0
@@ -570,7 +570,7 @@ surface0,10
 	animation3001000.pattern0,replace,3001000,0,0,0
 	
 	//Idle
-	animation3001100.interval,bind+random,20
+	animation3001100.interval,bind+random,15
 	animation3001100.pattern0, replace,3001100,0,0,0
 	animation3001100.pattern1, replace,3001101,65,0,0
 	animation3001100.pattern2, replace,3001102,65,0,0
@@ -622,7 +622,7 @@ surface0,10
 	animation3100000.pattern0,replace,3100000,0,0,0
 	
 	//Idle
-	animation3100100.interval,bind+random,20
+	animation3100100.interval,bind+random,15
 	animation3100100.pattern0 ,replace,3100100,0,0,0
 	animation3100100.pattern1 ,replace,3100101,65,0,0
 	animation3100100.pattern2 ,replace,3100102,65,0,0
@@ -676,7 +676,7 @@ surface0,10
 	animation3101000.pattern0,replace,3101000,0,0,0
 	
 	//Idle
-	animation3101100.interval,bind+random,20
+	animation3101100.interval,bind+random,15
 	animation3101100.pattern 0,replace,3101100,0,0,0
 	animation3101100.pattern 1,replace,3101101,65,0,0
 	animation3101100.pattern 2,replace,3101102,65,0,0
