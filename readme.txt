@@ -8,7 +8,7 @@ An evil wizard sits atop a tower, collecting souls... for what purpose? Nobody i
 A Ghost Jam 2025 entry, by:
 
 Galla - https://gallathegalla.github.io/gtg-ghosts/
-Pommy - https://www.youtube.com/@pommy_the_mimic
+Pommy - https://www.woogagoog.net/
 Zichqec - https://ukagaka.zichqec.com/
 
 Using Aosora SHIORI: https://github.com/kanadelab/aosora-shiori

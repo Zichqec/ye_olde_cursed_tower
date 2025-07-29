@@ -99,7 +99,7 @@ function sakura@recommendsites
 {
 	return FormatLinks([
 		{name: "Galla", url: "https://gallathegalla.github.io/gtg-ghosts/"},
-		{name: "Pommy", url: "https://www.youtube.com/@pommy_the_mimic"},
+		{name: "Pommy", url: "https://www.woogagoog.net/"},
 		{name: "Zichqec", url: "https://ukagaka.zichqec.com/"},
 	]);
 }
