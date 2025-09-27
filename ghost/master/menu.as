@@ -2,6 +2,7 @@
 function OnSakuraMenu
 {
 	local output = "";
+	if (Shiori.Headers.ID != "OnMouseDoubleClick") output += "\C\![lock,balloonrepaint]\c";
 	
 	output += "\0\b[2]\s[0]\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]\![quicksection,true]\![no-autopause]";
 	
@@ -40,6 +41,8 @@ function OnSakuraMenu
 	output += "\n\n";
 	
 	output += "\![*]\__q[blank]As you were!\__q";
+	
+	output += "\![unlock,balloonrepaint]";
 	
 	return output;
 }
