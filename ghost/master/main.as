@@ -19,7 +19,6 @@ function OnAosoraLoad
 	TalkTimer.NadenadeMoveThreshold = 50; //Unsure if I need to specify this or if 50 is the default when unspecified, but...
 	TalkBuilder.Default.AutoLineBreak = "\n\w8";
 	TalkBuilder.Default.ScopeChangeLineBreak = "\n\n";
-	TalkBuilder.Default.Head = ""; //For now, this ghost requires this to be blank...
 	LastTalk = "";
 }
 
